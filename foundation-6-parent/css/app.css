@@ -1,0 +1,43 @@
+body #main {font-family: 'EB Garamond', serif; font-weight: 400;font-size:19px;}
+.center {display: block;margin-left: auto;margin-right: auto}
+div.top-bar a {color:#58595b;}
+/* Top Bar Navigation */
+ul.is-dropdown-submenu {margin-top:0.5em;background-color:#fff;}
+ul.is-dropdown-submenu li.is-submenu-item.is-dropdown-submenu-item {background-color:#fff;}
+ul#primary-menu li {border-right:1px solid #fff;}
+/* Menu Toggle */
+.title-bar .menu-icon {background-color: transparent;border-width:0;}
+.title-bar button.menu-icon,
+.title-bar button.menu-icon:hover {background-color:transparent;box-shadow:none;}
+/* Page Content */
+.home .entry-title,
+.page-id-2 .entry-title {display:none;}
+.published-date {color:#A4A4A6;font-size:0.9em;}
+/* Comments */
+.callout h3 {font-size:1em; font-weight:normal;}
+.comment-body {border:1px solid rgba(10,10,10,.25); margin-top:3em; padding:1em; border-radius: 3px; }
+.comment-author.vcard {background-color:#f1f1f1; border-radius:5px;}
+.comment-metadata {text-align:right;}
+.comment-metadata a {color:#58595b; text-decoration:none;}
+.avatar {margin-right:5px;}
+div.reply {background-color: #f7941d; border-radius: 5px; padding:0.25em 0.5em;display:inline-block;}
+div.reply:hover {background-color: #64B0C4; border-radius: 5px; padding:0.25em 0.5em;display:inline-block;}
+div.reply a {color:#fff;text-decoration:none;}
+div.reply {display:none;}
+.comment-list {list-style:none;margin-left:0;}
+.comment-form-url {display:none;}
+span .comment-edit-link {margin-left:1em;}
+textarea#comment {margin-bottom:1.5em;height:6em;margin-top:0;}
+/* Widgets */
+.widget-title {margin-top:0.67em;font-size:2em;}
+/* Headline & Body Copy */
+h1.entry-title {font-size:1.4em;}
+/* hyperlinks */
+a,
+a.comment-edit-link {text-decoration:underline; color:#4169E1;}
+a.button{text-decoration:none;}
+/* News headlines */
+.news {margin-top:2em;margin-bottom:2em;}
+.post-93 .publication {display:none}
+span.posted-on>a {visibility:visible;float:left;text-decoration:none;color:#58595b;font-size:0.9em;}
+span.posted-on {visibility:hidden;}
