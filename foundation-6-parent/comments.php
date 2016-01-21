@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package President-designateial-transition
+ * @package foundation-6-parent
  */
 
 /*

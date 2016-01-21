@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 get_header(); ?>

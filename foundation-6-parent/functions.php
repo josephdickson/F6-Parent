@@ -1,13 +1,13 @@
 <?php
 /**
- * presidential-transition functions and definitions.
+ * foundation-6-parent functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
-if ( ! function_exists( 'presidential_transition_setup' ) ) :
+if ( ! function_exists( 'foundation_6_parent' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'presidential_transition_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function presidential_transition_setup() {
+function foundation_6_parent() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on presidential-transition, use a find and replace
-	 * to change 'presidential-transition' to the name of your theme in all the template files.
+	 * If you're building a theme based on foundation-6-parent, use a find and replace
+	 * to change 'foundation-6-parent' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'presidential-transition', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'foundation-6-parent', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function presidential_transition_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'presidential-transition' ),
+		'primary' => esc_html__( 'Primary', 'foundation-6-parent' ),
 	) );
 
 	/*
@@ -72,13 +72,13 @@ function presidential_transition_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'presidential_transition_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'foundation_6_parent_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'presidential_transition_setup' );
+add_action( 'after_setup_theme', 'foundation_6_parent' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -87,19 +87,19 @@ add_action( 'after_setup_theme', 'presidential_transition_setup' );
  *
  * @global int $content_width
  */
-function presidential_transition_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'presidential_transition_content_width', 640 );
+function foundation_6_parent_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'foundation_6_parent_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'presidential_transition_content_width', 0 );
+add_action( 'after_setup_theme', 'foundation_6_parent_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function presidential_transition_widgets_init() {
+function foundation_6_parent_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'presidential-transition' ),
+		'name'          => esc_html__( 'Sidebar', 'foundation-6-parent' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -108,7 +108,7 @@ function presidential_transition_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'presidential_transition_widgets_init' );
+add_action( 'widgets_init', 'foundation_6_parent_widgets_init' );
 
 /**
  * Implement the Custom Header feature.
@@ -143,19 +143,19 @@ require get_template_directory() . '/custom_nav.php';
 /**
  * Enqueue scripts and styles.
  */
-function presidential_transition_scripts() {
+function foundation_6_parent_scripts() {
 
 	wp_enqueue_style( 'foundation-style',  get_stylesheet_directory_uri() . '/css/foundation.min.css' );
 
-	wp_enqueue_style( 'presidential-transition-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'foundation-6-parent-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'google-web-font-eb-garamond', 'https://fonts.googleapis.com/css?family=EB+Garamond' );
 
 	wp_enqueue_style( 'foundation-app-style', get_stylesheet_directory_uri() . '/css/app.css' );
 
-	wp_enqueue_script( 'presidential-transition-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'foundation-6-parent-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'presidential-transition-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'foundation-6-parent-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js', array(), '20151221', true );
 
@@ -167,4 +167,4 @@ function presidential_transition_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'presidential_transition_scripts' );
+add_action( 'wp_enqueue_scripts', 'foundation_6_parent_scripts' );

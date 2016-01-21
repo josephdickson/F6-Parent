@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 get_header(); ?>

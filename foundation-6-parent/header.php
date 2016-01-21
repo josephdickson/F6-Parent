@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 ?><!DOCTYPE html>

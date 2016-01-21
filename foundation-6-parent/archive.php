@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 get_header(); ?>
@@ -13,11 +13,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
-				echo '<div class="row">';
-				echo '<div class="small-12 featured-image">';
-				echo '<img src="' . get_template_directory_uri() . '/img/banner.jpg">' ; 
-				echo '</div>';
-				echo '</div>';
 
 		if ( have_posts() ) : ?>
 

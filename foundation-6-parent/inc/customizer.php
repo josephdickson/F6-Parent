@@ -2,7 +2,7 @@
 /**
  * presidential-transition Theme Customizer.
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 /**
@@ -10,17 +10,17 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function presidential_transition_customize_register( $wp_customize ) {
+function foundation_6_parent_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
-add_action( 'customize_register', 'presidential_transition_customize_register' );
+add_action( 'customize_register', 'foundation_6_parent_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function presidential_transition_customize_preview_js() {
-	wp_enqueue_script( 'presidential_transition_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function foundation_6_parent_preview_js() {
+	wp_enqueue_script( 'foundation_6_parentr', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'presidential_transition_customize_preview_js' );
+add_action( 'customize_preview_init', 'foundation_6_parent_preview_js' );

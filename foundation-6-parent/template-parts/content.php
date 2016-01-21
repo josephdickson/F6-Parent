@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 ?>
@@ -16,9 +16,7 @@
 			<?php
 				if ( is_single() ) {
 					the_title( '<span class="entry-title">', '</span>' );
-				} else {
-					the_title( '<em><span class="publication">'. get_field('publication_name') . ':</span></em> <span class="entry-title">"<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" target="_blank">', '</a>"</span>' );
-				}
+				} 
 
 			if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">

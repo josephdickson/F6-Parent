@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package presidential-transition
+ * @package foundation-6-parent
  */
 
 ?>
@@ -20,13 +20,9 @@
 				echo '</div>';
 			}
 
-			else {
-				echo '<div class="row">';
-				echo '<div class="small-12 featured-image">';
-				echo '<img src="' . get_template_directory_uri() . '/img/banner.jpg">' ; 
-				echo '</div>';
-				echo '</div>';
-}
+			else { // Do nothing, you can place code here for a fallback when there isn't a featured image set on the page
+
+			}
 			?>
 
 	<div class="row">
@@ -44,7 +40,7 @@
 					the_content();
 
 					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'presidential-transition' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'foundation-6-parent' ),
 						'after'  => '</div>',
 					) );
 				?>
@@ -59,7 +55,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'presidential-transition' ),
+					esc_html__( 'Edit %s', 'foundation-6-parent' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',
