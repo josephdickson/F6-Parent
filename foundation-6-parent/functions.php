@@ -145,13 +145,13 @@ require get_template_directory() . '/custom_nav.php';
  */
 function foundation_6_parent_scripts() {
 
-	wp_enqueue_style( 'foundation-style',  get_stylesheet_directory_uri() . '/css/foundation.min.css' );
+	wp_enqueue_style( 'foundation-style',  get_template_directory_uri() . '/css/foundation.min.css' );
 
-	wp_enqueue_style( 'foundation-6-parent-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'foundation-6-parent-style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_style( 'google-web-font-eb-garamond', 'https://fonts.googleapis.com/css?family=EB+Garamond' );
 
-	wp_enqueue_style( 'foundation-app-style', get_stylesheet_directory_uri() . '/css/app.css' );
+	wp_enqueue_style( 'foundation-app-style', get_template_directory_uri() . '/css/app.css' );
 
 	wp_enqueue_script( 'foundation-6-parent-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
