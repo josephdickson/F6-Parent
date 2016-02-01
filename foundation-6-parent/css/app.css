@@ -1,6 +1,7 @@
 .center {display: block;margin-left: auto;margin-right: auto}
 div.top-bar a {color:#58595b;}
 /* Top Bar Navigation */
+.alert-box.navigation a {display:inline}
 ul.is-dropdown-submenu {margin-top:0.5em;background-color:#fff;}
 ul.is-dropdown-submenu li.is-submenu-item.is-dropdown-submenu-item {background-color:#fff;}
 /* Menu Toggle */

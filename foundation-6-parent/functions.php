@@ -168,3 +168,22 @@ function foundation_6_parent_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'foundation_6_parent_scripts' );
+
+
+/**
+ * A fallback when no navigation is selected by default, otherwise it throws some nasty errors in your face.
+ */
+
+function foundation_menu_fallback() {
+	echo '<div class="alert-box navigation">';
+	// Translators 1: Link to Menus, 2: Link to Customize
+  	printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'foundation' ),
+  		sprintf(  __( '<a href="%s">Menus</a>', 'foundation' ),
+  			get_admin_url( get_current_blog_id(), 'nav-menus.php' )
+  		),
+  		sprintf(  __( '<a href="%s">Customize</a>', 'foundation' ),
+  			get_admin_url( get_current_blog_id(), 'customize.php' )
+  		)
+  	);
+  	echo '</div>';
+}
