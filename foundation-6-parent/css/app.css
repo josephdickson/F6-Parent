@@ -4,6 +4,7 @@ div.top-bar a {color:#58595b;}
 .alert-box.navigation a {display:inline}
 ul.is-dropdown-submenu {margin-top:0.5em;background-color:#fff;}
 ul.is-dropdown-submenu li.is-submenu-item.is-dropdown-submenu-item {background-color:#fff;}
+.off-canvas .menu li a {display: block;padding: 0.7rem 1rem;line-height: 1;}
 /* Menu Toggle */
 .title-bar .menu-icon {background-color: transparent;border-width:0;}
 .title-bar button.menu-icon,

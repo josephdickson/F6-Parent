@@ -33,7 +33,7 @@
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
-			<?php the_date('F j, Y', '<span class="published-date"> Announcement | ', '</span>'); ?>
+			<?php the_modified_date('F j, Y', '<span class="published-date"> Updated on ', '</span>'); ?>
 
 			<div class="entry-content">
 				<?php   
