@@ -44,3 +44,5 @@ li.block{float:none;}
 /* Content */
 .main-navigation article a {display:inline;}
 span.edit-link {padding:0;margin:0;}
+/* centered row fix */
+.row.expanded .row {margin-left: auto;margin-right: auto;}

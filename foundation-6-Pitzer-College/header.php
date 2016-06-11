@@ -26,8 +26,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'foundation-6-Pitzer-College' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="medium-4 columns show-for-medium">
+	<header id="masthead" class="site-header row" role="banner">
+		<div class="medium-4 columns show-for-medium logo">
 			<a href="http://www.pitzer.edu/"><img src="<?php bloginfo('template_directory'); ?>/img/pitzer_logo_sans_colleges_orange.gif" alt="Pitzer College Logo" width="250" height="96" /></a>
 		</div>
 
@@ -39,10 +39,11 @@
 
 			<!-- nav ends in footer.php -->
 			<nav id="site-navigation" class="main-navigation" role="navigation"> 
-
+				<div class="row">
 					<?php get_template_part('inc/top-nav'); ?>
-
+				</div>
+			</nav>
 
     <!-- original content goes in this container -->
     <div class="off-canvas-content" data-off-canvas-content>
-      <div class="row">
+      <div class="row expanded">

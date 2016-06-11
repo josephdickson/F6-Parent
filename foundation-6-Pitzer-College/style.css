@@ -557,6 +557,9 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
+#masthead .logo {padding:0;}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -630,6 +633,9 @@ a:active {
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
 }
+
+.main-navigation {background-color:#58595b;}
+.off-canvas-content {box-shadow: none;}
 
 /* Small menu. */
 .menu-toggle,

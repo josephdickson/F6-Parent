@@ -1,11 +1,4 @@
 <?php 
-/* If post is a news item with a redirect url go to that url */
-			$post = $wp_query->post;
-
-			if ( in_category('news') ) {
-				get_template_part('post-redirect');
-}
-
 /**
  * The template for displaying all single posts.
  *

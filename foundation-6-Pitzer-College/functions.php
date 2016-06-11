@@ -184,7 +184,7 @@ function foundation_6_parent_scripts() {
 
 	wp_enqueue_style( 'foundation-style',  get_template_directory_uri() . '/css/foundation.min.css' );
 
-		wp_enqueue_style( 'foundation-6-parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'foundation-6-parent-style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_style( 'google-web-font-eb-garamond', 'https://fonts.googleapis.com/css?family=EB+Garamond' );
 
