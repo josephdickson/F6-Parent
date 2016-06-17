@@ -32,7 +32,17 @@
 		</div>
 
 		<div class="medium-8 columns show-for-medium">
-			<?php get_template_part('inc/quicklinks-menu-walker') ?>
+
+			<div class="row">
+				<?php get_template_part('inc/quicklinks-menu-walker') ?>
+			</div>
+
+			<div class="row">
+				<div class="medium-6 columns float-right">
+				<?php get_template_part('inc/search-form') ?>
+				</div>
+			</div>
+
 		</div>
 
 	</header><!-- #masthead -->

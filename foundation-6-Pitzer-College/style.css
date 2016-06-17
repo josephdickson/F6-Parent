@@ -420,7 +420,7 @@ table {
 
 /*--------------------------------------------------------------
 # Forms
---------------------------------------------------------------*/
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -524,6 +524,8 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+*** Commented Out, interferes with Foundation 6 JD ***/
 
 /*--------------------------------------------------------------
 # Navigation
