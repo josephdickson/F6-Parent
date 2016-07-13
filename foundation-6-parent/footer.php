@@ -15,6 +15,10 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">
+						<?php get_template_part( 'acf/social-networks' ); ?>
+		</div>
+
+		<div class="row">
 			<a href="http://www.pitzer.edu/"><img class="logo center" src="<?php bloginfo('template_directory'); ?>/img/pitzer_logo_sans_colleges_orange.gif" alt="Pitzer College Logo" width="250" height="96" /></a>
 
 			<div class="site-info hide">
