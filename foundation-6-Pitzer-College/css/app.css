@@ -23,6 +23,18 @@ ul#quicklinks-mobile li.menu-item-has-children {padding-top:2em;}
 .button.orange {background:#f7941d;}
 .button.orange:hover {background:#E1871A;}
 .input-group .button.orange {border-radius:0 5px 5px 0;}
+#___gcse_0 .cse input.gsc-input,input.gsc-input{background-image:none !important;}
+#___gcse_0 #gsc-i-id1.gsc-input {width:24em;padding:0 1em;}
+#___gcse_0 td.gsc-input {padding:0;}
+#___gcse_0 td.gsc-search-button {padding:0;}
+#___gcse_0 input.gsc-search-button {height:3.6em;color:#fff;border-radius:0 7px 7px 0;margin-left:0;}
+#___gcse_0 td.gsc-clear-button {display:none;}
+#___gcse_0 tbody {border-width:0;}
+.gs-title {text-align:left;}
+#bgresponse {margin-top:5em;}
+.cse .gsc-control-cse,
+.gsc-control-cse {padding: 0 0 0 0 !important;}
+.pac-container{margin-top:5em !important; border:5px solid green !important;}
 /* Slideshow */
 .orbit button{border-width:0;}
 .orbit button img {display:none;}

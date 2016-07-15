@@ -10,7 +10,7 @@
 		$phone = get_field('phone' , 'option');
 		$address = get_field('address' , 'option');
 		$email = get_field('email' , 'option');
-	}
+	
  ?>
 
 <ul class="contact">
@@ -27,6 +27,8 @@
     <li class="small"><?php if(isset( $phone)) echo $phone; ?></li>
     <li class="small"><?php if(isset( $address)) echo  $address; ?></li>
 </ul>
+
+<?php } //end check for get_field -- ACF ?>
 	<?php get_template_part( 'acf/social-networks' ); ?>
 </div>
     <div class="small-12 large-2 columns">
