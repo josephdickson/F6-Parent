@@ -12,6 +12,7 @@ h3,h4,h5,h6 {font-size:1.5rem;}
 .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {border-color: #f7941d transparent transparent transparent;}
 div.top-bar a {color:#fff;}
 div.top-bar li.is-submenu-item a {color:#58595b;}
+div.top-bar {padding:0;}
 /* Quicklinks Menu */
 .top-bar-quicklinks #quicklinks-menu a {font-size:0.9rem; text-decoration:none;}
 #quicklinks-menu .first-sub.js-dropdown-active {margin-top:0;}
@@ -33,7 +34,7 @@ nav.orbit-bullets {margin-top:0;}
 .tiles a.button {margin:0;color:#fff;background-color:#f7941d;}
 .tiles a.button:hover {background-color:#E1871A;}
 .tiles:nth-child(4) {clear:left;}
-/* Front Page Lists  */ 
+/* Front Page Lists  */
 li.block{float:none;}
 #font-page-lists li.block a {padding-left:0;}
 /*Fat Footer */
@@ -43,6 +44,8 @@ li.block{float:none;}
 .fat-footer li a {color:#fff;}
 .fat-footer li a:hover {color:#f1f1f1;text-decoration:underline;}
 .fat-footer ul {list-style:none;}
+/* Lists */
+ul.contact {margin:0;list-style-position:inside;}
 /* Yoast Breadcrumbs */
 #breadcrumbs {font-size:0.8em;margin-top:0.5em;}
 #breadcrumbs a {display:inline;}

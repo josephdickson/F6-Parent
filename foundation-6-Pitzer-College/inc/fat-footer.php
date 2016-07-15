@@ -13,7 +13,7 @@
 	}
  ?>
 
-<ul>
+<ul class="contact">
     <li>Contact us</li>
     <li><strong class="text-orange"><?php if(isset( $email )) : 
 		
@@ -27,6 +27,7 @@
     <li class="small"><?php if(isset( $phone)) echo $phone; ?></li>
     <li class="small"><?php if(isset( $address)) echo  $address; ?></li>
 </ul>
+	<?php get_template_part( 'acf/social-networks' ); ?>
 </div>
     <div class="small-12 large-2 columns">
 <ul class="small">

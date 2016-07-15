@@ -1,0 +1,26 @@
+/*
+Theme Name: Homepage Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: homepage-child
+*/
+
+#news .columns {padding-top:0.8375em;}
+#news a p {color:#85895b;}
+#news h1.entry-title {margin:0 0 0.5em 0;line-height:1em;}
+#news .row .columns .row {margin-bottom:0.9375rem;}
+ul.events {margin:0;list-style-position:inside;}
+/* Slideshow */
+.orbit {margin-bottom:1em;}
+.orbit button{border-width:0;}
+.orbit button img {display:none;}
+.orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;}
+.orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
+nav.orbit-bullets {margin-top:0;}
