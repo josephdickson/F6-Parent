@@ -47,13 +47,32 @@
 
 	</header><!-- #masthead -->
 
-			<!-- nav ends in footer.php -->
 			<nav id="site-navigation" class="main-navigation" role="navigation"> 
 				<div class="row">
 					<?php get_template_part('inc/top-nav'); ?>
 				</div>
 			</nav>
 
+			<!-- nav ends in footer.php -->
+			<nav id="site-navigation" role="navigation"> 
+					<?php get_template_part('inc/mobile-nav'); ?>
+
     <!-- original content goes in this container -->
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="row expanded">
+	<div class="row">
+		<?php
+		    /*  
+			for global variables, since it is being changed or updated from time to time,
+			please refer to Related Resources for more information
+			https://codex.wordpress.org/WPMU_Functions/restore_current_blog	
+		    */
+			global $switched;
+			switch_to_blog(1); // Switch to another blog by ID#
+			// The following uses WP_Query to check for Global notifications.
+			get_template_part('template-parts/alert-wp-query');
+			get_template_part('template-parts/warning-wp-query');
+			get_template_part('template-parts/notice-wp-query');
+			restore_current_blog(); // Switch back to current blog
+		?>
+	</div>

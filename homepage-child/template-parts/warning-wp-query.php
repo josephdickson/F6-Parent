@@ -16,28 +16,25 @@ $the_query = new WP_Query( $args );
 <?php if ( $the_query->have_posts() ) : ?>
 
 	<!-- pagination here -->
-
+<div id="warning" class="row">
+	<div class="small-12 columns">
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<?php if ( get_permalink() ) { ?>
-					<div class="warning callout" data-closable>
+					<div class="global warning callout" data-closable>
 					<a href="<?php the_permalink(); ?>">
 					<?php echo the_title( '<h1 class="entry-title">', '</h1>' ) ;
 					echo the_excerpt(); ?>
-					<?php get_template_part('template-parts/edit-post-link'); ?>
 					</a>
+					<?php get_template_part('template-parts/edit-post-link'); ?>
 					</div>
 				<?php }	?>
-		
-
-
 
 	<?php endwhile; ?>
 	<!-- end of the loop -->
-
-<?php endif; ?>
-
-
+	</div>
+</div>
 	<!-- pagination here -->
+<?php endif; ?>
 
 	<?php wp_reset_postdata();

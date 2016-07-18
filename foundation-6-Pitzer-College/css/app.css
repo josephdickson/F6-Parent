@@ -66,3 +66,8 @@ ul.contact {margin:0;list-style-position:inside;}
 span.edit-link {padding:0;margin:0;}
 /* centered row fix */
 .row.expanded .row {margin-left: auto;margin-right: auto;}
+/* Global Notices, Warnings, Alerts */
+.global.callout h1.entry-title, .global.callout p, .global.callout a {font-family:'Open Sans';color:#fff;}
+.global.alert.callout {background-color:#EE2C3C;}
+.global.warning.callout {background-color:#f7941d;}
+.global.primary.callout {background-color:#003D71;}

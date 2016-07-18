@@ -8,26 +8,8 @@
  */
 
 get_header(); ?>
+
 	<main id="main" class="site-main" role="main">
-
-			<div id="alert" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/alert-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="warning" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/warning-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="notice" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/notice-wp-query'); ?>
-				</div>
-			</div>
-
 
 			<div id="carousel" class="row" style="margin-bottom:0.9375rem;">
 				<div class="small-12 columns">
@@ -54,7 +36,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div id="tiles" class="row" style="margin:3em auto;">
+			<div id="tiles" class="row" style="margin:2em auto;">
 				<?php get_template_part('template-parts/tile-wp-query'); ?>
 			</div>
 

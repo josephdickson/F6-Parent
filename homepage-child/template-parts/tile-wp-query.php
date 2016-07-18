@@ -6,6 +6,7 @@ $args = array(
 	'post_type' => 'post',
 	'orderby' => 'date',
 	'order'   => 'DESC',
+	'posts_per_page' => 4,
 	'category_name' => 'footer-tile',
 );
 
