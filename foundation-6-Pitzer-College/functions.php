@@ -194,9 +194,9 @@ function foundation_6_parent_scripts() {
 
 	wp_enqueue_script( 'foundation-6-parent-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js', array(), '20151221', true );
+	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '20151221', true );
 
-	wp_enqueue_script( 'foundation-min', get_template_directory_uri() . '/js/foundation.min.js', array(), '20151221', true );
+	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/js/foundation.js', array(), '20151221', true );
 
 	wp_enqueue_script( 'app-js', get_template_directory_uri() . '/js/app.js', array(), '20151221', true );
 
@@ -243,5 +243,8 @@ require get_template_directory() . '/inc/disable-emojis.php';
 /* Social Networks */
 require get_template_directory() . '/inc/social-networks.php';
 
-/* Options Page */
+/* Options Page - Requires Advanced Custom Fields */
 require get_template_directory() . '/inc/options-page.php';
+
+/* Flexible Content - Requires Advanced Custom Fields */
+require get_template_directory() . '/inc/flexible-content.php';

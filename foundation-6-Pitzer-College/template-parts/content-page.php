@@ -46,6 +46,10 @@
 				?>
 			</div><!-- .entry-content -->
 
+
+			<?php 	// Requires Advanced Custom Fields
+				get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
+
 		</div><!-- .small-12 -->
 
 	</div>

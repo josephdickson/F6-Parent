@@ -34,12 +34,12 @@
 		<div class="medium-8 columns show-for-medium">
 
 			<div class="row">
-				<?php get_template_part('inc/quicklinks-menu-walker') ?>
+				<?php get_template_part('template-parts/quicklinks-menu-walker') ?>
 			</div>
 
 			<div class="row">
 				<div class="medium-6 columns float-right">
-				<?php get_template_part('inc/search-form') ?>
+				<?php get_template_part('template-parts/search-form') ?>
 				</div>
 			</div>
 
@@ -49,18 +49,17 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation"> 
 				<div class="row">
-					<?php get_template_part('inc/top-nav'); ?>
+					<?php get_template_part('template-parts/top-nav'); ?>
 				</div>
 			</nav>
 
 			<!-- nav ends in footer.php -->
 			<nav id="site-navigation" role="navigation"> 
-					<?php get_template_part('inc/mobile-nav'); ?>
+					<?php get_template_part('template-parts/mobile-nav'); ?>
 
     <!-- original content goes in this container -->
     <div class="off-canvas-content" data-off-canvas-content>
-      <div class="row expanded">
-	<div class="row">
+      <div class="row">
 		<?php
 		    /*  
 			for global variables, since it is being changed or updated from time to time,
@@ -75,4 +74,3 @@
 			get_template_part('template-parts/notice-wp-query');
 			restore_current_blog(); // Switch back to current blog
 		?>
-	</div>

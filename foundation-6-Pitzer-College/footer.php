@@ -15,7 +15,7 @@
 	  </div><!-- .row starts in header.php -->  
 	</div><!-- .off-canvas-content starts in header.php -->
 
-	<?php get_template_part('inc/fat-footer'); ?>
+	<?php get_template_part('template-parts/fat-footer'); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">

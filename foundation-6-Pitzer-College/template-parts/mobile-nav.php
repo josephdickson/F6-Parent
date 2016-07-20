@@ -15,11 +15,11 @@
 
     <!-- off-canvas left menu -->
     <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-	<?php get_template_part('inc/primary-menu-walker') ?>
-	<?php get_template_part('inc/secondary-menu-walker') ?>
+	<?php get_template_part('template-parts/primary-menu-walker') ?>
+	<?php get_template_part('template-parts/secondary-menu-walker') ?>
     </div>
 
     <!-- off-canvas right menu -->
     <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-	<?php get_template_part('inc/quicklinks-mobile-menu-walker') ?>
+	<?php get_template_part('template-parts/quicklinks-mobile-menu-walker') ?>
     </div>
