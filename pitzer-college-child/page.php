@@ -13,7 +13,6 @@
  */
 
 get_header(); ?>
-<div class="row">
 	<div id="primary" class="content-area columns small-12 large-9">
 		<main id="main" class="site-main" role="main">
 
@@ -36,26 +35,9 @@ get_header(); ?>
 
 	<div class="small-12 large-3 columns">
 
-		<strong style="margin-top:2.5em;display:block;">Navigation</strong>
-		<ul class="vertical menu">
-		  <li>
-		    <a href="#">One</a>
-		    <ul class="nested vertical menu">
-		      <li><a href="#">One</a></li>
-		      <li><a href="#">Two</a></li>
-		      <li><a href="#">Three</a></li>
-		      <li><a href="#">Four</a></li>
-		    </ul>
-		  </li>
-		  <li class="active" style="border-left:3px solid #f7941d;"><a href="#" style="color:#f7941d;">Two</a></li>
-		  <li><a href="#">Three</a></li>
-		  <li><a href="#">Four</a></li>
-		</ul>
+		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
+
 	</div>
-
-
-
-
 
 </div>
 <?php

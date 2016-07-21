@@ -118,6 +118,15 @@ register_nav_menus( array(
 	'quicklinks' => esc_html__( 'Quicklinks', 'foundation-6-child' ),
 ) );
 
+/**
+ * Unregister Sidebar Menu for use on child themes
+ */
+
+unregister_nav_menu( 'sidebar' ); 
+
+/**
+ * Quicklinks for Mobile
+ */
 
 class Foundation_Quicklinks_Mobile extends Walker_Nav_Menu {
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
@@ -145,7 +154,6 @@ class Foundation_Quicklinks_Mobile extends Walker_Nav_Menu {
 	}
 
 } // end Walker_Nav_Menu
-
 
 /**
  * Implement the Custom Header feature.
