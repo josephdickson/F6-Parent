@@ -52,13 +52,12 @@
 					) );
 				?>
 
-			<?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
-
-			</div><!-- .entry-content -->
-
-
 			<?php 	// Requires Advanced Custom Fields
 				get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
+			
+			</div><!-- .entry-content -->
+
+			<?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
 
 		</div><!-- .small-12 -->
 

@@ -111,11 +111,15 @@ function foundation_6_parent_widgets_init() {
 add_action( 'widgets_init', 'foundation_6_parent_widgets_init' );
 
 /**
- * Register Quicklinks and Secondary top Navigation
+ * Register Global Navigation. Secondary, Quicklinks, Footer Columns
  */
 register_nav_menus( array(
 	'secondary' => esc_html__( 'Secondary', 'foundation-6-child' ),
 	'quicklinks' => esc_html__( 'Quicklinks', 'foundation-6-child' ),
+	'footer_column_1' => esc_html__( 'Footer Column 1', 'foundation-6-child' ),
+	'footer_column_2' => esc_html__( 'Footer Column 2', 'foundation-6-child' ),
+	'footer_column_3' => esc_html__( 'Footer Column 3', 'foundation-6-child' ),
+	'footer_column_4' => esc_html__( 'Footer Column 4', 'foundation-6-child' ),
 ) );
 
 /**
@@ -234,6 +238,8 @@ function foundation_menu_fallback() {
 }
 
 
+/* Foundation Shortcodes */
+require get_template_directory() . '/inc/foundation-shortcodes/foundation-shortcodes.php';
 
 /**
  * Disable the emoji's

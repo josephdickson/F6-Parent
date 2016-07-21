@@ -28,6 +28,7 @@ ul#quicklinks-mobile li.menu-item-has-children {padding-top:2em;}
 .input-group input.input-group-field {padding:0 0 0 0.5em;}
 .button.orange {background:#f7941d;}
 .button.orange:hover {background:#E1871A;}
+a:link.button, a:visited.button {color: #f2f2f2;}
 .input-group .button.orange {border-radius:0 5px 5px 0;}
 #___gcse_0 .cse input.gsc-input,input.gsc-input{background-image:none !important;}
 #___gcse_0 #gsc-i-id1.gsc-input {width:24em;padding:0 1em;}
@@ -59,9 +60,10 @@ li.block{float:none;}
 .off-canvas-content {padding-bottom: 2rem}
 .fat-footer {background-color:#58595b;float:left;width:100%;clear:right;color:#fff;padding:2em;margin-top:0;box-shadow:0px 0px 10px rgba(10, 10, 10, 0.5) inset;}
 .fat-footer li {float:none;}
-.fat-footer li a {color:#fff;}
+.fat-footer li a {color:#fff;padding:0.35em;font-size:0.8rem;}
 .fat-footer li a:hover {color:#f1f1f1;text-decoration:underline;}
 .fat-footer ul {list-style:none;}
+.fat-footer li.bold a {font-weight:bold;font-size:0.9rem;}
 /* Lists */
 ul.contact {margin:0;list-style-position:inside;}
 /* Yoast Breadcrumbs */
