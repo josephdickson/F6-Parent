@@ -32,6 +32,12 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<!-- monsido web governance script-->
+<script type="text/javascript">
+	var _monsido = _monsido || [];
+	_monsido.push(['_setDomainToken', 'KAsr98eG5vIUXKrLshA4OA']);
+	_monsido.push(['_withStatistics', 'true']);
+</script>
+<script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
 </body>
 </html>
