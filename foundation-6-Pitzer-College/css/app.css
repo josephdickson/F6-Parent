@@ -22,7 +22,7 @@ div.top-bar .menu .active > a  {background-color:#f7941d;color:#fff;}
 div.top-bar li.is-submenu-item a {color:#58595b;}
 div.top-bar {padding:0;}
 /* Quicklinks Menu */
-.top-bar-quicklinks .menu-item-has-children li {border:5px solid green;display:none;}
+.top-bar-quicklinks .menu-item-has-children li {display:none;}
 .top-bar-quicklinks #quicklinks-menu a {font-size:0.9rem; text-decoration:none;}
 #quicklinks-menu .first-sub.js-dropdown-active {margin-top:0;}
 ul#quicklinks-mobile ul.nested {left:0;display:block;width:100%;position:relative;float:left;margin-top:-2em;margin-left:0;}
