@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area columns small-12">
 		<main id="main" class="site-main" role="main">
-
+			<div class="columns">
 				<?php
 				while ( have_posts() ) : the_post();
 					get_template_part( 'template-parts/content', 'page' );
@@ -28,8 +28,18 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
+	<div class="small-12 large-3 columns">
+
+		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
+
+	</div>
+
+</div>
 
 <?php
 // get_sidebar();

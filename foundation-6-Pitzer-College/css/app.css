@@ -9,6 +9,8 @@ h1.entry-title {margin:0;}
 p#breadcrumbs {margin-top:1.5em;margin-bottom:0.5em;}
 span.published-date {float:right;font-size:0.8em;}
 .entry-content figcaption, span.featured-caption {text-align:left;font-size:0.8em; color:#58595b;}
+.right {float:right;}
+.left {float:left;}
 /* Top Bar Menu */
 .top-bar, .top-bar ul {background-color:#58595b;font-size:1.2rem;}
 .off-canvas .menu li {display: block;padding: 0.7rem auto;line-height: 1;width:100%;background-color:#fff;}
@@ -20,6 +22,7 @@ div.top-bar .menu .active > a  {background-color:#f7941d;color:#fff;}
 div.top-bar li.is-submenu-item a {color:#58595b;}
 div.top-bar {padding:0;}
 /* Quicklinks Menu */
+.top-bar-quicklinks .menu-item-has-children li {border:5px solid green;display:none;}
 .top-bar-quicklinks #quicklinks-menu a {font-size:0.9rem; text-decoration:none;}
 #quicklinks-menu .first-sub.js-dropdown-active {margin-top:0;}
 ul#quicklinks-mobile ul.nested {left:0;display:block;width:100%;position:relative;float:left;margin-top:-2em;margin-left:0;}
@@ -30,6 +33,7 @@ ul#quicklinks-mobile li.menu-item-has-children {padding-top:2em;}
 .button.orange:hover {background:#E1871A;}
 a:link.button, a:visited.button {color: #f2f2f2;}
 .input-group .button.orange {border-radius:0 5px 5px 0;}
+.input-group {display: none;}
 #___gcse_0 .cse input.gsc-input,input.gsc-input{background-image:none !important;}
 #___gcse_0 #gsc-i-id1.gsc-input {width:24em;padding:0 1em;}
 #___gcse_0 td.gsc-input {padding:0;}
@@ -37,6 +41,7 @@ a:link.button, a:visited.button {color: #f2f2f2;}
 #___gcse_0 input.gsc-search-button {height:3.6em;color:#fff;border-radius:0 7px 7px 0;margin-left:0;}
 #___gcse_0 td.gsc-clear-button {display:none;}
 #___gcse_0 tbody {border-width:0;}
+#___gcse_0 input.gsc-search-button {border-width:0 !important;}
 .gs-title {text-align:left;}
 #bgresponse {margin-top:5em;}
 .cse .gsc-control-cse,
@@ -82,3 +87,6 @@ span.edit-link {padding:0;margin:0;}
 .sidebar-menu li a {line-height:1.3rem;}
 .sidebar-menu li > a::after {border-color: #f7941d transparent transparent transparent;}
 .sidebar-menu li.current-menu-item.active {border-left: 3px solid #f7941d;}
+ul#sidebar-menu .menu-item-has-children li {display: none;}
+/*Flexible Fields */
+.row .columns.profile {margin-top:2em;}

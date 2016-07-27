@@ -1,0 +1,51 @@
+/*
+Theme Name:         Pitzer College - Child About & Gateways
+Theme URI:      http://themefortress.com/reverie/
+Description:    Built on Reverie a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Author:         Joseph Dickson
+Author URI:     http://pitzer.edu/
+Template: 	Pitzer-College
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+/*
+CSS Document 
+    Created by Joseph Dickson
+    Edited on 10/29/2014
+	
+	100% saturation of CMYK colors to web
+	Pitzer Orange			#f7941d
+	Link Orange			#CA7918
+	Avocado Green			#a1af27
+	Graphite Gray			#58595b
+	Text Area approx		#f2efe8
+	Background approx		#E0DFCD
+	Pomona-Pitzer Blue		#003d71
+	
+	Secondary Colors
+	
+	light-blue: 			#64b0c3
+	red:				#ee2c3b
+	yellow: 			#ffce00
+	tan:				#e8d9b5
+*/
+.heds-blurb {margin-top:1.5em;}
+.heds-blurb h3 {font-size:1.5rem;}
+.heds-blurb .panel {
+
+	-moz-box-shadow:    	0px 1px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 	0px 1px 3px rgba(0,0,0,0.1);
+	box-shadow:         	0px 1px 3px rgba(0,0,0,0.1);	
+	border-radius: 		5px;
+
+}
+.heds-blurb .panel:hover
+{
+	-moz-box-shadow:    	0px 0px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 	0px 0px 3px rgba(0,0,0,0.2);;
+	box-shadow:         	0px 0px 3px rgba(0,0,0,0.2);;
+
+}
+.heds-blurb a:hover h3 {color:#f7941d;}

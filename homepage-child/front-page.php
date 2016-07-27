@@ -1,46 +1,31 @@
 <?php
 /**
- * font-page.php
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package foundation-6-parent
+ * @package presidential-transition
  */
 
 get_header(); ?>
+<!-- Row for main content area - post-redirect.php -->
+<?php 
+	$redirect = get_field('redirect_to_url');
 
-	<main id="main" class="site-main" role="main">
+?>
 
-			<div id="carousel" class="row" style="margin-bottom:0.9375rem;">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/carousel-wp-query'); ?>
-				</div>
-			</div>
+<script type="text/javascript">
+<!--
+window.location = "<?php echo $redirect; ?>"
+-->
+</script>
 
-			<div id="news">
-				<div class="row large-collapse" style="margin-top:1.875rem;margin-bottom:0.9375rem;">
-					<div class="small-12 medium-9 columns">
-						<?php get_template_part('template-parts/news-wp-query'); ?>
-					</div>
-					<div class="small-12 medium-3 columns">
-						<?php get_template_part('template-parts/tiles-vertical-wp-query'); ?>
-					</div>
-				</div>
-
-			</div>
-
-			<div id="events" class="row">
-				<div class="small-12 columns">
-					<h2>Events</h2>
-					<?php get_template_part('template-parts/events-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="tiles" class="row" style="margin:2em auto;">
-				<?php get_template_part('template-parts/tile-wp-query'); ?>
-			</div>
-
-	</main><!-- #main -->
-
+<p>If not automatically redirected please <a href="<?php the_field('redirect_to_url'); ?>">click here</a>.</p>
 <?php
+// get_sidebar();
 get_footer();

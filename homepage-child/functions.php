@@ -9,3 +9,21 @@ function foundation_6_child_scripts() {
 	wp_enqueue_style( 'foundation-6-child-style', get_stylesheet_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'foundation_6_child_scripts' );
+
+/**
+ * Unregister Sidebar Menu for use on child themes
+ */
+
+unregister_nav_menu( 'sidebar' );
+unregister_nav_menu( 'foundation-6-child' );
+
+/**
+ * Re-register global menus Secondary and Quicklinks from Parent
+ * See plugin Network-Wide Menus for more information
+ * Register Sidebar
+ */
+
+register_nav_menus( array(
+	'secondary' => esc_html__( 'Secondary', 'foundation-6-child' ),
+	'quicklinks' => esc_html__( 'Quicklinks', 'foundation-6-child' ),
+) );

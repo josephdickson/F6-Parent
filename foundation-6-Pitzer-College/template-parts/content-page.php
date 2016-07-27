@@ -28,7 +28,7 @@
 
 	<div class="row">
 
-		<div class="small-12">
+		<div class="columns">
 
 				<?php
 					if ( function_exists('yoast_breadcrumb') ) {
@@ -59,11 +59,6 @@
 
 			<?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
 
-		</div><!-- .small-12 -->
-
-	</div>
-
-			<footer class="entry-footer row">
 		<?php
 			edit_post_link(
 				sprintf(
@@ -75,6 +70,9 @@
 				'</span>'
 			);
 		?>
-			</footer><!-- .entry-footer -->
+
+		</div><!-- .columns -->
+
+	</div>
 
 </article><!-- #post-## -->

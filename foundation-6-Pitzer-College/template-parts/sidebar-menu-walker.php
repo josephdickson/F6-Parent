@@ -1,7 +1,7 @@
 <?php 
 	$custom_walker = new Foundation_Quicklinks_Mobile;
 		wp_nav_menu( array(
-			'theme_location'	=> 'sidebar',
+			'theme_location'	=> 'foundation-6-sidebar',
 			'menu_id'		=> 'sidebar-menu',
 			'container_class'	=> 'sidebar-menu',
 			'menu_class'		=> 'vertical menu',
