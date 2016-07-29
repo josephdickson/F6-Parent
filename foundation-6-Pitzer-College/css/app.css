@@ -88,5 +88,7 @@ span.edit-link {padding:0;margin:0;}
 .sidebar-menu li > a::after {border-color: #f7941d transparent transparent transparent;}
 .sidebar-menu li.current-menu-item.active {border-left: 3px solid #f7941d;}
 ul#sidebar-menu .menu-item-has-children li {display: none;}
+ul#sidebar-menu .menu-item-has-children li {display: none;}
+ul#sidebar-menu .menu-item-has-children a {color:#404040;}
 /*Flexible Fields */
 .row .columns.profile {margin-top:2em;}
