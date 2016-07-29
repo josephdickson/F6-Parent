@@ -1,7 +1,7 @@
-a:link{color:#64B0C4;}
-a:visited{color:#64B0C4;}
-a:hover{color:#4169E1;}
-a:active{color:#4169E1;}
+ul#sidebar-menu .menu-item-has-children li a:link,a:link{color:#64B0C4;}
+ul#sidebar-menu .menu-item-has-children li a:visited,a:visited{color:#64B0C4;}
+ul#sidebar-menu .menu-item-has-children li a:hover,a:hover{color:#4169E1;}
+ul#sidebar-menu .menu-item-has-children li a:active,a:active{color:#4169E1;}
 h1,h2 {font-size:2rem;}
 h3,h4,h5,h6 {font-size:1.5rem;}
 h1.entry-title {margin:0;}
