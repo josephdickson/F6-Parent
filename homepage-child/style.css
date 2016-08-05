@@ -17,6 +17,7 @@ Text Domain: homepage-child
 #news h1.entry-title {margin:0 0 0.5em 0;line-height:1em;}
 #news .row .columns .row {margin-bottom:0.9375rem;}
 ul.events {margin:0;list-style-position:inside;}
+span.published-date{float:none;}
 /* Slideshow */
 .orbit {margin-bottom:1em;}
 .orbit button{border-width:0;}
