@@ -2,6 +2,7 @@ ul#sidebar-menu .menu-item-has-children li a:link,a:link{color:#4E83D6;}
 ul#sidebar-menu .menu-item-has-children li a:visited,a:visited{color:#4E83D6;}
 ul#sidebar-menu .menu-item-has-children li a:hover,a:hover{color:#4169E1;}
 ul#sidebar-menu .menu-item-has-children li a:active,a:active{color:#4169E1;}
+.entry-content ul, .entry-content ol {margin:1.5em 1em;}
 h1,h2 {font-size:2rem;}
 h3,h4,h5,h6 {font-size:1.5rem;}
 h1.entry-title {margin:0;}

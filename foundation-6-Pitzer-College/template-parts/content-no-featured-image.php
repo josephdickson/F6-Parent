@@ -20,8 +20,6 @@
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
-				<?php the_modified_date('F j, Y', '<span class="published-date"> Updated on ', '</span>'); ?>
-
 				<div class="entry-content">
 					<?php   
 						the_content();
@@ -32,7 +30,7 @@
 						) );
 					?>
 				</div><!-- .entry-content -->
-
+                <?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
 
 			<footer class="entry-footer">
 				<div class="row columns">

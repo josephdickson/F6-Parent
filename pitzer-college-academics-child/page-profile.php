@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Alternate
- * The template for displaying alternate pages.
+ * Template Name: Faculty Profile
+ * The template for displaying all pages.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,13 +14,13 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area columns small-12">
+<div class="row">
+	<div id="primary" class="content-area columns small-12 large-9">
 		<main id="main" class="site-main" role="main">
 
 				<?php
 				while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/content', 'page-alt' );
+					get_template_part( 'template-parts/content', 'page-profile' );
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
@@ -32,6 +32,17 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+	<div class="small-12 large-3 columns">
+
+		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
+        <?php get_template_part('template-parts/sidebar-menu-walker-2') ?>
+        <?php get_template_part('template-parts/sidebar-menu-walker-3') ?>
+        <?php get_template_part('template-parts/sidebar-menu-walker-4') ?>
+
+	</div>
+
+</div>
 <?php
 // get_sidebar();
 get_footer();
