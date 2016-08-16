@@ -24,13 +24,13 @@ $the_query = new WP_Query( $args );
 		<!-- the loop -->
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	<div class="columns tiles">
-				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-						echo '<a href="' . get_permalink() . '">';
-							the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
+				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+						<a href="<?php the_field('redirect_to_url'); ?>">
+							<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
 						echo '</a>';
 				} ?>
 
-			<strong><a class="button flat orange expanded" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+			<strong><a class="button flat orange expanded" href="<?php the_field('redirect_to_url'); ?>"><?php the_title(); ?></a></strong>
 	</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->
