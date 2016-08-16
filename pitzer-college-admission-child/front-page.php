@@ -18,6 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <div class="row">
                 <div class="small-12 columns">
+                    <a href="/admission-unpeeled/"><img class="banner" src="<?php echo get_stylesheet_directory_uri(); ?>/img/admission-financial-aid.gif" alt="Admission &amp; Financial Aid" /></a><br />
                     <?php get_template_part('template-parts/front-page-carousel'); ?>
                 </div>
                 <div class="small-12 large-3 columns">
@@ -38,18 +39,22 @@ get_header(); ?>
             </div><!-- .row -->
             <div class="row">
                 <div class="small-12 large-3 columns">
-                    Admission Unpeeled Tile
+                    <a href="/admission-unpeeled/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pitzer-admission-unpeeled.jpg" alt="Admission Unpeeled Blog" /></a>
                 </div>
                 <div class="small-12 large-6 columns">
-                    Drop down list
+                    <?php get_template_part('template-parts/front-page-recruitment-dropdown'); ?>
                 </div>
                 <div class="small-12 large-3 columns">
-                    Social Media plugin
+                    <?php
+                        if(function_exists('get_field')) {
+                            echo'<strong>Follow us:</strong>';
+                            get_template_part( 'acf/social-networks' );
+                    }?>
                 </div>
             </div><!-- .row -->
             <div class="row">
                 <div class="small-12 columns">
-                    Admission Unpeeled Content
+                    <?php get_template_part('template-parts/front-page-admission-unpeeled'); ?>
                 </div>
             </div>
 		</main><!-- #main -->

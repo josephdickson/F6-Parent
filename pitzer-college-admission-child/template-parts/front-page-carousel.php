@@ -22,9 +22,9 @@ if ( $the_query->have_posts() ) {
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
-				echo '<a href="' . get_permalink() . '">';
+				// echo '<a href="' . get_permalink() . '">';
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
-				echo '</a>';
+				// echo '</a>';
 				} 
 			
             $my_excerpt = get_post(get_post_thumbnail_id())->post_excerpt; // Grabs Caption associated with the Media File
