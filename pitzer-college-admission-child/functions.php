@@ -18,7 +18,5 @@ function register_sidebar_menu() {
     register_nav_menu('foundation-6-sidebar-5',__( 'Sidebar Menu 5' ));
     register_nav_menu('foundation-6-sidebar-6',__( 'Sidebar Menu 6' ));
     register_nav_menu('foundation-6-sidebar-7',__( 'Sidebar Menu 7' ));
-    register_nav_menu('foundation-6-sidebar-8',__( 'Sidebar Menu 8' ));
-    register_nav_menu('foundation-6-sidebar-9',__( 'Sidebar Menu 9' ));
 }
 add_action( 'init', 'register_sidebar_menu' );

@@ -18,9 +18,9 @@ $the_query = new WP_Query( array(
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-						echo '<div class="callout">';
-                        echo '<a href="' . get_permalink() . '">';
-							the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) );
+						echo '<div class="callout">'; ?>
+                        <a href="<?php the_field('redirect_to_url'); ?>" target="_blank">
+                        <?php the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) );
 						echo '</a>';
                         echo the_content();
                         echo '</div>';

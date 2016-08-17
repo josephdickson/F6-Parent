@@ -40,8 +40,6 @@ get_header(); ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-5') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-6') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-7') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-8') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-9') ?>
 	</div>
 
 </div>
