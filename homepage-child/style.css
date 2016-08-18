@@ -11,10 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light,responsive-layout, foundation 6, zurb
 Text Domain: homepage-child
 */
-
 #news .columns {padding-top:0.8375em;}
 #news a p {color:#85895b;}
 #news h1.entry-title {margin:0 0 0.5em 0;line-height:1em;}
+#news h3, #news h4 {margin:0 0 0 0.5em;}
+#news ul li {list-style:none;margin:0 0 0 0.75em;}
 #news .row .columns .row {margin-bottom:0.9375rem;}
 ul.events {margin:0;list-style-position:inside;}
 span.published-date{float:none;}
@@ -25,3 +26,4 @@ span.published-date{float:none;}
 .orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;}
 .orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
 nav.orbit-bullets {margin-top:0;}
+#tiles .columns img {border:1px solid #f1f1f1;}

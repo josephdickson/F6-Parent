@@ -23,7 +23,8 @@ $the_query = new WP_Query( $args );
 				<div class="small-12 columns">
 				<?php echo '<a href="' . get_permalink() . '">';
 					the_post_thumbnail('large');
-				echo '</a>'; ?>
+				echo '</a>';
+                echo get_template_part('template-parts/edit-post-link');?>
 				</div>
 				<?php }	?>
 

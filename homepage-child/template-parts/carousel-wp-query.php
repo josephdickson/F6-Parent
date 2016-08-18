@@ -20,8 +20,9 @@ if ( $the_query->have_posts() ) {
 			echo ' <li class="orbit-slide">
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
-			if ( has_post_thumbnail() ) {
-				echo '<a href="' . get_permalink() . '">';
+			if ( has_post_thumbnail() ) { ?>
+				<a href="<?php the_field('redirect_to_url'); ?>">
+                    <?php
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
 				echo '</a>';
 				} 
@@ -29,8 +30,7 @@ if ( $the_query->have_posts() ) {
 			if ( '' != $my_excerpt ) {
 				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
 			}
-			echo '</div>
-		          </li>';
+			echo '</div>' . get_template_part('template-parts/edit-post-link') . '</li>';
 			}
 ?>
         </ul>

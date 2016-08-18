@@ -20,23 +20,21 @@ $the_query = new WP_Query( $args );
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<?php if ( has_post_thumbnail() ) { ?>
-				<div class="row">
-					<div class="small-12 medium-3 columns">
+					<div class="small-12 medium-4 large-2 columns">
 						<?php echo '<a href="' . get_permalink() . '">';
 							the_post_thumbnail( 'medium' );
 						echo '</a>';
 						?>
 					</div>
-					<div class="small-12 medium-9 columns">
-					<?php 
-						echo '<a href="' . get_permalink() . '">';
-						the_title( '<h1 class="entry-title">', '</h1>' );
+					<div class="small-12 medium-8 large-10 columns">
+					<a href="<?php the_field('redirect_to_url'); ?>">
+					<?php	
+                        the_title( '<h1 class="entry-title">', '</h1>' );
 						the_excerpt(); 
 						get_template_part('template-parts/edit-post-link');
 						echo '</a>';
 					?>
 					</div>
-				</div>
 			<?php }	?>
 
 
