@@ -22,7 +22,7 @@ yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
                     <div class="row">
 			    <?php // get_template_part('inc/acf', 'video'); ?>
                             <?php the_content(); ?>
-			    <?php get_template_part( 'acf' , 'flexible-fields' ); ?>
+			    <?php get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
                     </div>
 				</div>
 		<div class="small-12 large-3 columns menu accordion-menu small">

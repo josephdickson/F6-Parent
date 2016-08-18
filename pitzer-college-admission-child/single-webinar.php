@@ -21,7 +21,7 @@ yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 			</header>
                     <div class="row">
 
-			    <?php get_template_part('inc/acf', 'video'); ?>
+			    <?php get_template_part('acf/acf', 'video'); ?>
                             <?php the_content(); ?>
 			<?php 
 
@@ -30,7 +30,7 @@ yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 					the_content();
 				}
 			?>
-			    <?php get_template_part( 'acf' , 'flexible-fields' ); ?>
+			    <?php get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
 			    <?php include 'include-for-category.php' ?>
                     </div>
 				</div>

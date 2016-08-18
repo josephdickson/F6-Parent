@@ -21,10 +21,11 @@ $the_query = new WP_Query( $args );
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<?php if ( has_post_thumbnail() ) { ?>
 				<div class="small-12 columns">
-				<?php echo '<a href="' . get_permalink() . '">';
-					the_post_thumbnail('large');
-				echo '</a>';
-                echo get_template_part('template-parts/edit-post-link');?>
+				<a href="<?php the_field('redirect_to_url'); ?>">
+                <?php
+                    the_post_thumbnail('large');
+				    echo '</a>';
+                    echo get_template_part('template-parts/edit-post-link'); ?>
 				</div>
 				<?php }	?>
 

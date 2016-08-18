@@ -11,7 +11,7 @@ $the_query = new WP_Query( array(
 // The Loop
 if ( $the_query->have_posts() ) {
 ?>
-	<div class="orbit" role="region" aria-label="Slideshow" data-orbit data-use-m-u-i="false">
+	<div class="orbit" role="region" aria-label="Admission Photo Carousel" data-orbit data-use-m-u-i="false">
         <ul class="orbit-container" style="margin-bottom:1em;">
           <button class="orbit-previous show-for-medium" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
           <button class="orbit-next show-for-medium" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>

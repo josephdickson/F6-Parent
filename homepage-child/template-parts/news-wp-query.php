@@ -20,9 +20,10 @@ $the_query = new WP_Query( $args );
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<?php if ( has_post_thumbnail() ) { ?>
+                <div class="row">
 					<div class="small-12 medium-4 large-2 columns">
-						<?php echo '<a href="' . get_permalink() . '">';
-							the_post_thumbnail( 'medium' );
+						<a href="<?php the_field('redirect_to_url'); ?>">
+                        <?php the_post_thumbnail( 'medium' );
 						echo '</a>';
 						?>
 					</div>
@@ -35,6 +36,7 @@ $the_query = new WP_Query( $args );
 						echo '</a>';
 					?>
 					</div>
+                </div>
 			<?php }	?>
 
 
