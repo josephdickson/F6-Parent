@@ -17,8 +17,7 @@ span.published-date {float:right;font-size:0.8em;}
 .top-bar, #masthead #quicklinks-menu,h1,h2,h3,h4,h5,h6 {font-family: 'EB Garamond', serif;}
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {border-color: #f7941d transparent transparent transparent;}
 div.top-bar a {background-color:transparent;color:#fff;}
-div.top-bar .menu a  {padding: 0.4rem 1rem 0.6rem 1rem;}
-div.top-bar .menu .active > a  {background-color:#f7941d;color:#fff;}
+div.top-bar .menu a  {padding: 0.4rem 1rem 0.6rem 1rem; color:#fff;}
 div.top-bar li.is-submenu-item a {color:#58595b;}
 div.top-bar {padding:0;}
 /* Quicklinks Menu */
