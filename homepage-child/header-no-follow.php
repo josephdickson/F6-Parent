@@ -13,6 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="robots" content="nofollow" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -28,7 +29,7 @@
 
 	<header id="masthead" class="site-header row" role="banner">
 		<div class="medium-4 columns show-for-medium logo">
-			<a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/pitzer_logo_sans_colleges_orange.gif" alt="Pitzer College Logo" width="250" height="96" /></a>
+			<a href="http://www.pitzer.edu/"><img src="<?php bloginfo('template_directory'); ?>/img/pitzer_logo_sans_colleges_orange.gif" alt="Pitzer College Logo" width="250" height="96" /></a>
 		</div>
 
 		<div class="medium-8 columns show-for-medium">

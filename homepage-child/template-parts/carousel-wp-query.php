@@ -4,7 +4,7 @@ $the_query = new WP_Query( array(
 	'category_name' => 'carousel',
 	'orderby' => 'date',
 	'order' => 'DESC',
-	'posts_per_page' => 4,
+	'posts_per_page' => 5,
 ) );
 	
 // The Loop

@@ -29,18 +29,12 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 			</div>
+            <div class="small-12 large-3 columns">
+
+		      <?php get_template_part('template-parts/sidebar-menu-walker') ?>
+
+	       </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
-	<div class="small-12 large-3 columns">
-
-		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
-
-	</div>
-
-</div>
-
 <?php
-// get_sidebar();
 get_footer();

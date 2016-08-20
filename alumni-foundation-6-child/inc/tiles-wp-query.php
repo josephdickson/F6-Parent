@@ -35,7 +35,7 @@ $the_query = new WP_Query( $args );
 					} 
 				?>
 
-			<strong><a class="button flat orange expand" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+			<strong><a class="button flat orange expanded" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
 	</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->

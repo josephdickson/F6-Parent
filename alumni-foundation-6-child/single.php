@@ -11,9 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="small-12 large-10 columns">
-
-
+			<div class="small-12 large-9 columns">
 <?php 
 
 $post = $wp_query->post;
@@ -54,9 +52,9 @@ $post = $wp_query->post;
 			}
 ?>
 
-			</div><!-- small-12 large-8 columns -->
-			<div class="small-12 large-2 columns">
-				<?php dynamic_sidebar("Sidebar"); ?>
+			</div><!-- small-12 large-9 columns -->
+			<div class="small-12 large-3 columns">
+				<?php get_template_part('template-parts/sidebar-menu-walker') ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

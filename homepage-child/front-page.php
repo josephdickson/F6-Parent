@@ -29,7 +29,7 @@ get_header(); ?>
 			</div>
 
 
-			<div id="carousel" class="row" style="margin-bottom:0.9375rem;">
+			<div id="carousel" class="row">
 				<div class="small-12 columns">
 					<?php get_template_part('template-parts/carousel-wp-query'); ?>
 				</div>
@@ -38,9 +38,10 @@ get_header(); ?>
 			<div id="news">
 				<div class="row large-collapse" style="margin-bottom:0.9375rem;">
 					<div class="small-12 medium-8 columns">
-                        <h3>Featured News</h3>
+                        <p><strong style="margin-left:0.75em;">Featured News</strong></p>
+                        <hr style="margin-left:0.75em;">
 						<?php get_template_part('template-parts/news-wp-query'); ?>
-                        <h4>Events</h4>
+                        <p><strong style="margin-left:0.75em;">Events</strong></p>
                         <?php get_template_part('template-parts/events-wp-query'); ?>
                     </div>
 					<div class="small-12 medium-3 medium-offset-1 columns">

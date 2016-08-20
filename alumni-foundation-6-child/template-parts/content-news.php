@@ -31,6 +31,9 @@
 							'after'  => '</div>',
 						) );
 					?>
+                    
+                    <?php 	// Requires Advanced Custom Fields
+				get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
 				</div><!-- .entry-content -->
 
 
