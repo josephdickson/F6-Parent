@@ -31,7 +31,7 @@ $the_query = new WP_Query( $args );
 					<a href="<?php the_field('redirect_to_url'); ?>">
 					<?php	
                         the_title( '<h1 class="entry-title">', '</h1>' );
-						the_excerpt(); 
+						the_content(); 
 						get_template_part('template-parts/edit-post-link');
 						echo '</a>';
 					?>

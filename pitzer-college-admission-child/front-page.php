@@ -22,9 +22,8 @@ get_header(); ?>
                     <?php get_template_part('template-parts/front-page-carousel'); ?>
                 </div>
                 <div class="small-12 large-3 columns">
-                    <p><strong>Updates</strong></p>
-                    <?php get_template_part('template-parts/front-page-note'); ?>
-                    <p></p><strong>Upcoming Dates &amp; Deadlines</strong></p>
+                    <?php // get_template_part('template-parts/front-page-note'); ?>
+                    <p><strong>Upcoming Dates &amp; Deadlines</strong>
                     <?php get_template_part('template-parts/front-page-updates'); ?>
                 </div>
                 <div class="small-12 large-6 columns">
