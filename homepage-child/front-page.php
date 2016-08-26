@@ -36,7 +36,7 @@ get_header(); ?>
 			</div>
 
 			<div id="news">
-				<div class="row large-collapse" style="margin-bottom:0.9375rem;">
+				<div class="row" style="margin-bottom:0.9375rem;">
 					<div class="small-12 medium-8 columns">
                         <p><strong style="margin-left:0.75em;">Featured News</strong></p>
                         <hr style="margin-left:0.75em;">

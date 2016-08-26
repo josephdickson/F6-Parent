@@ -2,7 +2,7 @@
 // Query Posts of Category "Slideshow"
 $the_query = new WP_Query( array( 
 	'category_name' => 'carousel',
-	'orderby' => 'date',
+	'orderby' => 'modified',
 	'order' => 'DESC',
 	'posts_per_page' => 5,
 ) );
