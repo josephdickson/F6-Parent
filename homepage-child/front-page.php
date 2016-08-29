@@ -28,7 +28,6 @@ get_header(); ?>
 				</div>
 			</div>
 
-
 			<div id="carousel" class="row">
 				<div class="small-12 columns">
 					<?php get_template_part('template-parts/carousel-wp-query'); ?>
@@ -38,10 +37,10 @@ get_header(); ?>
 			<div id="news">
 				<div class="row" style="margin-bottom:0.9375rem;">
 					<div class="small-12 medium-8 columns">
-                        <p><strong style="margin-left:0.75em;">Featured News</strong></p>
-                        <hr style="margin-left:0.75em;">
+                        <p class="news"><strong><a href="/communications/news/">Featured News</a></strong></p>
+                        <hr>
 						<?php get_template_part('template-parts/news-wp-query'); ?>
-                        <p><strong style="margin-left:0.75em;">Events</strong></p>
+                        <p class="events"><strong><a href="https://emsweb.claremont.edu/PitzerMC/MasterCalendar.aspx?data=UkJlz1bbJnVvh7tSvMtleg==" target="_blank">Events</a></strong></p>
                         <?php get_template_part('template-parts/events-wp-query'); ?>
                     </div>
 					<div class="small-12 medium-3 medium-offset-1 columns">
