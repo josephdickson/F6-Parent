@@ -8,12 +8,11 @@
  */
 
 get_header(); ?>
-
 <div class="row">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-				<div class="columns small-12">
+				<div class="columns small-12 large-9 columns">
 					<?php
 					while ( have_posts() ) : the_post();
 
@@ -30,6 +29,12 @@ get_header(); ?>
 
 					?>
 				</div><!-- .columns .large-9 -->
+            
+            <div class="small-12 large-3 columns">
+
+		      <?php get_template_part('template-parts/sidebar-menu-walker') ?>
+
+	       </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

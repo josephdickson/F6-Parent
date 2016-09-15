@@ -36,11 +36,11 @@
 					}
 				?>
 
-			<header class="entry-header">
+			<header id="content" class="entry-header small-12 columns">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
-			<div class="entry-content">
+			<div class="entry-content small-12 columns">
 
 
 				<?php   

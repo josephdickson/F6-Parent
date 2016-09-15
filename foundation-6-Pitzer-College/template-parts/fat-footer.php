@@ -45,4 +45,7 @@
     <div class="small-12 medium-6 large-2 columns">
 	<?php get_template_part('template-parts/footer-column-4-menu-walker') ?>
     </div>
+    <div class="row">
+        <div class="small-12 columns copyright"><span class="copyright-info">&copy; <?php the_time('Y'); ?> Pitzer College</span></div>
+    </div>
 </div><!-- .fat-footer -->
