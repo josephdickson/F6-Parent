@@ -15,7 +15,6 @@
 get_header(); ?>
 	<div id="primary" class="content-area columns small-12 large-9">
 		<main id="main" class="site-main" role="main">
-
 				<?php
 				while ( have_posts() ) : the_post();
 					get_template_part( 'template-parts/content', 'page' );
@@ -32,13 +31,9 @@ get_header(); ?>
 
 
 	<div class="small-12 large-3 columns">
+
 		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-2') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-3') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-4') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-5') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-6') ?>
-        <?php get_template_part('template-parts/sidebar-menu-walker-7') ?>
+
 	</div>
 
 <?php

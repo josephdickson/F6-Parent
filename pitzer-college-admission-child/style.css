@@ -13,7 +13,7 @@ Text Domain: pitzer-college-child
 */
 .home .entry-content ul {margin:0 0 1.75em 0;list-style: none;}
 .home .entry-content p {margin:0 0 0.25em 0;}
-.home span.published-date {float:none;}
+.home span.published-date {float:none;font-size:1rem;}
 .home .tiles {margin-bottom:1rem;margin-top:0;}
 .home .additional-information ul{margin-left:1rem;}
 .home img.banner {display:block;margin:1rem auto 0 auto;}
