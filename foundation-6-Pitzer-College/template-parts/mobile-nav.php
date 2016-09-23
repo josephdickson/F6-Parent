@@ -3,12 +3,12 @@
     <!-- off-canvas title bar for 'small' screen -->
     <div class="title-bar hide-for-medium" data-responsive-toggle="widemenu" data-hide-for="medium">
       <div class="title-bar-left">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"><span>Menu</span></button>
         <span class="title-bar-title">Menu</span>
       </div>
       <div class="title-bar-right">
         <span class="title-bar-title">Quicklinks</span>
-        <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+        <button class="menu-icon" type="button" data-open="offCanvasRight"><span>Quicklinks</span></button>
 
       </div>
     </div>

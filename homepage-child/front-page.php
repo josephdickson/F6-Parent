@@ -9,6 +9,7 @@
 
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
+        <div id="content" class="columns">
 
 			<div id="alert" class="row">
 				<div class="small-12 columns">
@@ -40,18 +41,19 @@ get_header(); ?>
                         <p class="news"><strong><a href="/communications/news/">Featured News</a></strong></p>
                         <hr>
 						<?php get_template_part('template-parts/news-wp-query'); ?>
-                        <p class="events"><strong><a href="https://emsweb.claremont.edu/PitzerMC/MasterCalendar.aspx?data=UkJlz1bbJnVvh7tSvMtleg==" target="_blank">Events</a></strong></p>
-                        <?php get_template_part('template-parts/events-wp-query'); ?>
                     </div>
 					<div class="small-12 medium-3 medium-offset-1 columns">
 						<?php get_template_part('template-parts/tiles-vertical-wp-query'); ?>
 					</div>
+                    <div class="small-12 columns events">
+                        <?php get_template_part('template-parts/widget-events'); ?>
+                    </div>
 				</div>
             </div>
 			<div id="tiles" class="row" style="margin:1.5em 0;border-top:1px solid #f7941d;padding:1.5em 0;">
 				    <?php get_template_part('template-parts/tile-wp-query'); ?>
 			</div>
-
+        </div><!-- #content.columns -->
 	</main><!-- #main -->
 
 <?php

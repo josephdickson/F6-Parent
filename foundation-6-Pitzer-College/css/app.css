@@ -1,11 +1,11 @@
-ul#sidebar-menu .menu-item-has-children li a:link,a:link{color:#4E83D6;}
-ul#sidebar-menu .menu-item-has-children li a:visited,a:visited{color:#4E83D6;}
-ul#sidebar-menu .menu-item-has-children li a:hover,a:hover{color:#4169E1;}
-ul#sidebar-menu .menu-item-has-children li a:active,a:active{color:#4169E1;}
+ul#sidebar-menu .menu-item-has-children li a:link,a:link{color:#2655a0;}
+ul#sidebar-menu .menu-item-has-children li a:visited,a:visited{color:#2655a0;}
+ul#sidebar-menu .menu-item-has-children li a:hover,a:hover{color:#2656a2;text-decoration:underline;}
+ul#sidebar-menu .menu-item-has-children li a:active,a:active{color:#2656a2;text-decoration:underline;}
 h1,h2 {font-size:2rem;}
 h3,h4,h5,h6 {font-size:1.5rem;}
 h1.entry-title {margin:0;}
-.menu .active > a {background-color:transparent;color:#64B0C4;}
+.menu .active > a {background-color:transparent;color:#2655a0;}
 p#breadcrumbs {margin-top:1.5em;margin-bottom:0.5em;}
 span.published-date {float:right;font-size:0.8em;}
 .entry-content figcaption, span.featured-caption {text-align:left;font-size:0.8em; color:#58595b;}
@@ -22,6 +22,8 @@ div.top-bar a {background-color:transparent;color:#fff;}
 div.top-bar .menu a  {padding: 0.4rem 1rem 0.6rem 1rem; color:#fff;}
 div.top-bar li.is-submenu-item a {color:#58595b;}
 div.top-bar {padding:0;}
+/* Accessibility - Allows screen readers to read the button and hide it from visual, fixes Foundation 6 conflict on how menus are labeled */
+button.menu-icon span {display:none;}
 /* Quicklinks Menu */
 .top-bar-quicklinks .menu-item-has-children li {display:none;}
 .top-bar-quicklinks #quicklinks-menu a {font-size:0.9rem; text-decoration:none;}

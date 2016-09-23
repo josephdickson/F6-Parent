@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="small-12 large-6 columns">
                     <?php get_template_part('template-parts/acf' , 'deadlines'); ?>
                     <!-- Academic Calendar Button -->
-                    <a class="button flat radius orange expand" href="http://pitweb.pitzer.edu/registrar/wp-content/uploads/sites/44/2016/03/2016-20-Academic-Calendar-key-dates.pdf" target="_blank">2016-17 Academic Calendar</a>
+                    <a class="button flat radius orange expand" href="http://pitweb.pitzer.edu/registrar/wp-content/uploads/sites/44/2016/03/2016-20-Academic-Calendar-key-dates.pdf" target="_blank">2017-18  Academic Calendar</a>
                     
                         <div class="large-6 columns">
                             <p><strong>The Sagehen Lens</strong></p>

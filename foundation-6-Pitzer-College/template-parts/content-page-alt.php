@@ -40,8 +40,6 @@
 			
 			</div><!-- .entry-content -->
 
-			<?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
-
 		<?php
 			edit_post_link(
 				sprintf(

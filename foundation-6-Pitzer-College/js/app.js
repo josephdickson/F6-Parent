@@ -11,4 +11,8 @@ jQuery(document).ready(function(){
     
     // displays Google search box set to display none in app.css to avoid loading glitch
     $(".input-group").css("display", "block");
+    
+    // remove class of active if the menu item is located in the same site as the menu
+    $( "#quicklinks-menu .is-dropdown-submenu-parent" ).removeClass( "active" );
+    //   $( "#quicklinks-menu .submenu.menu.vertical.is-dropdown-submenu.first-sub").css("display", "none");
 });
