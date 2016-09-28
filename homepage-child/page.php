@@ -16,6 +16,11 @@ get_header(); ?>
 <div class="row">
 	<div id="primary" class="content-area columns small-12">
 		<main id="main" class="site-main" role="main">
+            <div class="expanded button-group" style="margin-top:0.9375rem">
+                <a href="/events/" class="button">Pitzer College Events Calendar</a>
+                <a href="/events/community/add" class="button">Add Your Event</a>
+                <a href="/event-submission-policy/" class="button secondary">Event Submission Policy</a>
+            </div>
             <div id="content" class="columns">
 				<?php
 				while ( have_posts() ) : the_post();

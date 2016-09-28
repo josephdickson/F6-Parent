@@ -27,7 +27,7 @@ $the_query = new WP_Query( $args );
                         </div>
                         <div class="small-8 medium-7 large-10 columns">
                         <?php	
-                            the_title( '<h1 class="entry-title">', '</h1>' );
+                            the_title( '<strong class="entry-title">', '</strong>' );
                             the_content(); 
                             get_template_part('template-parts/edit-post-link');
                         ?>

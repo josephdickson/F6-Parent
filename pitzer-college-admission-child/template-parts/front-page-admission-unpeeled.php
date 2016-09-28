@@ -18,7 +18,7 @@
 							}
 							else { // Do nothing
 							}
-						?><h1 class="normal justified"><?php the_title(); ?></h1>
+						?><strong class="entry-title justified"><?php the_title(); ?></strong>
 							<?php the_excerpt(); ?></div></a></div>
 			
 						<?php

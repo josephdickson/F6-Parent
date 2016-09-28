@@ -1,8 +1,10 @@
 <?php
 	echo '<div class="callout recruitment">
 	<p><strong>Meet Your Admission Counselor</strong></p>
+                <label for="recruitment-menu" class="hide">Admission Recruitment by Geographic Location</label>
                        <form name="jump">
-                        <select name="menu" onchange="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GO">
+                        
+                        <select name="recruitment-menu" id="recruitment-menu" onchange="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GO">
                                            <option selected="selected" value="">Choose Your Location</option>
                                            <option value="/admission/recruitment-staff/international/">International</option>
                                            <option value="/admission/recruitment-staff/alabama/">Alabama</option>

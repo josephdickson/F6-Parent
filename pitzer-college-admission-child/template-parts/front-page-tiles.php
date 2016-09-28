@@ -27,10 +27,9 @@ $the_query = new WP_Query( $args );
 				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
 						<a href="<?php the_field('redirect_to_url'); ?>">
 							<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
-						echo '</a>';
 				} ?>
-
-			<strong><a class="button flat orange expanded" href="<?php the_field('redirect_to_url'); ?>"><?php the_title(); ?></a></strong>
+			                 <strong><span class="button flat orange expanded" href="<?php the_field('redirect_to_url'); ?>"><?php the_title(); ?></span></strong>
+                        </a>
 	</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->

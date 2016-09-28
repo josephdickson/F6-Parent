@@ -12,8 +12,8 @@ Tags: light,responsive-layout, foundation 6, zurb
 Text Domain: homepage-child
 */
 #news .columns {padding-top:0.8375em;}
-#news a p {color:#58595b;}
-#news h1.entry-title {margin:0 0 0.5em 0;font-size:1.4rem;line-height:1em;}
+#news a p {color:#58595b; text-decoration: none;}
+#news strong.entry-title {margin:0 0 0.5em 0;font-size:1.4rem;line-height:1em;font-weight: normal; font-family: "EB Garamond",serif;}
 #news h3, #news h4 {margin:0 0 0 0.5em;}
 #news ul li {list-style:none;margin:0 0 0 0.75em;}
 #news .row .columns .row {margin-bottom:0.9375rem;}
@@ -37,12 +37,20 @@ h4.tribe-event-title {font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-se
 .tribe-event-duration {font-size: 0.8rem;margin-bottom:1rem;}
 .homepage-events strong.events {font-size:1.25rem;margin-bottom:0.25rem;}
 #news ul.events li {margin: 0.5rem 0.5rem 0.5rem 0;}
-.tribe-mini-calendar-event .list-date {background-color:#f7941d;}
-.tribe-mini-calendar-event .list-info h2 {font-size: 1.4rem;font-weight: normal;line-height:1.4rem;}
-.tribe-mini-calendar-event .list-date {width:10%;margin-right:0.9375rem;}
-.tribe-mini-calendar-event .list-date .list-daynumber {color:#000;}
-.tribe-events-widget-link {display: none;}
-.tribe-mini-calendar-event {border-bottom-width:0;margin-bottom:1.875rem;}
+.home .tribe-mini-calendar-event .list-date {background-color:#f7941d;}
+.home .tribe-mini-calendar-event .list-info h2 {font-size: 1.4rem;font-weight: normal;line-height:1.4rem;}
+.home .tribe-mini-calendar-event .list-date {width:10%;margin-right:0.9375rem;}
+.home .tribe-mini-calendar-event .list-date .list-daynumber {color:#000;font-size:1rem;}
+.home .tribe-mini-calendar-event .list-date .list-dayname {font-size:0.9rem;}
+.home .tribe-events-widget-link {display: none;}
+.home .tribe-mini-calendar-event {border-bottom-width:0;margin-bottom:1.875rem;}
+/* Events Calendar */
+.expanded.button-group a.button {color:#fff;font-size:1.1rem;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] {background-color:#58595b;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] a {background-color:#58595b;color:#fff;}
+body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past a, body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {color:#58595b;}
+.tribe-events-calendar td.tribe-events-past h3.tribe-events-month-event-title a {color:#114b7d;}
+
 /* Community Events */
 #tribe-community-events select {width:auto;}
 #tribe-community-events [type="color"], #tribe-community-events [type="date"], #tribe-community-events [type="datetime-local"], #tribe-community-events [type="datetime"], #tribe-community-events [type="email"], #tribe-community-events [type="month"], #tribe-community-events [type="number"], #tribe-community-events [type="password"], #tribe-community-events [type="search"], #tribe-community-events [type="tel"], #tribe-community-events [type="text"], #tribe-community-events [type="time"], #tribe-community-events [type="url"], #tribe-community-events [type="week"], #tribe-community-events textarea {width:auto;}

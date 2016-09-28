@@ -21,8 +21,9 @@ $the_query = new WP_Query( array(
 						echo '<div class="callout">'; ?>
                         <a href="<?php the_field('redirect_to_url'); ?>" target="_blank">
                         <?php the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) );
-						echo '</a>';
-                        echo the_content();
+						echo the_content();
+                        echo '</a>';
+                        get_template_part('template-parts/edit-post-link');
                         echo '</div>';
 				} ?>
 	<?php endwhile; ?>
