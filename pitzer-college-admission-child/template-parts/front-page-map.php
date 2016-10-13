@@ -17,15 +17,16 @@ $the_query = new WP_Query( array(
 
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-						echo '<div class="callout">'; ?>
+            <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+					<div class="callout">
                         <a href="<?php the_field('redirect_to_url'); ?>" target="_blank">
-                        <?php the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) );
-						echo the_content();
-                        echo '</a>';
-                        get_template_part('template-parts/edit-post-link');
-                        echo '</div>';
-				} ?>
+                            <?php the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) ); ?>
+                            <?php the_content(); ?>
+                        </a>
+                        <?php get_template_part('template-parts/edit-post-link'); ?>
+                    </div>
+                
+            <?php } ?>
 	<?php endwhile; ?>
 	<!-- end of the loop -->
 

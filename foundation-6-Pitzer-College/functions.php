@@ -192,7 +192,7 @@ require get_template_directory() . '/custom_nav.php';
 /**
  * Enqueue scripts and styles.
  */
-function foundation_6_parent_scripts() {
+function foundation_6_parent_scripts() { 
 
 	wp_enqueue_style( 'foundation-style',  get_template_directory_uri() . '/css/foundation.min.css' );
     
@@ -201,7 +201,7 @@ function foundation_6_parent_scripts() {
 	wp_enqueue_style( 'google-web-font-eb-garamond', 'https://fonts.googleapis.com/css?family=EB+Garamond' );
 
 	wp_enqueue_style( 'foundation-app-style', get_template_directory_uri() . '/css/app.css' );
-
+    
 	wp_enqueue_script( 'foundation-6-parent-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'foundation-6-parent-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

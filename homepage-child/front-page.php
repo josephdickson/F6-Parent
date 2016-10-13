@@ -10,31 +10,6 @@
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
         <div id="content" class="columns">
-
-			<div id="alert" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/alert-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="warning" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/warning-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="notice" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/notice-wp-query'); ?>
-				</div>
-			</div>
-
-			<div id="carousel" class="row">
-				<div class="small-12 columns">
-					<?php get_template_part('template-parts/carousel-wp-query'); ?>
-				</div>
-			</div>
-
 			<div id="news">
 				<div class="row" style="margin-bottom:0.9375rem;">
 					<div class="small-12 medium-8 columns">

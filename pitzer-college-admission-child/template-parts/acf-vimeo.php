@@ -23,7 +23,7 @@ if( get_row_layout() == 'video' ):
         	// check if the nested repeater field has rows of data
         	if( have_rows('tile_repeater') ):
 
-		 	echo '<div class="row small-up-2 medium-up-3 large-up-4 callout">';
+		 	echo '<div class="row small-up-2 medium-up-2 large-up-2 callout">';
 
 			 	// loop through the rows of data
 			    while ( have_rows('tile_repeater') ) : the_row();
@@ -37,7 +37,7 @@ if( get_row_layout() == 'video' ):
 					$caption = $image['caption'];
 
 					// thumbnail
-					$size = 'medium';
+					$size = 'large';
 					$thumb = $image['sizes'][ $size ];
 					$width = $image['sizes'][ $size . '-width' ];
 					$height = $image['sizes'][ $size . '-height' ];

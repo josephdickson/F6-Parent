@@ -89,10 +89,7 @@ ul.contact {margin:0;list-style-position:inside;}
 .main-navigation article a {display:inline;}
 span.edit-link {padding:0;margin:0;}
 /* Global Notices, Warnings, Alerts */
-.global.callout h1.entry-title, .global.callout p, .global.callout a {font-family:'Open Sans';color:#fff;}
-.global.alert.callout {background-color:#EE2C3C;}
-.global.warning.callout {background-color:#f7941d;}
-.global.primary.callout {background-color:#003D71;}
+.alert.callout p, .primary.callout p, .warning.callout p {margin-bottom:0.2rem;}
 /* Sidebar Menu */
 .sidebar-menu li {border-left: 3px solid transparent;}
 .sidebar-menu li a {line-height:1.3rem;}

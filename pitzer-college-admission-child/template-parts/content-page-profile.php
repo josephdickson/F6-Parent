@@ -8,16 +8,9 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row">
 		<div class="columns">
-
-				<?php
-					if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-					}
-				?>
             <div class="small-12 large-3 columns">
                 <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                     echo '<div class="row">';
@@ -35,7 +28,7 @@
             
             <div class="small-12 large-9 columns">
                 <header class="entry-header">
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    <?php the_title( '<strong class="entry-title profile">', '</strong>' ); ?>
                 </header><!-- .entry-header -->
                     <div class="entry-content">
                             <?php   
@@ -52,7 +45,7 @@
 
                     </div><!-- .entry-content -->
 
-                        <?php the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
+                        <?php // the_modified_date('F j, Y', '<span class="published-date"> Page last updated on ', '</span>'); ?>
 
                     <?php
                         edit_post_link(

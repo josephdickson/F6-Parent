@@ -8,41 +8,33 @@
  */
 
 get_header(); ?>
-
-<div class="row">
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area columns small-12 large-9">
 		<main id="main" class="site-main" role="main">
+            <div class="yoast">
+                <?php
+					if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+					}
+				?>
+            </div>
+            <div id="content">
+                <h1 class="category"><?php echo single_cat_title(); ?></h1>
+				<?php get_template_part( 'template-parts/wp-query', 'staff-order' ); ?>
+            </div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-				<div class="columns small-12 large-9">
-					<?php
-					while ( have_posts() ) : the_post();
 
-						get_template_part( 'template-parts/content', 'no-featured-image' , get_post_format() );
-
-						//the_post_navigation();
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					endwhile; // End of the loop.
-
-					?>
-				</div><!-- .columns .large-9 -->
-                <div class="small-12 large-3 columns">
-
-        <?php get_template_part('template-parts/sidebar-menu-walker') ?>
+	<div class="small-12 large-3 columns">
+		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-2') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-3') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-4') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-5') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-6') ?>
         <?php get_template_part('template-parts/sidebar-menu-walker-7') ?>
+	</div>
 
-	           </div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .row -->
-
-<?php get_footer(); ?>
+<?php
+// get_sidebar();
+get_footer();

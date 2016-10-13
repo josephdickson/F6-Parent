@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area columns small-12">
 		<main id="main" class="site-main" role="main">
-			<div class="columns">
+			<div class="columns small-12 large-9">
 				<?php
 				while ( have_posts() ) : the_post();
 					get_template_part( 'template-parts/content', 'page' );

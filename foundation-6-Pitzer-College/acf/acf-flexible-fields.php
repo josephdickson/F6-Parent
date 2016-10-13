@@ -1,4 +1,5 @@
 <?php
+if(function_exists('get_field')){
 // Requires the Advanced Custom Fields plugin to function
 // check if the flexible content field has rows of data
 if( have_rows('flexible_content') ):
@@ -79,5 +80,5 @@ else :
     // no layouts found
 
 endif;
-
+}
 ?>

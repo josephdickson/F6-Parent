@@ -50,7 +50,8 @@ h4.tribe-event-title {font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-se
 .tribe-events-calendar div[id*="tribe-events-daynum-"] a {background-color:#58595b;color:#fff;}
 body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past a, body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {color:#58595b;}
 .tribe-events-calendar td.tribe-events-past h3.tribe-events-month-event-title a {color:#114b7d;}
-
+.homepage-events .tribe-events-location, .homepage-events .tribe-events-duration {display: inline-block;padding:0;margin:0;}
+.homepage-events .tribe-event-time::after {content:", "}
 /* Community Events */
 #tribe-community-events select {width:auto;}
 #tribe-community-events [type="color"], #tribe-community-events [type="date"], #tribe-community-events [type="datetime-local"], #tribe-community-events [type="datetime"], #tribe-community-events [type="email"], #tribe-community-events [type="month"], #tribe-community-events [type="number"], #tribe-community-events [type="password"], #tribe-community-events [type="search"], #tribe-community-events [type="tel"], #tribe-community-events [type="text"], #tribe-community-events [type="time"], #tribe-community-events [type="url"], #tribe-community-events [type="week"], #tribe-community-events textarea {width:auto;}

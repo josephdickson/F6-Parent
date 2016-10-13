@@ -22,10 +22,8 @@ $the_query = new WP_Query( $args );
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<?php if ( get_permalink() ) { ?>
 					<div class="primary callout" data-closable>
-						<a href="<?php the_permalink(); ?>">
 							<?php echo the_title( '<h1 class="entry-title">', '</h1>' ) ;
-							echo the_excerpt(); ?>
-						</a>
+							echo the_content(); ?>
 					<?php get_template_part('template-parts/edit-post-link'); ?>
 					</div>
 				<?php }	?>
