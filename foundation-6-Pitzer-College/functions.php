@@ -218,7 +218,6 @@ function foundation_6_parent_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'foundation_6_parent_scripts' );
 
-
 /**
  * A fallback when no navigation is selected by default, otherwise it throws some nasty errors in your face.
  */

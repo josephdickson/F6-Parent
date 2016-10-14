@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <div id="content">
-				<div class="columns small-12 large-9 columns">
+				<div class="columns small-12 columns">
 					<?php
 					while ( have_posts() ) : the_post();
 
@@ -28,16 +28,23 @@ get_header(); ?>
 					endwhile; // End of the loop.
 
 					?>
-				</div><!-- .columns .large-9 -->
-            
-            <div class="small-12 large-3 columns">
-
-		      <?php get_template_part('template-parts/sidebar-menu-walker') ?>
-
-	       </div>
-        </div><!-- #content -->
+				</div><!-- .columns -->
+            </div><!-- #content -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .row -->
 
-<?php get_footer(); ?>
+<?php
+
+/**
+ *  dequeue the foundation version of jquery for wordpress, this will break search and quicklinks etc. 
+ */
+
+function dequeue_jquery_script() {
+//    wp_dequeue_script( 'jquery' );
+    wp_dequeue_script( 'foundation-jquery' );
+    wp_dequeue_script( 'app-js' );
+}
+add_action( 'wp_print_scripts', 'dequeue_jquery_script', 100 );
+                
+get_footer(); ?>
