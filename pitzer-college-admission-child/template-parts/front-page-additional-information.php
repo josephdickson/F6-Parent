@@ -17,9 +17,9 @@ $the_query = new WP_Query( array(
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <?php if ( get_permalink() ) { ?>
-				    <p><strong><?php the_title() ; ?></strong>
+				    <strong><?php the_title() ; ?></strong>
                         <?php the_content(); ?>
-                        <?php get_template_part('template-parts/edit-post-link'); ?></p>
+                        <?php get_template_part('template-parts/edit-post-link'); ?>
 				<?php }	?>
 	<?php endwhile; ?>
 	<!-- end of the loop -->

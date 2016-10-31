@@ -25,10 +25,16 @@ $the_query = new WP_Query( array(
 	<!-- end of the loop -->
 
 <?php else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<?php if ( is_user_logged_in() ) {
+    echo '<p>To add a note here <a href="/admission/wp-admin/post-new.php">create a new post</a> then categorize it <strong>Front Page</strong> and tag it <strong>Note</strong>. Finally, <strong>schedule</strong> the post for a date and time in the future. When that date passes the post will expire.</p>';
+} else ; ?>
 <?php endif; ?>
 
 
 	<!-- pagination here -->
 
-	<?php wp_reset_postdata();
+	<?php wp_reset_postdata(); ?>
+
+<?php
+
+?>
