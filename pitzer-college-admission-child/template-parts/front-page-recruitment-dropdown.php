@@ -13,7 +13,7 @@
                         <option value="/admission/recruitment-staff/colorado/">Colorado</option>
                         <option value="/admission/recruitment-staff/connecticut/">Connecticut</option>
                         <option value="/admission/recruitment-staff/delaware/">Delaware</option>
-                        <option value="/admission/recruitment-staff/washington-dc/">District of Columbia</option>
+                        <option value="/admission/recruitment-staff/district-of-columbia/">District of Columbia</option>
                         <option value="/admission/recruitment-staff/florida/">Florida</option>
                         <option value="/admission/recruitment-staff/georgia/">Georgia</option>
                         <option value="/admission/recruitment-staff/hawaii/">Hawaii</option>
