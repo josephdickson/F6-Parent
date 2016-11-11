@@ -6,7 +6,7 @@ $args = array(
 	'post_type' => 'post',
 	'orderby' => 'date',
 	'order'   => 'DESC',
-	'category_name' => 'alert',
+	'category_name' => 'alert'
 );
 
 // the query
