@@ -20,15 +20,13 @@ if ( post_password_required() ) {
 }
 
 ?>
-
-<div class="row">
-	<div class="small-12">
 		<div id="comments" class="comments-area">
+
 			<div class="callout">
 	<?php
 
 		$comments_args = array(
-			// change the title of send button 
+			// change the title of send button
 			'label_submit'=>'Submit Comment',
 			// change the title of the reply section
 			'title_reply'=>'Comments',
@@ -41,9 +39,6 @@ if ( post_password_required() ) {
 		comment_form($comments_args);
 
 	?>
-
-
-
 
 			<?php
 			// You can start editing here -- including this comment!
@@ -104,10 +99,5 @@ if ( post_password_required() ) {
 			endif;
 ?>
 
-
-
-
-
 			</div><!-- .callout -->
-		</div><!-- #comments -->
 	</div>
