@@ -25,7 +25,7 @@ get_header(); ?>
                     </div>
                     <div class="small-12 large-3 columns">
                         <?php get_template_part('template-parts/front-page-note'); ?>
-                        <p><strong>Upcoming Dates &amp; Deadlines</strong>
+                        <strong>Upcoming Dates &amp; Deadlines</strong>
                         <?php get_template_part('template-parts/front-page-updates'); ?>
                     </div>
                     <div class="small-12 large-6 columns">

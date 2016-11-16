@@ -2,7 +2,7 @@
 $current_post_ID = get_the_ID(); // the post's id is assigned to $current_post_ID
 
 // Query Posts of Category "Front Page"
-$the_query = new WP_Query( array( 
+$the_query = new WP_Query( array(
 	'category_name' => 'Front Page',
     'tag' => 'note',
 	'orderby' => 'date',
