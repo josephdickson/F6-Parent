@@ -14,6 +14,8 @@ get_header(); ?>
 
 			<?php get_template_part('inc/slideshow-wp-query'); ?>
 
+			<?php get_template_part('inc/promotional-query'); ?>
+
 			<div id="primary" class="row small-up-2 medium-up-3 large-up-4">
 				<?php get_template_part('inc/tiles-wp-query'); ?>
 			</div><!-- #primary -->

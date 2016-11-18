@@ -6,7 +6,7 @@ $the_query = new WP_Query(
     array(
         'post_type' => 'attachment',
         'post_status' => 'inherit',
-        'p' => 1962
+        'p' => 592
     )
 
 );
@@ -18,7 +18,7 @@ if ( $the_query->have_posts() ) {
 
 		$the_query->the_post();
 
-		  echo '<img class="banner" src="' . wp_get_attachment_url() . '" alt="Pitzer Stories" />';
+		  echo '<img class="tile" src="' . wp_get_attachment_url() . '" alt="Give Now" />';
 
 	}
 

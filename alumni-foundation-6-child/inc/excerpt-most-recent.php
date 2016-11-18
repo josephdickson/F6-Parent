@@ -12,27 +12,28 @@ $args = array(
 	'posts_per_page' => 2,
 	'orderby' => 'date',
 	'order'   => 'DESC',
+	'category_name' => 'Alumni Awards'
 );
 
 // the query
 $the_query = new WP_Query( $args );
 ?>
 
-<?php if ( $the_query->have_posts() ) : 
+<?php if ( $the_query->have_posts() ) :
 
 	echo '<h2>Alumni News</h2>';
 ?>
-	
+
 	<!-- pagination here -->
 
 	<!-- the loop -->
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		
+
 			<?php if ( has_post_thumbnail() ) {
 				the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) ); ?>
 				<h2 class="post-title" style="display:inline;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<?php the_excerpt();
-			} 
+			}
 		?>
 
 		<?php  ?>

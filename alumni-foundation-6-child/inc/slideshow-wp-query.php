@@ -1,12 +1,12 @@
 <?php
 // Query Posts of Category "Slideshow"
-$the_query = new WP_Query( array( 
+$the_query = new WP_Query( array(
 	'category_name' => 'Slideshow',
 	'orderby' => 'date',
-	'order' => 'ASC',
+	'order' => 'DESC',
 	'posts_per_page' => 4,
 ) );
-	
+
 // The Loop
 if ( $the_query->have_posts() ) {
 ?>
@@ -24,7 +24,7 @@ if ( $the_query->have_posts() ) {
 				echo '<a href="' . get_permalink() . '">';
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
 				echo '</a>';
-				} 
+				}
 			$my_excerpt = get_the_excerpt();
 			if ( '' != $my_excerpt ) {
 				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';

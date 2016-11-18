@@ -27,11 +27,11 @@ if ( $the_query->have_posts() ) {
 				// echo '</a>';
 				}
 
-            $my_excerpt = get_post(get_post_thumbnail_id())->post_excerpt; // Grabs Caption associated with the Media File
-			if (!empty($my_excerpt)) {
-                echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>'; // If the caption exists display a caption
-            }
-			echo '</div>
+				$my_excerpt = get_the_excerpt();
+				if ( '' != $my_excerpt ) {
+					echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
+				}
+				echo '</div>
 		          </li>';
 			}
 ?>

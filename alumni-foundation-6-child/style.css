@@ -40,8 +40,10 @@ nav.orbit-bullets {margin-top:0;}
 .tiles a.button {margin:0;color:#fff;background-color:#f7941d;}
 .tiles a.button:hover {background-color:#E1871A;}
 .tiles:nth-child(4) {clear:left;}
-/* Front Page Lists  */ 
+/* Front Page Lists  */
 li.block{float:none;}
+.home .small {font-size:0.8rem;}
+.home strong.entry-title {font-family: 'EB Garamond', serif; font-size:1.7rem;}
 #font-page-lists li.block a {padding-left:0;}
 /*Fat Footer */
 .off-canvas-content {padding-bottom: 2rem}

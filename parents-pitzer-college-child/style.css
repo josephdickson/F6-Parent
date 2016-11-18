@@ -39,7 +39,7 @@ nav.orbit-bullets {margin-top:0;}
 .tiles a.button:hover {background-color:#E1871A;}
 .tiles:nth-child(4) {clear:none;}
 .home .tiles:first-child .button {display:none;}
-/* Front Page Lists  */ 
+/* Front Page Lists  */
 li.block{float:none;}
 #font-page-lists li.block a {padding-left:0;}
 /*Fat Footer */
@@ -54,3 +54,5 @@ li.block{float:none;}
 /* Content */
 .main-navigation article a {display:inline;}
 span.edit-link {padding:0;margin:0;}
+/* headlines */
+h2, h3, h4, h4, h5, h6 {font-weight: normal; font-size:1.5rem;}

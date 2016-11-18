@@ -27,13 +27,29 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
+            
+                <?php 
+            
+                    
+                
+                       get_template_part( 'template-parts/acf-staff' );
+                    
+            
+                ?>
+            
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 
 	<div class="small-12 large-3 columns">
+        
+        <?php dynamic_sidebar("sidebar"); ?>
 
 		<?php get_template_part('template-parts/sidebar-menu-walker') ?>
+        
+        <?php get_template_part('template-parts/sidebar-menu-walker-2') ?>
+        
+        <?php dynamic_sidebar("section-menu"); ?>
 
 	</div>
 <?php

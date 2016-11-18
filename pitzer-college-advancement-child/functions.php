@@ -12,5 +12,6 @@ add_action( 'wp_enqueue_scripts', 'foundation_6_child_scripts' );
 
 function register_sidebar_menu() {
   register_nav_menu('foundation-6-sidebar',__( 'Sidebar Menu' ));
+  register_nav_menu('foundation-6-sidebar-2',__( 'Sidebar Menu 2' ));
 }
 add_action( 'init', 'register_sidebar_menu' );

@@ -22,8 +22,17 @@ $the_query = new WP_Query( $args );
 					the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
 				echo '</a>';
 				the_excerpt();
-			} 
+			}
+
+			else {
+				echo '<strong class="entry-title">' . get_the_title() . '</strong>';
+
+				the_content();
+
+				get_template_part( 'template-parts/edit-post-link' );
+			}
 		?>
+
 	<?php endwhile; ?>
 	<!-- end of the loop -->
 
