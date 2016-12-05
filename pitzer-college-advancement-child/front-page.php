@@ -14,7 +14,8 @@ get_header(); ?>
 
 				<div class="small-12">
 
-					<?php get_template_part('template-parts/wp-query-banner'); ?>
+					<h1 style="display:none;">Office of College Advancement</h1>
+                    <?php get_template_part('template-parts/wp-query-banner'); ?>
 
 				</div>
 
@@ -23,7 +24,7 @@ get_header(); ?>
 					<?php get_template_part('template-parts/wp-query-carousel'); ?>
 
 				</div>
-
+                    <h2 style="display:none;">Giving to Pitzer College</h2>
 					<?php get_template_part('template-parts/wp-query-tiles'); ?>
 
 				<div class="small-12">

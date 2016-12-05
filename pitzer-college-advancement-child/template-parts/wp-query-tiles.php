@@ -15,7 +15,7 @@ $the_query = new WP_Query(
 // The Loop
 if ( $the_query->have_posts() ) {
 
-	echo '<div class="row small-up-1 medium-up-2 large-up-3 tile">';
+	echo '<div id="content" class="row small-up-1 medium-up-2 large-up-3 tile">';
 
 		while ( $the_query->have_posts() ) {
 

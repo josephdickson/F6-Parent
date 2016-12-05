@@ -29,6 +29,7 @@ span.published-date{float:none;}
 .orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
 nav.orbit-bullets {margin-top:0;}
 #tiles .columns img {border:1px solid #f1f1f1;}
+.small-12.medium-3.medium-offset-1.columns img {padding-bottom: 1em; margin-bottom: 1em;}
 /* Events */
 ol.tribe-list-widget {list-style-type: none;margin:0;}
 #news ol.tribe-list-widget h4 {margin:0;font-size:1rem;}
