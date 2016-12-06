@@ -15,7 +15,7 @@ get_header(); ?>
 			<div id="carousel" class="row">
 
 				<div class="small-12 columns">
-
+					<h1 class="hide">Pitzer College</h1>
 					<?php get_template_part('template-parts/carousel-wp-query'); ?>
 				</div>
 

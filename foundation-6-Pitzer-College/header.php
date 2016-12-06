@@ -23,12 +23,16 @@
 
 <body <?php body_class(); ?>>
 
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'foundation-6-Pitzer-College' ); ?></a>
+
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'foundation-6-Pitzer-College' ); ?></a>
 
 	<header id="masthead" class="site-header row" role="banner">
+
 		<div class="medium-4 columns show-for-medium logo">
+
 			<a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/pitzer_logo_sans_colleges_orange.gif" alt="Pitzer College Logo" width="250" height="96" /></a>
+
 		</div>
 
 		<div class="medium-8 columns show-for-medium">
