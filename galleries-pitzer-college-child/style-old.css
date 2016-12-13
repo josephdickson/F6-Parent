@@ -1,0 +1,46 @@
+/*
+Theme Name:         Galleries - Pitzer College - Child
+Version: 1.0.0
+Theme URI:      http://themefortress.com/reverie/
+Description:    Reverie is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:        4.0.0
+Author:         Zhen Huang
+Adapted:	Joseph Dickson joseph_dickson@pitzer.edu - see main.css
+Author URI:     http://themefortress.com/
+Template: 	Pitzer-College
+License:        MIT License
+License URI:    http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+/*
+CSS Document 
+    Created by Joseph Dickson
+	
+	100% saturation of CMYK colors to web
+	Pitzer Orange			#f7941d
+	Link Orange			#CA7918
+	Avocado Green			#a1af27
+	Graphite Gray			#58595b
+	Text Area approx		#f2efe8
+	Background approx		#E0DFCD
+	Pomona-Pitzer Blue		#003d71
+	
+	Secondary Colors
+	
+	light-blue: 			#64b0c3
+	red:				#ee2c3b
+	yellow: 			#ffce00
+	tan:				#e8d9b5
+*/
+
+ul.clearing-thumbs li:nth-child(3n) {
+	height:21em;
+	max-height:21em;
+
+}
+
+ul.clearing-thumbs p {
+	margin:0.2em 0 0.8em 0;
+	line-height:1.2em;
+}
