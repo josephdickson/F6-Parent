@@ -145,6 +145,7 @@ register_field_group(array (
 						'Twitter' => 'Twitter',
 						'Vimeo' => 'Vimeo',
 						'YouTube' => 'YouTube',
+						'webinar' => 'Webinar'
 					),
 					'other_choice' => 0,
 					'save_other_choice' => 0,
