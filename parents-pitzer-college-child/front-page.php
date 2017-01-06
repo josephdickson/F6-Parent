@@ -10,7 +10,7 @@
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
-		<img class="banner aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Parent_Relations_Banner.gif" alt="Parent Relations" width="842" height="76" />
+		<img id="content" class="banner aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Parent_Relations_Banner.gif" alt="Parent Relations" width="842" height="76" />
 
 			<?php get_template_part('inc/slideshow-wp-query'); ?>
 
