@@ -1,0 +1,56 @@
+/*
+Theme Name: Pitzer College Inauguration Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: pitzer-college-child
+*/
+a.post-edit-link {display:inline;}
+.orange { background-color: #f7941d;}
+
+.radius {border-radius: 2rem;}
+
+.home p, .home .events strong {font-family: 'EB Garamond'; font-size:1.3rem;line-height: 1.3em;}
+.events h2  {margin-bottom: 1.5rem;}
+.home .events strong.block {margin-top:1rem; font-size: 2.3rem;}
+.block {display: block; margin: 0.5rem 0;}
+.off-canvas-content {padding-bottom:0;}
+strong.text-center.block {font-weight: normal;}
+
+/* Menu */
+.menu-centered {
+    border-bottom: 1px solid #58595b;
+    font-weight: bold;
+    margin-top:0.5rem;
+}
+
+.biography,
+.events,
+.map {padding: 1rem 0;}
+
+.intro {padding-bottom: 1rem;}
+.intro div.entry-content{margin-top:0;}
+.intro h1.entry-title {padding: 1rem 0;}
+.events h1.entry-title {padding: 0.5rem 0; line-height: 1.2em; font-size: 1.7rem;}
+.events p {font-size: 1rem;}
+
+/* Background Color */
+.map {background-color: #f7941d; }
+.events {background-color: #B9B9B9; }
+
+/* shadows */
+.inner-shadow {
+   -moz-box-shadow:    inset 0 0 10px -10px #000000;
+   -webkit-box-shadow: inset 0 0 10px -10px #000000;
+   box-shadow:         inset 0 0 10px 0px #000000;
+}
+
+/* Accordion */
+.accordion-title {font-family: 'EB Garamond'; font-size:1.3rem;line-height: 1.2em;}
+.accordion-title:before{margin-top: -0.7rem;}

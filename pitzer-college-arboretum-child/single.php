@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * The template for displaying all single posts.
  *
@@ -16,7 +16,7 @@ get_header(); ?>
 					<?php
 					while ( have_posts() ) : the_post();
 
-						get_template_part( 'template-parts/content', 'page' , get_post_format() );
+						get_template_part( 'template-parts/content', 'single' , get_post_format() );
 
 						//the_post_navigation();
 
@@ -37,7 +37,7 @@ get_header(); ?>
 <?php
 
 /**
- *  dequeue the foundation version of jquery for wordpress, this will break search and quicklinks etc. 
+ *  dequeue the foundation version of jquery for wordpress, this will break search and quicklinks etc.
  */
 
 function dequeue_jquery_script() {
@@ -46,5 +46,5 @@ function dequeue_jquery_script() {
     wp_dequeue_script( 'app-js' );
 }
 add_action( 'wp_print_scripts', 'dequeue_jquery_script', 100 );
-                
+
 get_footer(); ?>
