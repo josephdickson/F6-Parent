@@ -16,11 +16,12 @@ get_header(); ?>
 	<div id="primary" class="content-area columns small-12">
 		<main id="main" class="site-main" role="main">
             <div id="content">
+
                 <div class="small-12">
         				<?php
                     // The Query
                     $the_query = new WP_Query( array('post_type' => 'page',));
-                    
+
                     // The Loop
                     if ( $the_query->have_posts() ) {
                         while ( $the_query->have_posts() ) {
@@ -43,30 +44,68 @@ get_header(); ?>
                     }
 				?>
                 </div>
-            
-				<?php
-                    // The Query
-                    $the_query = new WP_Query( array('category_name' => 'uncategorized', 'order' => 'DESC',));
-                    
-                    // The Loop
-                    if ( $the_query->have_posts() ) {
-                        while ( $the_query->have_posts() ) {
-                            $the_query->the_post();
-                            echo '<div class="row">';
-                             if ( has_post_thumbnail() ) {
-                                the_post_thumbnail('large');
-                            }
-                            echo '<strong class="entry-title">' . get_the_title() . '</strong>';
-                            the_excerpt();
-                            get_template_part('template-parts/edit-post-link');
-                            echo '</div>';
-                        }
-                        /* Restore original Post Data */
-                        wp_reset_postdata();
-                    } else {
-                        // no posts found
-                    }
-				?>
+
+
+				<div class="small-12">
+					<?php
+						// The Query
+							$the_query = new WP_Query(
+								array(
+									'category_name' => 'spring',
+									'order' => 'DESC',
+									'is_admin' => 'true',
+									'post_status' => 'publish',
+								)
+							);
+
+						// The Loop
+							if ( $the_query->have_posts() ) {
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+										echo '<div class="small-12 columns">';
+											 if ( has_post_thumbnail() ) {
+													the_post_thumbnail('large');
+												}
+												echo '<strong class="entry-title">' . get_the_title() . '</strong>';
+												the_excerpt();
+												get_template_part('template-parts/edit-post-link');
+												echo '</div>';
+											}
+						/* Restore original Post Data */
+							wp_reset_postdata();
+							} else {
+							// no posts found
+							}
+
+							?>
+						</div>
+
+				<div class="small-12">
+					<?php
+	                    // The Query
+	                    $the_query = new WP_Query( array('category_name' => 'uncategorized', 'order' => 'DESC',));
+
+	                    // The Loop
+	                    if ( $the_query->have_posts() ) {
+	                        while ( $the_query->have_posts() ) {
+	                            $the_query->the_post();
+	                            echo '<div class="row">';
+	                             if ( has_post_thumbnail() ) {
+	                                the_post_thumbnail('large');
+	                            }
+	                            echo '<strong class="entry-title">' . get_the_title() . '</strong>';
+	                            the_excerpt();
+	                            get_template_part('template-parts/edit-post-link');
+	                            echo '</div>';
+	                        }
+	                        /* Restore original Post Data */
+	                        wp_reset_postdata();
+	                    } else {
+	                        // no posts found
+	                    }
+					?>
+				</div>
+
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
