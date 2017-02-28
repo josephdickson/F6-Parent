@@ -24,7 +24,7 @@
 
                 <div class="entry-meta">
 
-					<span class="published-date"><?php the_time('l, F jS, Y') ?></span>
+					<span class="published-date"><?php the_time('l, F j, Y') ?></span>
 
                     <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 

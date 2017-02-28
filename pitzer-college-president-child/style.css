@@ -15,4 +15,4 @@ Text Domain: pitzer-college-child
 .category-messages-to-the-community span.posted-on, span.cat-links  {float: right;font-size: 0.8em;clear:right;}
 .post-647 span.published-date {display: none;}
 
-.messages-to-the-community .entry-meta span.published-date {float: left; clear:right; display:block; font-size: 1.8rem; font-family: "EB Garamond", serif; margin-bottom: 0.5em; ;}
+.messages-to-the-community .entry-meta span.published-date {float: left; clear:right; display:block; margin: 0.5em 0;}
