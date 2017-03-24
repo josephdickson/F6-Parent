@@ -15,9 +15,17 @@
 get_header(); ?>
 	<div id="primary" class="content-area columns small-12 large-9">
 		<main id="main" class="site-main" role="main">
+
+			<header id="content" class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+
+
+			<?php get_template_part('template-parts/carousel-wp-query'); ?>
+
 				<?php
 				while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/content', 'page' );
+					get_template_part( 'template-parts/content', 'front-page' );
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :

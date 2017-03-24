@@ -86,8 +86,9 @@ get_header(); ?>
 			}
 		 ?>
 		</main><!-- #main -->
+
 	</div><!-- #primary -->
+
 </div>
-<?php
-// get_sidebar();
-get_footer();
+
+<?php get_footer();

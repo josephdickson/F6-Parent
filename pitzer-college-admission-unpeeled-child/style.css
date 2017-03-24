@@ -11,3 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light,responsive-layout, foundation 6, zurb
 Text Domain: pitzer-college-child
 */
+.single-post .callout {background-color:#F9F9F9;}
+.single-post .callout a {color:#000;text-decoration:none;}
+.single-post .callout h1.entry-title {font-size:1.2rem; line-height: 1.3rem;margin-bottom:0.5rem; margin-top: 0.5rem;color:#2655a0;}
+.single-post .callout a:hover h1.entry-title {text-decoration: underline;}
+.single-post .callout p {font-size:0.9rem; line-height: 1.2rem;margin-bottom:0;}

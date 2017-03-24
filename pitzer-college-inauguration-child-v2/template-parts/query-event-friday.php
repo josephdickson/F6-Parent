@@ -20,8 +20,8 @@ if ( $the_query->have_posts() ) {
 
 							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 
-					the_post_thumbnail();
-					echo '<span class="featured-caption">' . get_post(get_post_thumbnail_id())->post_excerpt . '</span>'; // Grabs Caption associated with the Media File / Image
+				//	the_post_thumbnail();
+				//	echo '<span class="featured-caption">' . get_post(get_post_thumbnail_id())->post_excerpt . '</span>'; // Grabs Caption associated with the Media File / Image
 
 				}
 

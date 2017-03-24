@@ -1,11 +1,3 @@
-<div class="inauguration-footer" style="background-color:#F79926;">
-	<div class="row">
-		<div class="small-6 small-centered">
-			<a href="/inauguration/"><img src="<?php bloginfo('template_directory'); ?>/img/inauguration-footer.png" alt="Pitzer College Inauguration Melvin L. Oliver" width="600" height="131" /></a>
-		</div>
-	</div>
-</div>
-
 <div class="fat-footer small">
 <div class="small-12 large-4 columns">
 
