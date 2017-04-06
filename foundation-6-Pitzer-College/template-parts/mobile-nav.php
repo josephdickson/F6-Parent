@@ -21,5 +21,6 @@
 
     <!-- off-canvas right menu -->
     <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-	<?php get_template_part('template-parts/quicklinks-mobile-menu-walker') ?>
+    <a class="button orange expanded flat" href="<?php echo get_template_directory_uri() . '/html/search.php' ?>">Search</a>
+    <?php get_template_part('template-parts/quicklinks-mobile-menu-walker') ?>
     </div>

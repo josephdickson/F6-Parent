@@ -33,6 +33,8 @@ $the_query = new WP_Query( $args );
 				the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) ); ?>
 				<h2 class="post-title" style="display:inline;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<?php the_excerpt();
+
+				get_template_part('template-parts/edit-post-link');
 			}
 		?>
 

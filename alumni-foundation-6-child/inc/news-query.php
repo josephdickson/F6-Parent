@@ -26,7 +26,8 @@ $the_query = new WP_Query( $args );
 					the_title( '<h1 class="entry-title">', '</h1>' );
 				echo '</a>';
 				the_content();
-			} 
+				get_template_part( 'template-parts/edit-post-link' );
+			}
 		?>
 
 				<?php get_template_part('template-parts/edit-post-link'); ?>

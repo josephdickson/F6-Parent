@@ -45,6 +45,8 @@ li.block{float:none;}
 .home .small {font-size:0.8rem;}
 .home strong.entry-title {font-family: 'EB Garamond', serif; font-size:1.7rem;}
 #font-page-lists li.block a {padding-left:0;}
+/* Front Page */
+.margin-top {margin-top:2rem;}
 /*Fat Footer */
 .off-canvas-content {padding-bottom: 2rem}
 .fat-footer {background-color:#58595b;float:left;width:100%;clear:right;color:#fff;padding:2em;margin-top:0;box-shadow:0px 0px 10px rgba(10, 10, 10, 0.5) inset;}

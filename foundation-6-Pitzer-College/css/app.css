@@ -90,7 +90,7 @@ ul.contact {margin:0;list-style-position:inside;}
 #breadcrumbs a {display:inline;}
 /* Content */
 .main-navigation article a {display:inline;}
-span.edit-link {padding:0;margin:0;}
+span.edit-link {padding:0;margin:0; display: block;}
 /* Global Notices, Warnings, Alerts */
 .alert.callout p, .primary.callout p, .warning.callout p {margin-bottom:0.2rem;}
 /* Sidebar Menu */

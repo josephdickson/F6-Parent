@@ -4,9 +4,9 @@
 $args = array(
 
 	'post_type'	=> 'page',
-	'post__in'	=> array(2714, 2716, 2718, 2110, 2440, 2110, 3182),
+	'post__in'	=> array(2714, 2716, 2718, 2110, 2440, 2110, 5236, 1881),
 	'orderby' => 'post__in', // Order manually by post__in
-	
+
 );
 
 $the_query = new WP_Query($args); // Assign $args to $the_query as an array
@@ -20,9 +20,9 @@ if ( $the_query->have_posts() ) {
 			echo '<div class="column">';
 				if ( has_post_thumbnail() ) {
 					echo '<a href="'. get_permalink() . '">';
-					the_post_thumbnail('thumbnail');
+					the_post_thumbnail('medium');
 					echo '</a>';
-				} 
+				}
 			echo '<a class="button expanded" href="'. get_permalink() . '">' . get_the_title() . '</a>';
 			echo '</div>';
 		}

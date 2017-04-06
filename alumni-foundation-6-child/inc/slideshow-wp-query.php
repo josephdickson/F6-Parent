@@ -17,6 +17,7 @@ if ( $the_query->have_posts() ) {
 <?php
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
+
 			echo ' <li class="orbit-slide">
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
@@ -29,6 +30,7 @@ if ( $the_query->have_posts() ) {
 			if ( '' != $my_excerpt ) {
 				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
 			}
+
 			echo '</div>
 		          </li>';
 			}

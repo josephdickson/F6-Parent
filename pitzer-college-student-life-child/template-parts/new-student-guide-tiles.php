@@ -9,15 +9,16 @@
 /*
  * This array $posts sets manual order of posts based in ID number
  */
+$posts = array( 5366, 5132, 5119, 5130, 5222, 5236, 5123 );
 
-$posts = array( 120, 122, 14, 118, 124, 116 );
+$current_post_ID = get_the_ID(); // the post's id is assigned to $current_post_ID
 
 $args = array(
-	'post_type' => 'post',
-	'posts_per_page' => 6,
-	'post__in' => $posts,
-	'orderby' => 'post__in', // Order manually by $posts order
-	'category_name' => 'Tile',
+    'post_type' => 'page',
+    'posts_per_page' => 6,
+    'post_parent' => 5236,
+    'post__not_in' => array( $current_post_ID ), // Exclude Current page if in array.
+	'orderby' => 'post__in' // Order manually by $posts order
 );
 
 // the query
@@ -25,12 +26,12 @@ $the_query = new WP_Query( $args );
 ?>
 
 <?php if ( $the_query->have_posts() ) : ?>
-
+<div class="row small-up-1 medium-up-2 large-up-3">
 	<!-- pagination here -->
 
 		<!-- the loop -->
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-	<div class="small-12 medium-4 columns tiles">
+	<div class="column">
 				<?php if
 
 					( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -41,12 +42,10 @@ $the_query = new WP_Query( $args );
 				?>
 
 			<strong><a class="button flat orange expanded" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
-
-			<?php get_template_part('template-parts/edit-post-link'); ?>
 	</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->
-
+</div>
 <?php else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
