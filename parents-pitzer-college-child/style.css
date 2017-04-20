@@ -30,7 +30,7 @@ ul#quicklinks-mobile li.menu-item-has-children {padding-top:2em;}
 .orbit {margin-bottom:1em;}
 .orbit button{border-width:0;}
 .orbit button img {display:none;}
-.orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;}
+.orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;display:none;}
 .orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
 nav.orbit-bullets {margin-top:0;}
 /* Tiles */

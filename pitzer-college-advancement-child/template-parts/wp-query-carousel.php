@@ -5,7 +5,7 @@ $the_query = new WP_Query(
 	array(
 			'category_name' => 'Carousel',
 			'orderby' => 'date',
-			'order' => 'ASC',
+			'order' => 'DESC',
 			'posts_per_page' => 4,
 		)
 
@@ -25,10 +25,18 @@ if ( $the_query->have_posts() ) {
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
-//				echo '<a href="' . get_permalink() . '">';
-				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
-//				echo '</a>';
+
+				// check if redirect is set
+				$redirect = get_field('redirect_to_url');
+				if ( '' != $redirect ) {
+					echo '<a href="' . $redirect . '">';
 				}
+				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
+
+				if ( '' != $redirect ) {
+					echo '</a>';
+				}
+			}
 			$my_excerpt = get_the_excerpt();
 			if ( '' != $my_excerpt ) {
 				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
