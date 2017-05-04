@@ -27,7 +27,7 @@ get_header(); ?>
 
 					<div class="small-12 medium-8 columns">
 
-                        <p class="news"><strong><a href="/communications/news/">Featured News</a></strong></p>
+                        <p class="news"><strong><a href="/communications/">Featured News</a></strong></p>
                         <hr>
 						<?php get_template_part('template-parts/news-wp-query'); ?>
 
