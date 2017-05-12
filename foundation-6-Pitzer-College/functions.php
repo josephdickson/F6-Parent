@@ -196,7 +196,7 @@ function foundation_6_parent_scripts() {
 
 	wp_enqueue_style( 'foundation-style',  get_template_directory_uri() . '/css/foundation.min.css' );
     
-    wp_enqueue_style( 'foundation-6-parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'foundation-6-parent-style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_style( 'google-web-font-eb-garamond', 'https://fonts.googleapis.com/css?family=EB+Garamond' );
 
@@ -206,7 +206,7 @@ function foundation_6_parent_scripts() {
 
 	wp_enqueue_script( 'foundation-6-parent-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '20151221', true );
+	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '20151221', false );
 
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/js/foundation.js', array(), '20151221', true );
 

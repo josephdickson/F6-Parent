@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Template Name: 2017 Summer Participant
+ * Template Name: 2017 Commencement
  * 
  */
 
@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class="columns small-12">
 				<?php
 				while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/content', 'page' );
+					get_template_part( 'template-parts/content', 'image' );
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
@@ -23,7 +23,7 @@ get_header(); ?>
 				?>
 
 				<?php   // Participant WP Query
-					get_template_part( 'template-parts/wp-query-2017-summer-participant' ); ?>
+					get_template_part( 'template-parts/wp-query-2017-commencement' ); ?>
 
 			</div>
 		</main><!-- #main -->

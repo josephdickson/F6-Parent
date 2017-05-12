@@ -40,3 +40,15 @@ a.page-numbers {display:inline-block;}
 .page-template-page-staff .row.small-up-1.medium-up-2 .column img {margin-bottom:2rem;}
 /* Post Page */
 p.tags {margin-top:1rem;}
+/* Special Page - Flag */
+.flag {display: block;position: relative;margin-left:-1rem;margin-top:-1rem !important;}
+.flag span {font-size:0.75rem;font-weight:bold;color:#fff;margin-top:0.45rem;}
+.flag:after {background-image:url('/wp-content/themes/pitzer-college-child-communications/img/flag-orange.png');content: '';position: absolute;top: 0; right: 0;  bottom: 0; left: 0;width:160px;height:60px;background-repeat:no-repeat;background-position:right center;}
+.flag span {z-index: 1;padding: 1.2em 0 0 1em;display: block;position: absolute;}
+.flag .arrow-left {width: 0;height: 0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-right:16px solid #c2c2c2;	margin-top:28px;position:relative;float:left;}
+/* Speical Page */
+.callout.special-item {padding-bottom:0;padding-top:0;}
+.callout.special-item img {margin-top:2rem;}
+.callout.special-item p {display:block;min-height:15rem;}
+.social-icons {background-color:#c2c2c2;padding:1rem 0 3rem 0;margin:0 -1rem;font-weight:bold;color:#fff;font-size:0.75rem;padding-right:1.25rem;}
+ul.social-icons li span.share-on {margin-top:0.25rem;display:inline-block;}
