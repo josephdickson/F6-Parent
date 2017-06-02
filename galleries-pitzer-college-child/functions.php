@@ -7,7 +7,7 @@ function art_galleries_scripts() {
 
 ;
 //	Enqueue Stylesheets in proper order
-	wp_enqueue_style( 'reverie-normalize-stylesheet', get_template_directory_uri() . '/css/normailize.css' );
+//	wp_enqueue_style( 'reverie-normalize-stylesheet', get_template_directory_uri() . '/css/normailize.css' );
 	wp_enqueue_style( 'reverie-foundation-stylesheet', get_template_directory_uri() . '/css/foundation.css' );	
 	wp_enqueue_style( 'pitzer-all', get_template_directory_uri() . '/main.css' );
 	wp_enqueue_style( 'reverie-stylesheet', get_stylesheet_uri() );

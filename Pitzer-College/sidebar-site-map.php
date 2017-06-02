@@ -3,16 +3,15 @@
     <div class="small-12 large-2 columns">
 <ul class="small">
     <li><a href="/advancement/">Giving</a></li>
-    <li><a href="/about/directories/">Directories</a></li>
-    <li><a href="/about/emergency-information-preparedness/">Emergency</a></li>
-    <li><a href="/maps/">Campus Maps</a></li>
+    <li><a href="/about/administration/office-directory/">Directories</a></li>
+    <li><a href="/emergency/">Emergency</a></li>
+    <li><a href="/about/maps/">Campus Maps</a></li>
 </ul>
 
 <ul class="tiny">
     <li class="large"><strong><a href="http://pitweb.pitzer.edu/about/">About</a></strong></li>
     <li><a href="/president/">President's Office</a></li>
     <li><a href="/about/administration/">Administration</a></li>
-    <li title="Presidential Annoucement"><a href="http://pitweb.pitzer.edu/6th-president/">Presidential Announcement</a></li>
     <li><a href="/about/claremont-colleges/">The Claremont Colleges</a></li>
 </ul>
     </div>
@@ -21,12 +20,12 @@
 <ul>
     <li class="large"><strong><a href="http://pitweb.pitzer.edu/academics/">Academics</a></strong></li>
 	<li><a href="/registrar/academic-calendar/">Academic Calendar</a></li>
-	<li><a href="http://pitweb.pitzer.edu/clc/">Campus Life Committee</a></li>
-	<li><a href="http://pitweb.pitzer.edu/academics/catalogs/">Course Catalogs</a></li>
-	<li><a href="http://pitweb.pitzer.edu/academics/faculty-achievements/">Faculty Achievements</a></li>
-	<li><a href="http://pitweb.pitzer.edu/academics/faculty/">Faculty Directory</a></li>
-	<li><a href="http://pitweb.pitzer.edu/iglas/fellowships-scholarships/">Fellowships and Scholarships</a></li>
-    	<li><a href="http://pitweb.pitzer.edu/academics/field-groups/">Field Groups</a></li>
+	<li><a href="/clc/">Campus Life Committee</a></li>
+	<li><a href="/academics/catalogs/">Course Catalogs</a></li>
+	<li><a href="/academics/faculty-achievements/">Faculty Achievements</a></li>
+	<li><a href="/academics/faculty/">Faculty Directory</a></li>
+	<li><a href="/iglas/fellowships-scholarships/">Fellowships and Scholarships</a></li>
+    	<li><a href="/academics/field-groups/">Field Groups</a></li>
 </ul>
     </div>
     

@@ -24,7 +24,9 @@ if ( $the_query->have_posts() ) {
 
 		// check if the post has a Post Thumbnail assigned to it.
 		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('medium'); 
+			echo '<a href="' . get_permalink() . '">';
+			the_post_thumbnail('medium');
+			echo '</a>';
 		}
 
 		echo '<h1><a href="' . get_permalink() . '">' . get_the_title() . '</a></h1>';
