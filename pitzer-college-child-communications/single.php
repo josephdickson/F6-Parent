@@ -40,19 +40,27 @@ get_header(); ?>
 					<?php 	// Display all tags for the post
 						the_tags('<p class="tags">Tags: ',', ','</p>') ; ?>
 
-					<?php	// Show last modified date at bottom of page
-						the_modified_date('F j, Y', '<p><span class="published-date"> Page last updated on ', '</span></p>'); ?>
-
 				</div><!-- .columns .large-9 -->
 
-            <div class="small-12 large-3 columns">
+		<div class="small-12 large-3 columns">
 
 			<?php get_template_part('template-parts/sidebar-menu-walker') ?>
 
-	       </div>
+		</div>
+
+	<?php 	// Display Summer 2017 Participant content
+		if ( in_category( 'summer-2017' )) {
+			echo '<div class="row related participant summer-2017">';
+				get_template_part('participant/related-summer-2017');
+			echo '</div>';
+		}
+	?>
+
+	<?php	// Show last modified date at bottom of page
+		the_modified_date('F j, Y', '<p><span class="published-date"> Page last updated on ', '</span></p>'); ?>
+
         </div><!-- #content -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .row -->
-
 <?php get_footer(); ?>

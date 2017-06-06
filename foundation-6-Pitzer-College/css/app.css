@@ -103,3 +103,4 @@ ul#sidebar-menu .menu-item-has-children li {display: none;}
 ul#sidebar-menu .menu-item-has-children a {color:#404040;}
 /*Flexible Fields */
 .row .columns.profile {margin-top:2em;}
+.accordion-title {font-size:1rem;font-weight:bold;}
