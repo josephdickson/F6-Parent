@@ -5,7 +5,8 @@ $the_query = new WP_Query( array( 'category_name' => '2017-commencement' ) );
 
 // The Loop
 if ( $the_query->have_posts() ) {
-	echo '<div class="row small-up-1 medium-up-2 large-up-3">';
+	echo '<div class="row small-up-1 medium-up-2 large-up-4">';
+	echo '<h2 class="entry-title" style="padding-left:1rem;">Commencement</h2>';
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		$posttags = get_the_tags();
@@ -37,7 +38,7 @@ if ( $the_query->have_posts() ) {
 		get_template_part( 'template-parts/edit-post-link' ); 
 
 		echo '<div class="social-icons">';
-		echo '<ul class="social-icons twenty-five">';
+		echo '<ul class="social-icons twenty">';
 		echo '<li><span class="share-on">Share on</span></li>';
 		echo '<li class="Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=' . get_permalink() . '&title=' . get_the_title() . '" target="_blank"><span>Facebook</span></a></li>';
 		echo '<li class="Linkedin"><a href="https://www.linkedin.com/sharing/share-offsite?mini=true&url=' . get_permalink() . '&title=' . get_the_title() . '&source=Pitzer College" target="_blank"><span>LinkedIn</span></a></li>';

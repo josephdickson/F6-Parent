@@ -48,12 +48,13 @@ get_header(); ?>
 
 		</div>
 
-	<?php 	// Display Summer 2017 Participant content
-		if ( in_category( 'summer-2017' )) {
-			echo '<div class="row related participant summer-2017">';
-				get_template_part('participant/related-summer-2017');
-			echo '</div>';
-		}
+	<?php 	/* Display Summer 2017 Participant content
+			if ( in_category( 'summer-2017' )) {
+				echo '<div class="row related participant summer-2017">';
+					get_template_part('participant/related-summer-2017');
+				echo '</div>';
+			} 
+		*/
 	?>
 
 	<?php	// Show last modified date at bottom of page
