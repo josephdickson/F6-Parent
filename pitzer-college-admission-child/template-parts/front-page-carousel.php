@@ -1,13 +1,13 @@
 <?php
 // Query Posts of Category "Front Page"
-$the_query = new WP_Query( array(
+$the_query = new WP_Query( array( 
 	'category_name' => 'Front Page',
     'tag' => 'carousel',
 	'orderby' => 'date',
 	'order' => 'ASC',
 	'posts_per_page' => 5,
 ) );
-
+	
 // The Loop
 if ( $the_query->have_posts() ) {
 ?>
@@ -23,15 +23,15 @@ if ( $the_query->have_posts() ) {
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
 				// echo '<a href="' . get_permalink() . '">';
-				the_post_thumbnail('full', array( 'class' => 'orbit-image' ) );
+				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
 				// echo '</a>';
-				}
-
-				$my_excerpt = get_the_excerpt();
-				if ( '' != $my_excerpt ) {
-					echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
-				}
-				echo '</div>
+				} 
+			
+            $my_excerpt = get_post(get_post_thumbnail_id())->post_excerpt; // Grabs Caption associated with the Media File
+			if (!empty($my_excerpt)) {
+                echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>'; // If the caption exists display a caption
+            }
+			echo '</div>
 		          </li>';
 			}
 ?>

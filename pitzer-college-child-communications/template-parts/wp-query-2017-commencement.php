@@ -6,7 +6,7 @@ $the_query = new WP_Query( array( 'category_name' => '2017-commencement' ) );
 // The Loop
 if ( $the_query->have_posts() ) {
 	echo '<div class="row small-up-1 medium-up-2 large-up-4">';
-	echo '<h2 class="entry-title" style="padding-left:1rem;">Commencement</h2>';
+	echo '<h2 class="entry-title" style="padding-left:1rem;">Commencement 2017</h2>';
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		$posttags = get_the_tags();

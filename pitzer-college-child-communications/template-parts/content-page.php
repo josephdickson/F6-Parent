@@ -13,7 +13,17 @@
 
 				<?php
 					if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+						// If in Summer 2017 Participant or 2017 Commencement link to Summer 2017 Particiapnt
+						if ( in_category ( array( 1075 , 1081 ) ) ) {
+
+							$categories = get_the_category();
+
+							echo the_title( '<p id="breadcrumbs"><a href="' . get_category_link( 1081 ) . '">' .  $categories[0]->name . '</a> » ' , '</p>' ) . '</p>';
+
+						}
+
+						else yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+
 					}
 				?>
 
@@ -34,7 +44,11 @@
 				?>
 
 			<?php 	// Requires Advanced Custom Fields
-				get_template_part( 'acf/acf' , 'flexible-fields' ); ?>
+				get_template_part( 'acf/acf' , 'flexible-fields' ); 
+
+				get_template_part( 'template-parts/acf' , 'gallery' );
+
+			?>
 
 			</div><!-- .entry-content -->
 

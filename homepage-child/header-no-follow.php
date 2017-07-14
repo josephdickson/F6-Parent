@@ -20,9 +20,28 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<?php
+// if the page has a redirect "requires Advanced Custom Fields"
+$redirect = get_field('redirect_to_url');
+
+	if ($redirect) { ?>
+
+		<script type="text/javascript">
+		<!--
+		window.location = "<?php echo $redirect; ?>"
+		//-->
+		</script>
+
+	<?php } ?>
+
 </head>
 
 <body <?php body_class(); ?>>
+
+
+
+
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'foundation-6-Pitzer-College' ); ?></a>

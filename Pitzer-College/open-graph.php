@@ -21,7 +21,7 @@ function insert_fb_in_head() {
 
         echo '<meta property="og:site_name" content="Pitzer College"/>';
 	if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-		$default_image="http://pitweb.pitzer.edu/wp-content/uploads/2013/11/pitzer_logo_sans_colleges_orange.gif"; //replace this with a default image on your server or an image in your media library
+		$default_image= get_template_directory_uri() . "/images/pitzer_logo_sans_colleges_orange.gif"; //replace this with a default image on your server or an image in your media library
 		echo '<meta property="og:image" content="' . $default_image . '"/>';
 	}
 	else{

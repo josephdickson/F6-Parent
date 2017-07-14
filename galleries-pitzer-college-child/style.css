@@ -33,7 +33,7 @@ CSS Document
 	red:				#ee2c3b
 	yellow: 			#ffce00
 	tan:				#e8d9b5
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 	# Accessibility
 --------------------------------------------------------------*/
 	/* Text meant only for screen readers. */
@@ -70,7 +70,6 @@ CSS Document
 		outline: 0;
 	}
 
-*/
 .profile img {padding-top:0;}
 
 /* banner above top navigation */
@@ -91,6 +90,8 @@ nav.top-bar ul li.menu-item a:visited {color: #58595b;}
 
 nav.top-bar ul li.menu-item a:hover,
 nav.top-bar ul li.menu-item a:active {background-color: #F1F8FA;}
+
+.disable a {color:#58595b; cursor:text;}
 
 .top-bar-section ul li.divider {height:0;}
 

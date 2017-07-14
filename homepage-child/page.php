@@ -12,7 +12,7 @@
  * @package presidential-transition
  */
 
-get_header(); ?>
+get_header('no-follow'); ?>
 <div class="row">
 	<div id="primary" class="content-area columns small-12">
 		<main id="main" class="site-main" role="main">

@@ -15,3 +15,15 @@ function register_sidebar_menu() {
   register_nav_menu('foundation-6-sidebar',__( 'Sidebar Menu' ));
 }
 add_action( 'init', 'register_sidebar_menu' );
+
+
+/**
+ *  dequeue the foundation version of jquery for wordpress, this will break search and quicklinks etc.
+ */
+
+function dequeue_jquery_script() {
+//    wp_dequeue_script( 'jquery' );
+    wp_dequeue_script( 'foundation-jquery' );
+    wp_dequeue_script( 'app-js' );
+}
+add_action( 'wp_print_scripts', 'dequeue_jquery_script', 100 );

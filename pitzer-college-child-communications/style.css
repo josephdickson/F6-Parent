@@ -33,6 +33,8 @@ Text Domain: homepage-child
 .archive .category-in-the-news,
 .archive .category-in-the-news a h1.entry-title {display:inline;}
 .archive .category-in-the-news a h1.entry-title {font-size:1.5rem;}
+figure.wp-caption.alignleft {margin-left:0;}
+.entry-content {margin-top:0.5em;}
 /* Pagination */
 a.page-numbers {display:inline-block;}
 /* Staff Page */
@@ -54,7 +56,10 @@ p.tags {margin-top:1rem;}
 .callout.special-item h1 {margin:0.1em 0;}
 .callout.special-item h1 a {font-size:0.9rem;line-height:1.3rem;display:block;min-height:2.5em;font-family:sans-serif;}
 .social-icons {background-color:#DEDEDE;padding:0.15rem 0 1.55rem 0;margin:0 -1rem;font-weight:bold;color:#58595b;font-size:0.75rem;padding-right:1.25rem;}
-ul.social-icons li span.share-on {margin-top:0.1rem;display:inline-block;padding-left:1rem;padding-right:0.5rem;}
+ul.social-icons li span.share-on {margin-top:0.1rem;display:inline-block;padding-left:1rem;padding-bottom:2em;}
+span.return-to-participant {margin-top:0.8rem;display:inline-block;float:right;}
+.off-canvas-wrapper div.social-icons {background-color:#dedede;}
+
 .callout.special-item ul.social-icons li {margin:0.1rem;}
 /* Spring Participant */
 .category-spring-2016 .flag:after {display:none;}
@@ -89,3 +94,24 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 /* .participant-plus .content p:first-child:first-letter { font-size:2em; } */
 /* .participant-plus.small-12.large-3.columns.radius:nth-of-type(5n+1) {clear:left;} */
 img.participant-plus-icon-cover {max-width: 35%;margin-top:-12% !important;padding-bottom:1em;}
+.participant-plus.cover {font-size:0.8rem;}
+.participant-plus.cover .edit-link {font-size:1rem;}
+.category-summer-2017 .participant-plus ul {padding:0;margin:0;list-style:none;}
+.category-summer-2017 .participant-plus li {}
+.category-summer-2017 .participant-plus li::before {content: "■ ";color: #f7941d;padding-right:0.3rem;font-size:2rem;line-height:1.2rem;}
+.category-summer-2017 .participant-plus li.gray::before {color:#58595b;}
+.category-summer-2017 .participant-plus li.blue::before {color:#20438F;}
+.category-summer-2017 .participant-plus li.light-blue::before {color:#64B0C4;}
+.category-summer-2017 .participant-plus li.yellow::before {color:#FFCF01;}
+.category-summer-2017 .participant-plus li.green::before {color:#7A941D;}
+/* Photo Gallery */
+.reveal.small a.previous,
+.reveal.small a.next {display:block;width:50%;position:absolute;top:15%;padding:28% 2%;}
+.reveal.small a.previous {float:left;left:0;text-align:left;}
+.reveal.small a.next {float:right;right:0;text-align:right;}
+.reveal.small a.previous span,
+.reveal.small a.next span {display:none;}
+.reveal.small a.previous img,
+.reveal.small a.next img {display:inline;}
+.reveal.small.first-image a.previous,
+.reveal.small.last-image a.next {display:none;}

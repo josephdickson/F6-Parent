@@ -1,11 +1,18 @@
 <?php
+$posts = array( '7487', '7491', '7494', '7506' );
 
 // The Query
-$the_query = new WP_Query( array( 'category_name' => 'summer-2017', 'tag' => 'inauguration-photos, inauguration-video' ) );
+$the_query = new WP_Query( 
+	array( 'category_name' => 'summer-2017', 
+	'post__in' => $posts,
+	'orderby' => 'post__in', // Order manually by $posts order
+	 )
+);
 
 // The Loop
 if ( $the_query->have_posts() ) {
 	echo '<div class="row small-up-1 medium-up-2 large-up-4">';
+	echo '<h2 class="entry-title" style="padding-left:1rem;display:block;">Inauguration</h2>';
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		$posttags = get_the_tags();

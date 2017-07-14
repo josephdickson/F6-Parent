@@ -36,15 +36,4 @@ get_header(); ?>
 
 <?php
 
-/**
- *  dequeue the foundation version of jquery for wordpress, this will break search and quicklinks etc.
- */
-
-function dequeue_jquery_script() {
-//    wp_dequeue_script( 'jquery' );
-    wp_dequeue_script( 'foundation-jquery' );
-    wp_dequeue_script( 'app-js' );
-}
-add_action( 'wp_print_scripts', 'dequeue_jquery_script', 100 );
-
 get_footer(); ?>

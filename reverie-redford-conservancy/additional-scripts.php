@@ -1,0 +1,2 @@
+<script type='text/javascript' src='http://pitweb.pitzer.edu/test/wp-content/themes/reverie-redford-conservancy/js/foundation.interchange.js'></script>
+<script type='text/javascript' src='http://pitweb.pitzer.edu/test/wp-content/themes/reverie-redford-conservancy/js/foundation/foundation.magellan.js'></script>

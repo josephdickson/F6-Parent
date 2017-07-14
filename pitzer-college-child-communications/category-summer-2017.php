@@ -3,9 +3,9 @@
 <!-- Row for main content area - category.php -->
 	<div class="small-12" role="main">
 
-		<div class="background-top" style="height:0px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r1_c1.jpg')"></div>
+		<div class="background-top" style="height:641px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r1_c1.jpg')"></div>
 
-		<div class="cover row" style="margin-top:0px;">
+		<div class="cover row" style="margin-top:-641px;">
 
 			<?php
 				// Participant Cover
@@ -23,7 +23,7 @@
 
 			?>
 
-			<div class="background-bottom" style="height:753px;width:100%;margin-top:-753px;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r2_c1.jpg')"></div>
+			<div class="background-bottom" style="height:553px;width:100%;margin-top:-553px;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r2_c1.jpg')"></div>
 
 		</div>
 
@@ -38,16 +38,34 @@
 
 		</div>
 
-			<div class="around-the-mounds">
 
-				<div class="background-top" style="height:627px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Around The Mounds Background_r1_c1.jpg')"></div>
+			<div class="spotlights">
 
-					<div style="margin-top:-550px;">
+				<div class="background-top" style="height:676px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Around The Mounds Background_r1_c1.jpg')"></div>
+
+					<div style="margin-top: -580px;"></div>
+						<?php
+							// Around the Mounds
+							get_template_part('/participant/participant-plus-wp-query-2017-spotlights'); 
+						?>
+					
+
+
+				<div class="background-bottom"></div>
+
+			</div>
+
+
+
+			<div class="around-the-mounds" style="margin-top:210px;">
+
 				
 					<?php
 						// Around the Mounds
 						get_template_part('/participant/participant-plus-wp-query-2017-around-the-mounds'); 
 					?>
+
+				<div class="background-bottom" style="height:396px;width:100%;margin-top:-200px;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Around The Mounds Background_r2_c1.jpg');"></div>
 
 			</div>
 

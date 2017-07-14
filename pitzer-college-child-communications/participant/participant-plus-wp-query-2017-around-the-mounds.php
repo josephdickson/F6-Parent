@@ -1,7 +1,15 @@
 <?php
 
+$posts = array( '7844', '7729', '7517', '7512' ); // Order manually by $posts order
+
 // The Query
-$the_query = new WP_Query( array( 'category_name' => 'summer-2017', 'tag' => 'career-services, student-senate, distinguished-scientist-lecture, alumni-weekend' ) );
+$the_query = new WP_Query(
+	array(
+		'category_name' => 'summer-2017',
+		'post__in' => $posts,
+		'orderby' => 'post__in', // Order manually by $posts order
+		)
+);
 
 // The Loop
 if ( $the_query->have_posts() ) {

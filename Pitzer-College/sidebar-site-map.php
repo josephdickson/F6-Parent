@@ -9,7 +9,7 @@
 </ul>
 
 <ul class="tiny">
-    <li class="large"><strong><a href="http://pitweb.pitzer.edu/about/">About</a></strong></li>
+    <li class="large"><strong><a href="/about/">About</a></strong></li>
     <li><a href="/president/">President's Office</a></li>
     <li><a href="/about/administration/">Administration</a></li>
     <li><a href="/about/claremont-colleges/">The Claremont Colleges</a></li>
@@ -18,7 +18,7 @@
     
     <div class="small-12 large-2 columns tiny">
 <ul>
-    <li class="large"><strong><a href="http://pitweb.pitzer.edu/academics/">Academics</a></strong></li>
+    <li class="large"><strong><a href="/academics/">Academics</a></strong></li>
 	<li><a href="/registrar/academic-calendar/">Academic Calendar</a></li>
 	<li><a href="/clc/">Campus Life Committee</a></li>
 	<li><a href="/academics/catalogs/">Course Catalogs</a></li>
@@ -46,8 +46,8 @@
 	<li><a href="https://mycampus2.pitzer.edu/ics/">MyCampus2 Portal</a></li>
 	<li><a href="/human-resources/">Human Resources</a></li>
 	<li><a href="https://mail.google.com/a/students.pitzer.edu">Email for Students</a></li>
-	<li><a href="https://www.pitzer.edu/email">Email for Faculty &amp; Staff</a></li>
-	<li title="Access Lynda.com"><a href="http://pitweb.pitzer.edu/information-technology/services/lynda/" target="_blank">Lynda.com</a></li>
+	<li><a href="https://pitweb2.pitzer.edu/email">Email for Faculty &amp; Staff</a></li>
+	<li title="Access Lynda.com"><a href="/information-technology/services/lynda/" target="_blank">Lynda.com</a></li>
 	<li title="Box Cloud Storage"><a href="https://pitzer.app.box.com/login">Box Cloud Storage</a></li>
 	<li><a href="https://sakai.claremont.edu:8443/portal/site/">Sakai</a></li>
 	<li><a href="http://copyright.claremont.edu/index.html" title="The Claremont Colleges and Copyright" target="_blank">Copyright Policy</a></li>
