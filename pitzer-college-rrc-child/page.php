@@ -28,13 +28,15 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
+
+				<?php get_template_part( 'acf' , 'promotional-tiles' ); ?>	
 			</div>
 
 			<div class="small-12 large-3 columns">
 
-		      <?php get_template_part('template-parts/sidebar-menu-walker') ?>
+				<?php get_template_part('template-parts/sidebar-menu-walker') ?>
 
-	       </div>
+		       </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

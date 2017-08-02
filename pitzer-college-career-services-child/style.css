@@ -1,0 +1,21 @@
+/*
+Theme Name: Pitzer College Career Services Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: pitzer-college-child
+*/
+.home #content {margin-top:1rem;}
+.home #content ul {list-style:none;}
+.home li.menu-item-has-children.menu-header a {font-weight:bold;color:#000;display:block;margin:0.5rem 0;}
+.home li.menu-item-has-children.menu-header ul.sub-menu li.menu-item a:link {font-weight:normal;color:#4E83D6;}
+.home li.menu-item-has-children.menu-header ul.sub-menu li.menu-item a:visited {font-weight:normal;color:#4E83D6;}
+.home li.menu-item-has-children.menu-header ul.sub-menu li.menu-item a:hover {font-weight:normal;color:#4169E1;}
+.home li.menu-item-has-children.menu-header ul.sub-menu li.menu-item a:active {font-weight:normal;color:#4E83D6;}
+.home .button.flat.expanded.tile {margin-bottom:0;}

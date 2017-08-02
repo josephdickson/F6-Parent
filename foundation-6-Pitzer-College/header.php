@@ -39,11 +39,10 @@
 
 			<div class="row">
 				<?php get_template_part('template-parts/quicklinks-menu-walker') ?>
-			</div>
 
-			<div class="row">
 				<div class="medium-6 columns float-right">
-				<?php get_template_part('template-parts/search-form') ?>
+					<?php get_template_part('template-parts/widget-google-search'); ?>
+					<?php echo do_shortcode( '[wp_google_searchbox]' ); ?>
 				</div>
 			</div>
 

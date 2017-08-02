@@ -261,3 +261,6 @@ require get_template_directory() . '/inc/options-page.php';
 
 /* Flexible Content - Requires Advanced Custom Fields */
 require get_template_directory() . '/inc/flexible-content.php';
+
+/* Google Search - Requires WP Google Search https://wordpress.org/plugins/wp-google-search/ */
+require get_template_directory() . '/inc/google-search.php';
