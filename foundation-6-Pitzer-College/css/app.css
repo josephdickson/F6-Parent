@@ -111,3 +111,7 @@ ul#sidebar-menu .menu-item-has-children a {color:#404040;}
 	}
 	 h1.entry-title {font-size:1.6rem;line-height:1.75rem;}
 }
+
+/* Fix margin issue on rows */
+.row .row {margin:0;} 
+
