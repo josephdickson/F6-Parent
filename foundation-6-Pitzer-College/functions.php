@@ -264,3 +264,12 @@ require get_template_directory() . '/inc/flexible-content.php';
 
 /* Google Search - Requires WP Google Search https://wordpress.org/plugins/wp-google-search/ */
 require get_template_directory() . '/inc/google-search.php';
+
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
