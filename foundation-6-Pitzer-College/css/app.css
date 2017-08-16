@@ -111,6 +111,23 @@ ul#sidebar-menu .menu-item-has-children a {color:#404040;}
 	}
 	 h1.entry-title {font-size:1.6rem;line-height:1.75rem;}
 }
+/* Print Stylesheet */
+@media print {
+	div.fat-footer,
+	nav.main-navigation,
+	div.sidebar-menu,
+	header#masthead,
+	ul#quicklinks-menu.align-right {display:none;}
+	.content-area p, .content-area ul, .content-area ol, .content-area blockquote {font-size:0.8rem;line-height:0.95rem;margin-bottom:0.5rem;}
+	.content-area img,
+	.content-area ul,
+	.content-area ol {page-break-inside: avoid;}
+	.content-area img,
+	.content-area hr,
+	.content-area p.tags {display:none;}
+	.content-area h1.entry-title {font-size:1.2rem;}
+	
+}
 
 /* Fix margin issue on rows */
 .row .row {margin:0;} 
