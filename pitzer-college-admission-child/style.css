@@ -22,6 +22,7 @@ strong.entry-title {padding:0.5em 0;display: inline-block;font-size:1.4rem;line-
 a strong.entry-title {color:#2655a0;}
 .home span.published-date {float:none;font-size:0.9rem;}
 .home li.small {font-size: 0.9rem;}
+.home li.extra-small {font-size: 0.75rem;}
 /* Landing Page Tiles */
 .home a span.button:hover {text-decoration:none;}
 .home a span.button {color:#000;}

@@ -27,13 +27,15 @@ $categories = get_the_category();
             <?php
                 if ( in_category('In the News') ) {
                         the_post_thumbnail( array(200,200, 'class' => ' alignleft') );
-                    ?>
 
-                <header>
-			<h2><a class="block" href="<?php the_field('redirect_to_url'); ?>"><?php the_title(); ?></a></h2>
-		</header>
+			if (get_field('defunct_url')) {
 
-                <?php }
+					echo '<a href="' . get_permalink() .'"><h1 class="entry-title"><h1 class="entry-title">' . get_the_title() . '</h1></a>' ;
+					
+					}
+
+					else echo '<a href="'. get_field('redirect_to_url') . '" target="_blank"><h1 class="entry-title">' . get_the_title() . '</h1></a>' ;
+			}
 
                 elseif ( in_category('Video') ) {
 

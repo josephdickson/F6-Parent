@@ -15,9 +15,11 @@ if ( in_category( 'press-release' ) ) {
 	if ( $the_query->have_posts() ) {
 		while ( $the_query->have_posts() ) {
 			$the_query->the_post();
+			echo '<div class="about-pitzer-college-info">';
 			echo '<p><strong>' . get_the_title() . '</strong></p>';
 			the_content();
 			get_template_part( 'template-parts/edit-post-link' );
+			echo '</div>';
 		}
 		/* Restore original Post Data */
 		wp_reset_postdata();
@@ -38,9 +40,11 @@ if ( in_category( 'press-release' ) ) {
 		if ( $the_query->have_posts() ) {
 			while ( $the_query->have_posts() ) {
 				$the_query->the_post();
+				echo '<div class="sagehen-athletics-info">';
 				echo '<p><strong>' . get_the_title() . '</strong></p>';
 				the_content();
 				get_template_part( 'template-parts/edit-post-link' );
+				echo '</div>';
 			}
 			/* Restore original Post Data */
 			wp_reset_postdata();
@@ -61,9 +65,11 @@ if ( in_category( 'press-release' ) ) {
 		if ( $the_query->have_posts() ) {
 			while ( $the_query->have_posts() ) {
 				$the_query->the_post();
+				echo '<div class="pitzer-art-galleries-info">';
 				echo '<p><strong>' . get_the_title() . '</strong></p>';
 				the_content();
 				get_template_part( 'template-parts/edit-post-link' );
+				echo '</div>';
 			}
 			/* Restore original Post Data */
 			wp_reset_postdata();
@@ -84,9 +90,11 @@ if ( in_category( 'press-release' ) ) {
 		if ( $the_query->have_posts() ) {
 			while ( $the_query->have_posts() ) {
 				$the_query->the_post();
+				echo '<div class="keck-science-info">';
 				echo '<p><strong>' . get_the_title() . '</strong></p>';
 				the_content();
 				get_template_part( 'template-parts/edit-post-link' );
+				echo '</div>';
 			}
 			/* Restore original Post Data */
 			wp_reset_postdata();
@@ -107,9 +115,11 @@ if ( in_category( 'press-release' ) ) {
 		if ( $the_query->have_posts() ) {
 			while ( $the_query->have_posts() ) {
 				$the_query->the_post();
+				echo '<div class="media-contact">';
 				echo '<p><strong>' . get_the_title() . '</strong></p>';
 				the_content();
 				get_template_part( 'template-parts/edit-post-link' );
+				echo '</div>';
 			}
 			/* Restore original Post Data */
 			wp_reset_postdata();
@@ -133,14 +143,25 @@ if ( in_category( 'in-the-news' ) ) {
 
 		}
 
-		echo '<div class="entry-content">';
+		if (get_field('defunct_url')) {
 
-		if (get_field('publication_name')) { echo 'Read the article at<br /><strong><em><a href="'. get_field('redirect_to_url') . '" target="_blank">' . get_field('publication_name') . '</a></em></strong>';}
+			if (get_field('publication_name')) { echo 'This article published on ' . get_the_date() . ' is no longer available on <strong><em>' . get_field('publication_name') . '</em></strong> website.';}
 
-		echo '</div><!-- .entry-content -->';
+		}
+
+		else {
+
+			echo '<div class="entry-content">';
+
+			if (get_field('publication_name')) { echo 'Read the article at<br /><strong><em><a href="'. get_field('redirect_to_url') . '" target="_blank">' . get_field('publication_name') . '</a></em></strong>';}
+
+			echo '</div><!-- .entry-content -->';
+		
+		}
 
 	} else { // no posts found
 
 	}
+
 }
 ?>

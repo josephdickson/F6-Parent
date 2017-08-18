@@ -1,7 +1,7 @@
 <div class="fat-footer small">
 <div class="small-12 large-4 columns">
 
-<a href="http://www.pitzer.edu/"><img src="<?php echo get_template_directory_uri(); ?>/img/pitzer_logo_sans_colleges_white-transparent.png" alt="Pitzer College Logo" width="279" height="91" /></a>
+<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/pitzer_logo_sans_colleges_white-transparent.png" alt="Pitzer College Logo" width="279" height="91" /></a>
 <?php
 	if(function_exists('get_field')){
 		// Footer Contact Information

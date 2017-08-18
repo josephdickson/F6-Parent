@@ -39,7 +39,16 @@
 					} 
 
 					echo '<header id="content" class="entry-header">';
-					echo '<a href="'. get_field('redirect_to_url') . '" target="_blank"><h1 class="entry-title">' . get_the_title() . '</h1></a>' ;
+					
+					// Check if URL is listed as defunct in the post - requires advanced custom fields
+					if (get_field('defunct_url')) {
+
+					echo '<a href="' . get_permalink() .'"><h1 class="entry-title"><h1 class="entry-title">' . get_the_title() . '</h1></a>' ;
+					
+					}
+
+					else echo '<a href="'. get_field('redirect_to_url') . '" target="_blank"><h1 class="entry-title">' . get_the_title() . '</h1></a>' ;
+
 					echo '</header><!-- .entry-header -->';
 
 					echo '<div class="entry-content">';

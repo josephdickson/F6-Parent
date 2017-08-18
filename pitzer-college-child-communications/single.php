@@ -40,6 +40,9 @@ get_header(); ?>
 					<?php 	// Display all tags for the post
 						the_tags('<p class="tags">Tags: ',', ','</p>') ; ?>
 
+					<?php	// Show last modified date at bottom of page
+						the_modified_date('F j, Y', '<p><span class="published-date"> Page updated on ', '</span></p>'); ?>
+
 				</div><!-- .columns .large-9 -->
 
 		<div class="small-12 large-3 columns">
@@ -57,8 +60,6 @@ get_header(); ?>
 		*/
 	?>
 
-	<?php	// Show last modified date at bottom of page
-		the_modified_date('F j, Y', '<p><span class="published-date"> Page last updated on ', '</span></p>'); ?>
 
         </div><!-- #content -->
 		</main><!-- #main -->

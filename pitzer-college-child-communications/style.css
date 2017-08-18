@@ -115,3 +115,8 @@ img.participant-plus-icon-cover {max-width: 35%;margin-top:-12% !important;paddi
 .reveal.small a.next img {display:inline;}
 .reveal.small.first-image a.previous,
 .reveal.small.last-image a.next {display:none;}
+/* Hide boiler plates on special press releases where they're included with others */
+body.postid-8378 div.media-contact,
+body.postid-8378 div.pitzer-art-galleries-info,
+body.postid-8378 div.about-pitzer-college-info {display:none;}
+body.postid-8378 h1.entry-title {font-size:1.75em;}

@@ -1,7 +1,8 @@
-function sidebarMenu( jQuery ) {
+jQuery(document).ready(function($){
+
 	// Check that foundation is ready
 	$(document).foundation();
-	
+
 	// Adds display block to active Sidebar accordion so it loads open
 	$(".active").parent().css("display", "block");
     
@@ -14,6 +15,5 @@ function sidebarMenu( jQuery ) {
 	// remove class of active if the menu item is located in the same site as the menu
 	$( "#quicklinks-menu .is-dropdown-submenu-parent" ).removeClass( "active" );
 	//   $( "#quicklinks-menu .submenu.menu.vertical.is-dropdown-submenu.first-sub").css("display", "none");
-};
 
-$( document ).ready( sidebarMenu );
+});
