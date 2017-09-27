@@ -76,7 +76,7 @@ span.button.flat.orange:hover {color:#fff;background-color:#dd6e10;}
 .off-canvas-content {}
 .fat-footer {background-color:#58595b;float:left;width:100%;clear:right;color:#fff;padding:2em;margin-top:0;box-shadow:0px 0px 10px rgba(10, 10, 10, 0.5) inset;}
 .fat-footer li {float:none;}
-.fat-footer li a {color:#fff;padding:0.35em;font-size:0.8rem;}
+.fat-footer li a {color:#fff;padding:0.35em;font-size:0.8rem;line-height:1.2em;}
 .fat-footer li a:hover {color:#f1f1f1;text-decoration:underline;}
 .fat-footer ul {list-style:none;}
 .fat-footer li.bold a {font-weight:bold;font-size:0.9rem;}
