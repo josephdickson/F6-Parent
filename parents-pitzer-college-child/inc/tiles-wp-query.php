@@ -26,13 +26,13 @@ $the_query = new WP_Query( $args );
 		<!-- the loop -->
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	<div class="columns tiles">
-				<?php 
+				<?php
 					$tile_image = get_field('homepage_tile_image');
 					$featured_image = get_the_post_thumbnail();
 
 					if ( $tile_image ) { // Display Homepage Tile if set in post
 						echo '<a href="' . get_permalink() . '">';
-						echo '<img src="' . $tile_image['url'] . '">' ;
+						echo '<img src="' . $tile_image['url'] . '" alt="' . $tile_image['alt'] . '">' ;
 						echo '</a>';
 					}
 
@@ -40,11 +40,14 @@ $the_query = new WP_Query( $args );
 						echo '<a href="' . get_permalink() . '">';
 							the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
 						echo '</a>';
+
 						}
 				?>
 
 
 			<strong><a class="button flat orange expanded" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+
+			<?php get_template_part('template-parts/edit-post-link'); ?>
 	</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->

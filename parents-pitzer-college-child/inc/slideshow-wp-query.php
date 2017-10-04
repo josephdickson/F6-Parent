@@ -4,7 +4,7 @@ $the_query = new WP_Query( array(
 	'category_name' => 'Slideshow',
 	'orderby' => 'date',
 	'order' => 'DESC',
-//	'posts_per_page' => 4,
+	'posts_per_page' => 4,
 ) );
 
 // The Loop
@@ -24,6 +24,8 @@ if ( $the_query->have_posts() ) {
 				echo '<a href="' . get_permalink() . '">';
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
 				echo '</a>';
+
+				get_template_part('template-parts/edit-post-link');
 				}
 				$my_excerpt = get_post(get_post_thumbnail_id())->post_excerpt; // Grabs Caption associated with the Media File
 				if (!empty($my_excerpt)) {

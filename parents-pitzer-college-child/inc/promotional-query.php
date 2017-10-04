@@ -23,7 +23,12 @@ $the_query = new WP_Query( $args );
 			}
 		?>
 
-		<?php the_content(); ?>
+		<?php 
+			the_content();
+
+			get_template_part('template-parts/edit-post-link');
+		?>
+
 	<?php endwhile; ?>
 	<!-- end of the loop -->
 
