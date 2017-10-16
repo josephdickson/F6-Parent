@@ -1,0 +1,61 @@
+/*
+ Theme Name:   Alumni Relations Pitzer College Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Foundation 6 Child Theme
+ Author:       Joseph Dickson
+ Author URI:   http://www.linuxbookpro.com.com
+ Template:     foundation-6-Pitzer-College
+ Version:      1.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         Foundation 6 by Zurb
+ Text Domain:  foundation-6-child
+*/
+h1,h2 {font-size:2rem;}
+h3,h4,h5,h6 {font-size:1.5rem;}
+/* Top Bar Menu */
+.top-bar, .top-bar ul {background-color:#58595b;font-size:1.2rem;}
+.off-canvas .menu li {display: block;padding: 0.7rem auto;line-height: 1;width:100%;background-color:#fff;}
+.top-bar, #masthead #quicklinks-menu,h1,h2,h3,h4,h5,h6 {font-family: 'EB Garamond', serif;}
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {border-color: transparent transparent transparent #f7941d;}
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {border-color: #f7941d transparent transparent transparent;}
+div.top-bar a {color:#fff;}
+div.top-bar li.is-submenu-item a {color:#58595b;}
+/* Sidebar */
+#menu-sidebar.menu > li:not(.menu-text) > a {line-height:1.2em;}
+#menu-sidebar ul li a {padding-left:0;padding-right:0;display:block;}
+/* Quicklinks Menu */
+.top-bar-quicklinks #quicklinks-menu a {font-size:0.9rem; text-decoration:none;}
+#quicklinks-menu .first-sub.js-dropdown-active {margin-top:0;}
+ul#quicklinks-mobile ul.nested {left:0;display:block;width:100%;position:relative;float:left;margin-top:-2em;margin-left:0;}
+ul#quicklinks-mobile li.menu-item-has-children {padding-top:2em;}
+/* Slideshow */
+.orbit button{border-width:0;}
+.orbit button img {display:none;}
+.orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;}
+.orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
+nav.orbit-bullets {margin-top:0;}
+/* Tiles */
+.tiles {margin-bottom:0rem;margin-top:2rem;}
+.tiles a.button {margin:0;color:#fff;background-color:#f7941d;}
+.tiles a.button:hover {background-color:#E1871A;}
+.tiles:nth-child(4) {clear:left;}
+/* Front Page Lists  */
+li.block{float:none;}
+.home .small {font-size:0.8rem;}
+.home strong.entry-title {font-family: 'EB Garamond', serif; font-size:1.7rem;}
+#font-page-lists li.block a {padding-left:0;}
+/* Front Page */
+.margin-top {margin-top:2rem;}
+/*Fat Footer */
+.off-canvas-content {padding-bottom: 2rem}
+.fat-footer {background-color:#58595b;float:left;width:100%;clear:right;color:#fff;padding:2em;margin-top:0;box-shadow:0px 0px 10px rgba(10, 10, 10, 0.5) inset;}
+.fat-footer li {float:none;}
+.fat-footer li a {color:#fff;}
+.fat-footer li a:hover {color:#f1f1f1;text-decoration:underline;}
+/* Yoast Breadcrumbs */
+#breadcrumbs {font-size:0.8em;margin-top:0.5em;}
+#breadcrumbs a {display:inline;}
+/* Content */
+.main-navigation article a {display:inline;}
+span.edit-link {padding:0;margin:0;}

@@ -1,0 +1,18 @@
+/*
+Theme Name: Pitzer College Emergency Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: pitzer-college-child
+*/
+body.page-id-29 h1.entry-title {text-align:center; text-transform: uppercase; font-size:3.5em;color: #000066; font-family: Helvetica, Arial sans-serif; font-weight:bold !important;}
+body.page-id-29 .entry-content {margin-top: 0;}
+body.page-id-29 h2 {font-size: 2.5em; line-height: 1em;display: block; color: #000066; font-family: Helvetica, Arial sans-serif;}
+body.page-id-29 table tbody tr {background: none;}
+body.page-id-29 table tbody {border-width: 0;}

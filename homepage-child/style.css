@@ -1,0 +1,63 @@
+/*
+Theme Name: Homepage Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: homepage-child
+*/
+#news .columns {padding-top:0.8375em;}
+#news a p {color:#58595b; text-decoration: none;}
+#news strong.entry-title {margin:0 0 0.5em 0;font-size:1.3rem;line-height:1em;font-weight: normal; font-family: "EB Garamond",serif;}
+#news h3, #news h4 {margin:0 0 0 0.5em;}
+#news ul li {list-style:none;margin:0 0 0 0.75em;}
+#news .row .columns .row {margin-bottom:0.9375rem;}
+#news p.events, #news p.news {font-size:1.25rem;margin-bottom:0.25rem;}
+#news hr {margin-top:0;margin-bottom:0;}
+ul.events {margin:0;list-style-position:inside;}
+span.published-date{float:none;}
+/* Slideshow */
+.orbit {margin-bottom:1em;}
+.orbit button{border-width:0;}
+.orbit button img {display:none;}
+.orbit button.orbit-next, .orbit button.orbit-previous {background-color:rgba(0,0,0,.5);box-shadow:none;}
+.orbit button.orbit-next:hover, .orbit button.orbit-previous:hover {background-color:rgba(0,0,0,.9)}
+nav.orbit-bullets {margin-top:0;}
+#tiles .columns img {border:1px solid #f1f1f1;}
+.small-12.medium-3.medium-offset-1.columns img {padding-bottom: 1em; margin-bottom: 1em;}
+/* Events */
+ol.tribe-list-widget {list-style-type: none;margin:0;}
+#news ol.tribe-list-widget h4 {margin:0;font-size:1rem;}
+h4.tribe-event-title {font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; font-weight: normal;margin-left:0;}
+.homepage-events .rounded {margin-bottom:0.75em;margin-top:0.25rem;display:block;}
+.tribe-event-duration {font-size: 0.8rem;margin-bottom:1rem;}
+.homepage-events strong.events {font-size:1.25rem;margin-bottom:0.25rem;}
+#news ul.events li {margin: 0.5rem 0.5rem 0.5rem 0;}
+.home .tribe-mini-calendar-event .list-date {background-color:#f7941d;}
+.home .tribe-mini-calendar-event .list-info h2 {font-size: 1.3rem;font-weight: normal;line-height:1.3rem;}
+.home .tribe-mini-calendar-event .list-date {width:10%;margin-right:0.9375rem;}
+.home .tribe-mini-calendar-event .list-date .list-daynumber {color:#000;font-size:1rem;}
+.home .tribe-mini-calendar-event .list-date .list-dayname {font-size:0.9rem;}
+.home .tribe-events-widget-link {display: none;}
+.home .tribe-mini-calendar-event {border-bottom-width:0;margin-bottom:0;}
+/* Events Calendar */
+.expanded.button-group a.button {color:#fff;font-size:1.1rem;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] {background-color:#58595b;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] a {background-color:#58595b;color:#fff;}
+body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past a, body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {color:#58595b;}
+.tribe-events-calendar td.tribe-events-past h3.tribe-events-month-event-title a {color:#114b7d;}
+.homepage-events .tribe-events-location, .homepage-events .tribe-events-duration {display: inline-block;padding:0;margin:0;}
+.homepage-events .tribe-event-time::after {content:", "}
+/* Community Events */
+#tribe-community-events select {width:auto;}
+#tribe-community-events [type="color"], #tribe-community-events [type="date"], #tribe-community-events [type="datetime-local"], #tribe-community-events [type="datetime"], #tribe-community-events [type="email"], #tribe-community-events [type="month"], #tribe-community-events [type="number"], #tribe-community-events [type="password"], #tribe-community-events [type="search"], #tribe-community-events [type="tel"], #tribe-community-events [type="text"], #tribe-community-events [type="time"], #tribe-community-events [type="url"], #tribe-community-events [type="week"], #tribe-community-events textarea {width:auto;}
+#tribe-community-events table tbody tr:nth-child(2n) {background-color:transparent;}
+/* 2017 holiday video post */
+.postid-3322 .off-canvas-content,
+.postid-3322 .holiday-footer {background-color: #A0C3CF;}
+.postid-3322 span.published-date {display: none;}

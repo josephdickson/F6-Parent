@@ -1,0 +1,19 @@
+/*
+Theme Name: Pitzer College Welcome Tour Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: pitzer-college-child
+*/
+strong.entry-title {font-size:1.6rem;text-align:center;display: block;}
+h1.entry-title {text-align:center;display: block;margin:0.5em 0;}
+.home span.edit-link {text-align:center;display: block;}
+.attachment-large {margin:1rem auto;display:block;}
+/* Gallery Modal */
+.reveal img {display:block;margin-left:auto;margin-right:auto;}

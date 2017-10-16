@@ -1,0 +1,455 @@
+/*
+Theme Name:         Pitzer College
+*/
+
+/*
+CSS Document 
+    Created by Joseph Dickson
+    Edited on 04/06/2013
+	
+	100% saturation of CMYK colors to web
+	Pitzer Orange		#f7941d
+	Link Orange			#CA7918
+	Avocado Green		#a1af27
+	Graphite Gray		#58595b
+	Text Area approx	#f2efe8
+	Background approx	#E0DFCD
+	Pomona-Pitzer Blue	#003d71
+	
+	Secondary Colors
+	
+	Light Blue: 		#64b0c3
+*/
+
+/* basic tags */
+
+body {
+	font: 12pt/140% Arial, Helvetica, sans-serif;
+	text-align: left;
+	color:#58595b;
+	background-color: #f2f2f2;
+/* commented out gradient
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	background-image: -webkit-linear-gradient(top, #fff, #eee); 
+	background-image:    -moz-linear-gradient(top, #fff, #eee);
+	background-image:     -ms-linear-gradient(top, #fff, #eee);
+	background-image:      -o-linear-gradient(top, #fff, #eee);
+*/
+	}
+
+p {
+	margin:10px;
+}
+
+a {color:#f7941d;}
+
+/* Lists */
+.inline {display: inline;}
+
+/* text */
+
+p .extra-large,
+p.extra-large {
+	font-size:2em;
+	line-height:1em;
+	}
+
+p .white,
+p.white {
+	color: #fff;
+	}
+.block {
+	display: block;
+	}
+.capitalize {
+	text-transform:capitalize;
+	}
+
+.uppercase {
+	text-transform: uppercase;
+	}
+.center {
+	text-align: center;
+	}
+
+.justify {
+	text-align: justify;
+	}
+
+.tiny {
+font-size:0.8em;
+}
+
+/* borders */
+
+.overline {
+	border-top: 1px;
+	}
+.underline {
+	border-bottom: 1px;
+	}
+.overline {
+	border-color: #fff;
+	}
+.underline {
+	border-color: #fff;
+	}
+.overline.underline {border-width: 3px 0;}
+.solid {
+	border-style: solid;
+	}
+/* boxes */
+
+div.asphalt {
+	background: url('/wp-content/uploads/2013/05/asphalt-tile.png') repeat;
+	border-width: 0;
+	}
+
+div.gray {
+	background-color: #58595b;
+}
+
+div.green {
+	background-color:#a1af27;
+}
+
+div.light-blue {
+	background-color:#64b0c3;
+}
+
+div.orange {
+	background-color:#f7941d;
+}
+
+div.white {
+	background-color:#fff;
+}
+
+a.light-blue {
+	color:#2BA6CB;
+}
+
+a.white {
+	color:#fff;
+}
+
+a:hover.white {
+	color:#58595b;
+}
+
+.shadow {
+	-moz-box-shadow: 0px 0px 10px #333;
+	-webkit-box-shadow: 0px 0px 10px #333;
+	box-shadow: 0px 0px 10px #333;
+}
+
+/* Main Navigation */
+
+/* 
+
+	ul.title-area.large-2.columns {
+		background-image: url('/wp-content/uploads/sites/9/2013/06/pitzer_logo_orange-transparent.png');
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-size: 98%;
+		display: block;
+		height:60px;
+		margin-top:4px;
+		}
+*/
+#top-nav {height:0;}
+#top-nav div.row {margin-top:0px;}
+.container.row {padding-top:30px;} /* fix scroll bug with top nav */
+.contain-to-grid {
+	background-color: #fff;
+}
+.top-bar {margin-top:0;}
+.top-bar .has-form {}
+.top-bar ul.left {margin-top:0;}
+.top-bar ul.left li a {}
+.top-bar .menu-item {}
+.top-bar ul.dropdown {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 2px 2px 2px #eee;
+	-webkit-box-shadow: 2px 2px 2px #eee;
+	box-shadow: 2px 2px 2px #eee;
+	background-color: #fff;
+}
+.top-bar ul.dropdown a:hover {
+	-moz-box-shadow: 0 4px 0 #fff, 0 0 4px #333;
+	-webkit-box-shadow: 0 4px 0 #fff, 0 0 4px #333;
+	box-shadow: 0 4px 0 #fff, 0 0 4px #333;
+}
+
+.top-bar ul.title-area {
+margin: 0;
+}
+.top-bar-section {}
+.top-bar-section ul {
+    width: 100%;
+    display: block;
+    background: none repeat scroll 0% 0% transparent;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.top-bar-section li a:not(.button) {
+    background: transparent;
+    color: #fff;
+	text-shadow:1px 1px 2px #000;
+	line-height:30px;
+	margin-top:20px;
+}
+.top-bar-section li a:hover:not(.button) {
+	background-color:transparent;
+	color: #f7941d;
+}
+.top-bar-section > ul > .divider {
+    border-color: transparent;
+}
+.top-bar-section .has-form {
+    background-color: transparent;
+}
+.top-bar #searchsubmit {
+	background-color: #d1d1d1;
+	border: 1px solid #d1d1d1;
+}
+.top-bar #searchsubmit:hover {
+	background-color: #2BC5EE;
+	border: 1px solid #2BC5EE;
+}
+header.row {
+	display: none;
+}
+.row.banner-3 .columns {
+	padding-right: 0.9375em;
+}
+
+nav.top-bar.large-12.columns {
+	background-color:#414042;
+	padding-top:10px;
+	margin-top:0;
+	height:60px;
+	z-index:100;
+	background-image: url('/celebrate50/wp-content/uploads/sites/9/2013/06/celebrate-50.png');
+	background-repeat:no-repeat;
+	background-position:45% -15px;
+	}
+nav.top-bar span {display:none;}
+
+
+.flag {
+    height: 40px;
+    width:130px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding:0 30px;
+    background-image: url('/celebrate50/wp-content/uploads/sites/9/2013/06/pitzer_logo_orange-transparent.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: #58585a;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+    background-size: 90%;
+	margin-left:-50px;
+	margin-top:0px;
+	z-index:101;
+}
+.flag-secondary {
+	height: 40px;
+    width:200px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    background-color: #58595b;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+	margin-top:-40px;
+	position:relative;
+	right:-20px;
+	top:50px;
+	z-index:101;
+	float:right;}
+	
+.flag-left {
+    background: url("/participant/wp-content/uploads/sites/8/2013/06/profile-flag.png") no-repeat scroll left top transparent;
+    width: 20px;
+    height: 24px;
+	margin-left:-30px;
+	margin-top:40px;
+}
+.flag-right {
+    background: url("/participant/wp-content/uploads/sites/8/2013/06/profile-flag.png") no-repeat scroll right top transparent;
+    width: 20px;
+    height: 24px;
+	margin-top:39px;
+	float:right;
+}
+.flag-secondary .search {
+	margin: 5px 0 0 10px;
+}
+
+.flag-secondary #searchform input#s {
+	height:25px;
+	margin: 4px 0 0 4px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:0 0 0 5%;
+	}
+.flag-secondary #searchsubmit.prefix {
+	height:25px;
+	margin: 4px 0 0 -4px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	}
+
+/* Container */
+
+div.container.full-page.shadow {
+	-moz-box-shadow: 0 7px 0 #fff, 0 0 7px #333;
+	-webkit-box-shadow: 0 7px 0 #fff, 0px 0px 7px #333;
+	box-shadow: 0 7px 0 #fff, 0px 0px 7px #333;
+	}
+
+.pre-footer {
+	border-width:0;
+	padding-top:20px;
+	background-color: #fff;
+	border: solid #a1af27;
+	border-width: 2px 0;
+	background-color: #EEF0D8;
+	}
+
+.pre-footer .panel {}
+.pre-footer p {
+	font-size:0.8em;
+	}
+footer a {color: #e6e6e6;}
+footer.row.full-width {
+	padding: 20px 11px 0 11px;
+	height: 211px;
+}
+
+
+/* Sub Navigation - side menus */
+ul#menu-secondary-menu li {
+	list-style:none;
+	font-size:0.8em;}
+
+#sidebar ul.side-nav .divider {
+	margin: 1.5em 0;
+	cursor: arrow;
+}
+
+/* bread crumbs - Requires SEO by Yoast to be installed */
+#breadcrumbs {
+	}
+	
+.home #breadcrumbs {
+	display:none;
+	}
+
+p#breadcrumbs {
+	margin:0 10px;
+	padding:0;
+	font-size: 0.7em;}
+
+./* Page and Post Headline size and weights */
+
+header h1.entry-title {
+	font-weight:normal;
+	font-size: 2em;
+}
+
+/* Remove updated time and byline / author */
+time.updated,
+.byline.author {
+	display : none;
+}
+
+/* Sections, Accordion, Tabs, Vertical Nav & Nav Bar */
+
+.accordion.section-container section a {
+	white-space: pre-line;
+	line-height:1em;
+	}
+.section-container.accordion {
+	border-width: 0;
+	}
+.accordion.section-container section a {
+	background-color: #FBFBFB;
+	}
+.accordion.section-container section a:hover  {
+	background-color: #64B0C3;
+	}
+.accordion.section-container section.active {
+	border-width: 1px;
+	border-style:dashed;
+	border-color: #C7E2E9;
+	margin: 0px -2px 5px -2px;
+	}
+.accordion.section-container section.active .title a {
+	background-color: #64b0c3;
+	}
+.accordion.section-container section .title span {
+	font-size:0.9em;
+	color: #58595b;
+	font-weight: normal;
+	display:block;
+	margin-top:-10px;
+	margin-bottom: 2em;
+	}
+.accordion.section-container section p.title a	{
+	color:#244047;}
+.accordion.section-container section p.title a:hover	{
+	color:#fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.accordion.section-container section p.title a:hover span	{
+	text-shadow: none;}
+
+/* Foundation.css overrides */
+.row .row {margin: 0;}
+
+/* Buttons */
+.button.orange {
+	background-color:#f7941d;
+	border-color: #f7941d;
+}
+.button.orange a {
+	color:#fff;
+}
+.button.orange:hover {
+	background-color:#CA7918;
+}
+
+/* icons - celebrate50 */
+
+.info {
+	background-image: url('/celebrate50/wp-content/uploads/sites/9/2013/06/Info.gif');
+	background-repeat:no-repeat;
+	padding-left:45px;
+	text-align: center;
+	background-position: left center;
+	}
+.tshirt {
+	background-image: url('/celebrate50/wp-content/uploads/sites/9/2013/06/t-shirt.gif');
+	background-repeat:no-repeat;
+	padding-left:45px;
+	text-align: center;
+	background-position: left center;
+	}
+.calendar {
+	background-image: url('/celebrate50/wp-content/uploads/sites/9/2013/06/calendar.gif');
+	background-repeat:no-repeat;
+	padding-left:45px;
+	text-align: center;
+	background-position: left center;
+	}
+
+/* 
+	Media Queries for mobile 
+*/
+
+

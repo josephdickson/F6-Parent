@@ -1,0 +1,154 @@
+/*
+Theme Name:         Pitzer College - Art Galleries
+Version: 1.2.1
+Theme URI:      http://themefortress.com/reverie/
+Description:    Reverie is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:        4.0.0
+Author:         Zhen Huang
+Adapted:	Joseph Dickson joseph_dickson@pitzer.edu - see main.css
+Author URI:     http://themefortress.com/
+Template: 	Pitzer-College
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+/*
+CSS Document
+    Created by Joseph Dickson
+    Edited on 10/29/2014
+
+	100% saturation of CMYK colors to web
+	Pitzer Orange			#f7941d
+	Link Orange			#CA7918
+	Avocado Green			#a1af27
+	Graphite Gray			#58595b
+	Text Area approx		#f2efe8
+	Background approx		#E0DFCD
+	Pomona-Pitzer Blue		#003d71
+
+	Secondary Colors
+
+	light-blue: 			#64b0c3
+	red:				#ee2c3b
+	yellow: 			#ffce00
+	tan:				#e8d9b5
+--------------------------------------------------------------
+	# Accessibility
+--------------------------------------------------------------*/
+	/* Text meant only for screen readers. */
+	.screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+	}
+
+	.screen-reader-text:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+
+	/* Do not show the outline on the skip link target. */
+	#content[tabindex="-1"]:focus {
+		outline: 0;
+	}
+
+.profile img {padding-top:0;}
+
+/* banner above top navigation */
+.container.row.shadow.banner img {padding: 0.25em 0 0.25em 1em;}
+
+/* top navigation */
+#top-nav,
+nav.top-bar,
+.top-bar-section ul,
+nav.top-bar ul li.menu-item a,
+div.google-search input.gsc-input {background-color: #fff;}
+#top-nav.top-bar-scrolled {box-shadow: 0 0 5px rgba(0, 0, 0, 0.2 );}
+
+.top-bar-section ul li.logo > a {width:150px;}
+
+nav.top-bar ul li.menu-item a:link,
+nav.top-bar ul li.menu-item a:visited {color: #58595b;}
+
+nav.top-bar ul li.menu-item a:hover,
+nav.top-bar ul li.menu-item a:active {background-color: #F1F8FA;}
+
+.disable a {color:#58595b; cursor:text;}
+
+.top-bar-section ul li.divider {height:0;}
+
+div.google-search input.gsc-input {border:1px solid #64b0c3 !important; }
+td.gsc-search-button input.gsc-search-button {background-color: #64b0c3 !important; cursor: pointer;}
+
+nav.top-bar li.logo {background-image: url("http://pitweb.pitzer.edu/galleries/wp-content/uploads/sites/77/2015/10/15_NIC_Pitzer_College_Art_Galleries_Logotype_FINAL-e1445369908552.png");background-repeat: no-repeat;background-position: 0 center;}
+nav.top-bar li.logo a {background-color:transparent !important;text-indent: 1000%; white-space: nowrap; overflow: hidden;}
+nav.top-bar.large-12.columns, nav.top-bar ul.left li, nav.top-bar ul.right li, nav.top-bar ul li.logo.menu-item a {background-color:#fff;}
+/* Footer */
+.colleges-footer {
+	padding-top:2em;
+}
+.colleges-footer .large-12.small-centered.columns {
+	padding: 1em 0;
+}
+
+.colleges-footer img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+/* catalogues */
+.row.catalogues {margin-bottom: 3rem;}
+/* slideshow */
+ul.orbit-slides-container img {padding-top:0;}
+
+/* Right Navigation */
+.section-container.accordion p.title{display:none;}
+.section-container.accordion {font-size:1.2em; font-weight:bold;}
+#section-menu ul li {padding:0.5em 0 1.3em 0 !important; border-top: 3px solid #f1f1f1 !important;border-left-width:0px !important;}
+#section-menu ul li ul.sub-menu li {padding:0.5em 0 0 0 !important; border-top: 3px solid #f1f1f1 !important;border-left-width:0px !important;}
+#section-menu ul li.menu-item-has-children li {border-top: 0px !important;}
+#section-menu ul.sub-menu {border-width: 0 !important;}
+
+#section-menu li.current-menu-item.active a {font-weight:bold;}
+
+/* Small Screens */
+@media screen and (max-width: 360px) and (min-width: 1px) {
+	.colleges-footer img {
+	max-width:40%;}
+#top-nav,
+nav.top-bar,
+.top-bar-section ul,
+nav.top-bar ul li.menu-item a,
+div.google-search input.gsc-input {background-color: #000;}
+body {padding-top:0 !important;}
+}
+/* Medium Screens */
+@media screen and (max-width: 699px) and (min-width: 361px) {
+	.colleges-footer img {
+	max-width:30%;}
+#top-nav,
+nav.top-bar,
+.top-bar-section ul,
+nav.top-bar ul li.menu-item a,
+div.google-search input.gsc-input {background-color: #000;}
+body {padding-top:0 !important;}
+}

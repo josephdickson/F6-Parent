@@ -1,0 +1,27 @@
+body#tinymce.wp-editor { 
+    max-width:870px;font-size:16px;line-height:1.6rem;font-family:sans-serif;
+}
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor h6
+ { 
+    font-family: 'EB Garamond', serif; font-weight: normal;
+}
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor h2
+ { 
+    font-size:2rem;
+}
+
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor h6
+ { 
+    font-size:1.5rem;
+}

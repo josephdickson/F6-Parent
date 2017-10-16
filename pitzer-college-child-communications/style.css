@@ -1,0 +1,122 @@
+/*
+Theme Name: Pitzer College Communications Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: homepage-child
+*/
+
+/* News page Categories */
+.archive .category-video a.category,
+.archive .category-experts-directory,
+.archive a.category {font-weight:bold;}
+.archive .category-video a.category {color:#ee2c3b;}
+.archive .category-spotlights a.category {color:#a1af27;}
+.archive .category-press-release a.category,
+.archive .category-in-the-news a.category {color:#f7941d;}
+.archive .category-experts-directory a.category,
+.archive a.category {color:#f7941d;}
+.archive .nav-previous, .news .nav-next {display:inline;}
+.archive .nav-previous {float:left;}
+.archive .nav-next {float:right;}
+.archive .category-press-release {border: 2px solid #FBC584;}
+.archive .category-spotlights {border:2px solid #D4DB9D;}
+.archive .category-in-the-news {border:2px solid #ffce00 !important;}
+.archive .category-video {border:2px solid #F47982 !important;}
+.archive .category-video, .archive .category-press-release, .archive .category-spotlights, .archive .category-video, .archive .category-experts-directory, .archive .category-in-the-news {border-width:1px !important;margin-bottom:2em; border-radius:0.2em;float:left;width:100%; padding:1rem;}
+.archive .category-in-the-news,
+.archive .category-in-the-news a h1.entry-title {display:inline;}
+.archive .category-in-the-news a h1.entry-title {font-size:1.5rem;}
+figure.wp-caption.alignleft {margin-left:0;}
+.entry-content {margin-top:0.5em;}
+/* Pagination */
+a.page-numbers {display:inline-block;}
+/* Staff Page */
+.page-template-page-staff .row.small-up-1.medium-up-2 .column {margin-bottom:1rem;}
+.page-template-page-staff .row.small-up-1.medium-up-2 .column img {margin-bottom:2rem;}
+/* Post Page */
+p.tags {margin-top:1rem;}
+/* Special Page - Flag */
+.flag {display: block;position: relative;margin-left:-1rem;margin-top:-1rem !important;}
+.flag span {font-size:1rem;font-weight:normal;color:#fff;margin-top:0rem;font-family:'EB Garamond', serif;}
+.flag:after {background-image:url('/wp-content/themes/pitzer-college-child-communications/img/flag-orange.png');content: '';position: absolute;top: 0; right: 0;  bottom: 0; left: 0;width:160px;height:60px;background-repeat:no-repeat;background-position:right center;}
+.flag span {z-index: 1;padding: 1.2em 0 0 1em;display: block;position: absolute;}
+.flag .arrow-left {width: 0;height: 0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-right:16px solid #c2c2c2;	margin-top:28px;position:relative;float:left;}
+/* Speical Page - Summer 2017 Participant */
+.category-summer-2017 .off-canvas-content {padding-bottom:0;}
+.callout.special-item {padding-bottom:0;padding-top:0;}
+.callout.special-item img {margin-top:2rem;}
+.callout.special-item p {display:block;min-height:3rem;font-size:0.85rem;line-height:1.2rem;font-family:'EB Garamond', serif;}
+.callout.special-item h1 {margin:0.1em 0;}
+.callout.special-item h1 a {font-size:0.9rem;line-height:1.3rem;display:block;min-height:2.5em;font-family:sans-serif;}
+.social-icons {background-color:#DEDEDE;padding:0.15rem 0 1.55rem 0;margin:0 -1rem;font-weight:bold;color:#58595b;font-size:0.75rem;padding-right:1.25rem;}
+ul.social-icons li span.share-on {margin-top:0.1rem;display:inline-block;padding-left:1rem;padding-bottom:2em;}
+span.return-to-participant {margin-top:0.8rem;display:inline-block;float:right;}
+.off-canvas-wrapper div.social-icons {background-color:#dedede;}
+
+.callout.special-item ul.social-icons li {margin:0.1rem;}
+/* Spring Participant */
+.category-spring-2016 .flag:after {display:none;}
+.category-spring-2016 section.container.row,
+.participant-plus.single {background-color:#f9f9f9;}
+.category-spring-2016 .single .flag {display:none;}
+.category-spring-2016 .flag{display:inline-block;padding:0.35em 2em 0 1em;margin-bottom:0.5em;}
+.category-spring-2016 .single .flag a {display:none;}
+.category-spring-2016 .flag a{color:#fff;}
+.participant-plus.counter-0 .flag {background-color:#9F7B34;}
+.participant-plus.counter-1 .flag {background-color:#f7941d;}
+.participant-plus.counter-2 .flag {background-color:#f7941d;}
+.participant-plus.counter-3 .flag {background-color:#58595b;}
+.participant-plus .tile h1.entry-title,
+.participant-plus .tile p {padding: 0.25em 0.5em;font-size:0.8em;}
+.participant-plus .tile span.button {margin-left:0.5em;}
+.participant-plus .tile,
+.participant-plus.tile {background-color:#fff; border:1px solid #aeaeae;margin-bottom:2em !important;}
+.participant-plus .tile h1.entry-title {font-size:1.2em;line-height:1.1em;}
+.participant-plus.radius .tile,
+.participant-plus.tile {border-radius:5px;}
+.participant-plus.small-12.large-6.columns.radius .tile {}
+.participant-plus .tile img,
+.participant-plus.tile img {padding:0;margin:0;display:block;border-radius:5px 5px 0 0;}
+a.participant-plus p, a.participant-plus:hover p,
+a.participant-plus ul, a.participant-plus:hover ul {color:#58595b;line-height:1.2em;display:block;margin:0.25em 0 0.4em 0;}
+a.participant-plus ul, a.participant-plus:hover ul {list-style:none;line-height:1.5em;display:inline;text-indent: 0;}
+.participant-plus .cover h1.entry-title {padding-left:0;font-weight:normal;margin-left:-0.65em;}
+.participant-plus .cover h1.entry-title span {font-size:0.8em;}
+.participant-plus .cover p {padding-left:0;font-weight:normal;margin-left:-0.9em;}
+a.participant-plus:hover > h1 {color:#64b0c3;}
+/* .participant-plus .content p:first-child:first-letter { font-size:2em; } */
+/* .participant-plus.small-12.large-3.columns.radius:nth-of-type(5n+1) {clear:left;} */
+img.participant-plus-icon-cover {max-width: 35%;margin-top:-12% !important;padding-bottom:1em;}
+.participant-plus.cover {font-size:0.8rem;}
+.participant-plus.cover .edit-link {font-size:1rem;}
+.category-summer-2017 .participant-plus ul {padding:0;margin:0;list-style:none;}
+.category-summer-2017 .participant-plus li {}
+.category-summer-2017 .participant-plus li::before {content: "■ ";color: #f7941d;padding-right:0.3rem;font-size:2rem;line-height:1.2rem;}
+.category-summer-2017 .participant-plus li.gray::before {color:#58595b;}
+.category-summer-2017 .participant-plus li.blue::before {color:#20438F;}
+.category-summer-2017 .participant-plus li.light-blue::before {color:#64B0C4;}
+.category-summer-2017 .participant-plus li.yellow::before {color:#FFCF01;}
+.category-summer-2017 .participant-plus li.green::before {color:#7A941D;}
+/* Photo Gallery */
+.reveal.small a.previous,
+.reveal.small a.next {display:block;width:50%;position:absolute;top:15%;padding:28% 2%;}
+.reveal.small a.previous {float:left;left:0;text-align:left;}
+.reveal.small a.next {float:right;right:0;text-align:right;}
+.reveal.small a.previous span,
+.reveal.small a.next span {display:none;}
+.reveal.small a.previous img,
+.reveal.small a.next img {display:inline;}
+.reveal.small.first-image a.previous,
+.reveal.small.last-image a.next {display:none;}
+/* Hide boiler plates on special press releases where they're included with others */
+body.postid-8378 div.media-contact,
+body.postid-8378 div.pitzer-art-galleries-info,
+body.postid-8378 div.about-pitzer-college-info {display:none;}
+body.postid-8378 h1.entry-title {font-size:1.75em;}

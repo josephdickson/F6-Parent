@@ -1,0 +1,17 @@
+/*
+Theme Name: Pitzer College Advancement Child
+Theme URI: http://www.pitzer.edu
+Description: Pitzer College's Foundation 6 Child Theme
+Author: Joseph Dickson
+Author URI: http://www.pitzer.edu
+Template: foundation-6-Pitzer-College
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light,responsive-layout, foundation 6, zurb
+Text Domain: pitzer-college-child
+*/
+.banner {display: block; margin: 0.25em auto; padding: 1em 0;}
+.tile .column .callout {min-height:415px; background-color: #F6F6F6;}
+.tile .column .callout ul {list-style: none; margin: 0;}
+img.tile {background-color: #fff; margin:1em 0; -moz-box-shadow: 0px 1px 3px #333;-webkit-box-shadow: 0px 1px 3px #333; box-shadow: 0px 1px 3px #333;	border-radius: 5px;	padding: 1em !important;}
