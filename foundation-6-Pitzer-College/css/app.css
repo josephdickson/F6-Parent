@@ -43,7 +43,10 @@ td.gsc-input {border:0 !important;padding:0 !important; margin:0 !important;}
 td.gsc-search-button .gsc-search-button.gsc-search-button-v2 {margin-top:7px !important;margin-left:-5px !important;}
 .gsc-input-box {border:0 !important;}
 div.gsc-control-cse.gsc-control-cse-en {padding:0 !important;}
-#gs_tti50.gsib_a input {background-color:#f1f1f1 !important;}
+#gs_tti50.gsib_a input,
+#gs_tti51.gsib_a input {background-color:#f1f1f1 !important;}
+#gs_tti51.gsib_a input {padding:6px 0 !important}
+#gsc-i-id2.gsc-input {}
 #gsc-i-id1 {height:1.7rem !important;}
 .gsc-branding {margin:0 !important;}
 #bgresponse {margin-top:5em;}

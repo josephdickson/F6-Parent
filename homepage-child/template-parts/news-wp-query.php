@@ -26,10 +26,23 @@ $the_query = new WP_Query( $args );
                             <?php the_post_thumbnail( 'medium' ); ?>
                         </div>
                         <div class="small-8 medium-7 large-10 columns">
-                        <?php	
-                            the_title( '<strong class="entry-title">', '</strong>' );
-                            the_content(); 
-                            get_template_part('template-parts/edit-post-link');
+                        <?php
+/*
+				$posttags = get_the_tags();
+				$count=0;
+				if ($posttags) {
+					foreach($posttags as $tag) {
+					$count++;
+						if (1 == $count) {
+						echo '<span class="tag">' . $tag->name . '</span>';
+						}
+					}
+				}
+*/
+
+				the_title( '<strong class="entry-title">', '</strong>' );
+				the_content(); 
+				get_template_part('template-parts/edit-post-link');
                         ?>
                         </div>
                     </a>

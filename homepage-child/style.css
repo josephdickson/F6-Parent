@@ -12,13 +12,14 @@ Tags: light,responsive-layout, foundation 6, zurb
 Text Domain: homepage-child
 */
 #news .columns {padding-top:0.8375em;}
-#news a p {color:#58595b; text-decoration: none;}
+#news a p {color:#404040; text-decoration: none;}
 #news strong.entry-title {margin:0 0 0.5em 0;font-size:1.3rem;line-height:1em;font-weight: normal; font-family: "EB Garamond",serif;}
 #news h3, #news h4 {margin:0 0 0 0.5em;}
 #news ul li {list-style:none;margin:0 0 0 0.75em;}
 #news .row .columns .row {margin-bottom:0.9375rem;}
 #news p.events, #news p.news {font-size:1.25rem;margin-bottom:0.25rem;}
 #news hr {margin-top:0;margin-bottom:0;}
+#news span.tag {font-size:0.7rem;color:#404040;text-transform:uppercase;margin-right:0.5rem;}
 ul.events {margin:0;list-style-position:inside;}
 span.published-date{float:none;}
 /* Slideshow */
@@ -47,8 +48,8 @@ h4.tribe-event-title {font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-se
 .home .tribe-mini-calendar-event {border-bottom-width:0;margin-bottom:0;}
 /* Events Calendar */
 .expanded.button-group a.button {color:#fff;font-size:1.1rem;}
-.tribe-events-calendar div[id*="tribe-events-daynum-"] {background-color:#58595b;}
-.tribe-events-calendar div[id*="tribe-events-daynum-"] a {background-color:#58595b;color:#fff;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] {background-color:#404040;}
+.tribe-events-calendar div[id*="tribe-events-daynum-"] a {background-color:#404040;color:#fff;}
 body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past a, body.post-type-archive-tribe_events .tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] {color:#58595b;}
 .tribe-events-calendar td.tribe-events-past h3.tribe-events-month-event-title a {color:#114b7d;}
 .homepage-events .tribe-events-location, .homepage-events .tribe-events-duration {display: inline-block;padding:0;margin:0;}
