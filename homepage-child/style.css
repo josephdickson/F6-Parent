@@ -30,7 +30,7 @@ div.column.news-item img {display: block;width: auto;height: auto;}
 #news strong.entry-title {padding-left:0;}
 #news .row .columns .row.news-item {margin-bottom:0.5em;}
 #news .column.news-item .small-8.medium-5.large-9.columns {padding-left:0;padding-right:0;}
-#news .column.news-item .small-8.medium-5.large-3.columns {padding-right:0;padding-left:0.2rem;padding-top:0.46875rem;}
+#news .column.news-item .small-4.medium-5.large-3.columns {padding-right:0;padding-left:0.2rem;padding-top:0.46875rem;}
 /* Slideshow */
 .orbit {margin-bottom:1em;}
 .orbit button{border-width:0;}

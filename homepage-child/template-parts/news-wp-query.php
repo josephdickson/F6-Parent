@@ -48,6 +48,7 @@ $the_query = new WP_Query( $args );
 								// Display the content of the post
 								the_content();
 
+								// add edit link if logged in
 								get_template_part('template-parts/edit-post-link'); 
 							?>
 
