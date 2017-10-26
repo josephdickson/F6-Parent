@@ -5,7 +5,7 @@ Description: Pitzer College's Foundation 6 Child Theme
 Author: Joseph Dickson
 Author URI: http://www.pitzer.edu
 Template: foundation-6-Pitzer-College
-Version: 1.0.0
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light,responsive-layout, foundation 6, zurb
@@ -29,8 +29,8 @@ div.column.news-item img {display: block;width: auto;height: auto;}
 #news span.tag {color:#404040;text-transform:uppercase;font-size:0.7rem;font-weight:bold;font-family:sans-serif;padding:0;border-width:0;padding:0;}
 #news strong.entry-title {padding-left:0;}
 #news .row .columns .row.news-item {margin-bottom:0.5em;}
-#news .column.news-item .small-4.medium-5.large-9.columns {padding-left:0;padding-right:0;}
-#news .column.news-item .small-4.medium-5.large-3.columns {padding-right:0;padding-left:0.2rem;padding-top:0.46875rem;}
+#news .column.news-item .small-8.medium-5.large-9.columns {padding-left:0;padding-right:0;}
+#news .column.news-item .small-8.medium-5.large-3.columns {padding-right:0;padding-left:0.2rem;padding-top:0.46875rem;}
 /* Slideshow */
 .orbit {margin-bottom:1em;}
 .orbit button{border-width:0;}
