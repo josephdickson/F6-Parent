@@ -1,0 +1,22 @@
+/* Note: highlighting class has been disabled/commented out in jquery.datepick.css  */
+
+.custom-style .datepick-month-header, .custom-style .datepick-month-header select, .custom-style .datepick-month-header input {
+	width: auto !important; /* New Setting */
+}
+
+/*
+.custom-style .datepick-month td .datepick-today {
+	background-color: #eee;
+	color: #000;
+}*/
+
+.custom-style .datepick-month td .datepick-selected {
+	background-color: #F7941d !important; /* Override existing setting */
+	color: #fff !important; /* Override existing setting */
+}
+
+/* Custom selectors  */
+.custom-style .holiday { background: #600; color: white !important;  }
+
+.custom-style .selected-date { background: #6AAEF2 !important; color: white !important;  }
+
