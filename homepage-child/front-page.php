@@ -10,51 +10,65 @@
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
-        <div id="content" class="columns">
+	<div id="content" class="columns">
 
-			<div id="carousel" class="row">
+		<div id="carousel" class="row">
 
-				<div class="small-12 columns">
-					<h1 class="hide">Pitzer College</h1>
+			<div class="small-12">
+
+				<h1 class="hide">Pitzer College</h1>
+
 					<?php get_template_part('template-parts/carousel-wp-query'); ?>
-				</div>
 
 			</div>
+
+		</div><!-- #carousel -->
 
 			<div id="news">
 
-				<div class="row" style="margin-bottom:0.9375rem;">
+				<div class="row">
 
-					<div class="small-12 medium-8 columns">
+					<div class="small-12 medium-9 columns">
 
-                        <p class="news"><strong><a href="/communications/">Featured News</a></strong></p>
-                        <hr>
-						<?php get_template_part('template-parts/news-wp-query'); ?>
+						<p class="news"><strong><a href="/communications/">Featured News</a></strong></p>
 
-                    </div>
+						<hr />
 
-					<div class="small-12 medium-3 medium-offset-1 columns">
+							<div class="row small-up-1 medium-up-2 large-up-2">
 
-						<?php get_template_part('template-parts/tiles-vertical-wp-query'); ?>
+								<?php get_template_part('template-parts/news-wp-query'); ?>
+
+							</div>
+
 					</div>
 
-                    <div class="small-12 columns events">
+					<div class="small-12 large-3 columns news">
 
-                        <?php get_template_part('template-parts/widget-events'); ?>
+						<?php get_template_part('template-parts/tiles-vertical-wp-query'); ?>
 
-                    </div>
+					</div>
 
-				</div>
+				</div><!-- .row -->
 
-            </div>
+			</div><!-- #news -->
 
-			<div id="tiles" class="row" style="margin:1.5em 0;border-top:1px solid #f7941d;padding:1.5em 0;">
+		<div class="row">
 
-				    <?php get_template_part('template-parts/tile-wp-query'); ?>
+					<div class="small-12 columns events">
 
-			</div>
+				        	<?php get_template_part('template-parts/widget-events'); ?>
 
-        </div><!-- #content.columns -->
+					</div>
+
+		</div><!-- .row -->
+
+		<div id="tiles" class="row">
+
+		    <?php get_template_part('template-parts/tile-wp-query'); ?>
+
+		</div>
+
+	</div><!-- #content.columns -->
 
 	</main><!-- #main -->
 

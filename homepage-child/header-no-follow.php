@@ -59,7 +59,7 @@ $redirect = get_field('redirect_to_url');
 
 			<div class="row">
 				<div class="medium-6 columns float-right">
-				<?php get_template_part('template-parts/search-form') ?>
+				<?php get_template_part('template-parts/widget-google-search'); ?>
 				</div>
 			</div>
 
