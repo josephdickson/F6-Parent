@@ -56,3 +56,5 @@ li.block{float:none;}
 span.edit-link {padding:0;margin:0;}
 /* headlines */
 h2, h3, h4, h4, h5, h6 {font-weight: normal; font-size:1.5rem;}
+/* buttons */
+a.button {color:#fff;}

@@ -4,7 +4,7 @@ $the_query = new WP_Query( array(
 	'category_name' => 'Slideshow',
 	'orderby' => 'date',
 	'order' => 'DESC',
-	'posts_per_page' => 4,
+	'posts_per_page' => 5,
 ) );
 
 // The Loop
@@ -21,16 +21,15 @@ if ( $the_query->have_posts() ) {
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
-				echo '<a href="' . get_permalink() . '">';
+				// echo '<a href="' . get_permalink() . '">';
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
-				echo '</a>';
+				// echo '</a>';
 
-				get_template_part('template-parts/edit-post-link');
 				}
-				$my_excerpt = get_post(get_post_thumbnail_id())->post_excerpt; // Grabs Caption associated with the Media File
-				if (!empty($my_excerpt)) {
-	                echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>'; // If the caption exists display a caption
-	            }
+				$my_excerpt = get_the_excerpt();
+			if ( '' != $my_excerpt ) {
+				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
+			}
 				echo '</div>
 		          </li>';
 			}

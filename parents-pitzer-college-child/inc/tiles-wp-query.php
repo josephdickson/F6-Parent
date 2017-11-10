@@ -5,11 +5,11 @@
  * @since Reverie 4.0
  * modified by Joseph Dickson 05/22/14
  */
-$posts = array( '42', '89', '32', '91', '94', '96', '49', '51' );
+$posts = array( '42', '89', '32', '209', '91', '94', '96', '49', '51' );
 
 $args = array(
 	'post_type' => 'post',
-	'posts_per_page' => 8,
+	'posts_per_page' => 9,
 	'category_name' => 'Tile',
 	'post__in' => $posts,
 	'orderby' => 'post__in', // Order manually by $posts order

@@ -64,15 +64,15 @@ $the_query = new WP_Query( $args );
 
 			<?php } ?>
 
-			</div>
+			</div><!-- .column.news-item -->
 
 	<?php endwhile; ?>
 	<!-- end of the WP_query loop -->
 
-	<?php else : ?>
+<?php else : ?>
 
-		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
-	<?php endif; ?>
+<?php endif; ?>
 
-	<?php wp_reset_postdata();
+<?php wp_reset_postdata();
