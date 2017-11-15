@@ -4,7 +4,7 @@
 $args = array(
 
 	'post_type'	=> 'page',
-	'post__in'	=> array(2712, 2720, 2105, 1874, 2110, 3182),
+	'post__in'	=> array(2712, 2720, 1866 ), // removed these on 10-20-17 for Spring- jd 1881, 5236, 2440
 	'orderby' => 'post__in', // Order manually by post__in
 	
 );

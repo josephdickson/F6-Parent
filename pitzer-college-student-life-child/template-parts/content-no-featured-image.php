@@ -12,20 +12,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-			<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				echo '<div class="row">';
-				echo '<div class="small-12 featured-image">';
-				the_post_thumbnail();
-				echo '<span class="featured-caption">' . get_post(get_post_thumbnail_id())->post_excerpt . '</span>'; // Grabs Caption associated with the Media File / Image
-				echo '</div>';
-				echo '</div>';
-			}
-
-			else { // Do nothing, you can place code here for a fallback when there isn't a featured image set on the page
-
-			}
-			?>
-
 				<?php
 					if ( function_exists('yoast_breadcrumb') ) {
 					yoast_breadcrumb('<p id="breadcrumbs">','</p>');

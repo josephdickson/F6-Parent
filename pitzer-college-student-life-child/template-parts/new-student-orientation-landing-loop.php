@@ -4,7 +4,7 @@
 $args = array(
 
 	'post_type'	=> 'page',
-	'post__in'	=> array(2714, 2716, 2718, 2110, 2440, 2110, 5236, 1881),
+	'post__in'	=> array(5236, 2712, 2720, 1866, 2440),
 	'orderby' => 'post__in', // Order manually by post__in
 
 );
