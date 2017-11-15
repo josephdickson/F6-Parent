@@ -21,15 +21,23 @@ if ( $the_query->have_posts() ) {
 			            <div>';
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
-				// echo '<a href="' . get_permalink() . '">';
+				echo '<a href="' . get_permalink() . '">';
 				the_post_thumbnail('full', array( 'class' => 'orbit-image' ));
-				// echo '</a>';
+				echo '</a>';
 
 				}
-				$my_excerpt = get_the_excerpt();
-			if ( '' != $my_excerpt ) {
-				echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>';
-			}
+
+				// assign the post's manually created excerpt to a variable
+				$my_excerpt = $post->post_excerpt;
+
+				// check that the variable has value and is not null
+				if ( !( has_excerpt() == NULL ) ) {
+
+					// display html and manually created post excerpt if it exists for the post
+					echo '<figcaption class="orbit-caption">' . $my_excerpt . '</figcaption>'; // Outputs the processed value to the page
+				}
+				
+
 				echo '</div>
 		          </li>';
 			}
