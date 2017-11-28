@@ -3,12 +3,12 @@
 
 Plugin Name: PZ Google Services
 Plugin URI: pitweb.pitzer.edu
-Description: Google Analytics Implementation and Custom Search for Pitzer College
-Version: 1
+Description: Google Analytics Implementation for Pitzer College
+Version: 2.0
 Author: Joseph Dickson
-Author URI: pitweb.pitzer.edu
+Author URI: www.pitzer.edu
 Date Created: July 14, 2014
-Modified: 
+Modified: November 28, 2017
 */
 
 /*
@@ -18,7 +18,6 @@ Modified:
 function pz_google_services() {
   	wp_enqueue_script( 'pz-analytics', plugins_url() . '/pz-google-services/pz-analytics.js', array ('jquery'),'',true );
 	wp_enqueue_script( 'google-scripts', 'https://www.google.com/jsapi', '', '', true );
-	wp_enqueue_script( 'google-search', plugins_url() . '/pz-google-services/pz-google-search.js', '', '', true );
 }
 
 
