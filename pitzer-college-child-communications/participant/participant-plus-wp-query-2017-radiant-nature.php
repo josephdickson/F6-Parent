@@ -24,20 +24,20 @@ if ( $the_query->have_posts() ) {
 
 		echo '<div class="callout special-item">';
 
-		// Checks for Post Tag and displays it in the flag
-		if ($posttags) {
-			foreach($posttags as $tag) {
-
-			echo '<strong>' . $tag->name . ' ' . '</strong>';
-
-			}
-		}
-
 		// check if the post has a Post Thumbnail assigned to it.
 		if ( has_post_thumbnail() ) {
 			echo '<a href="' . get_permalink() . '">';
 			the_post_thumbnail('400x400');
 			echo '</a>';
+		}
+
+		// Checks for Post Tag and displays it in the flag
+		if ($posttags) {
+			foreach($posttags as $tag) {
+
+			echo '<strong class="pst-la-la">' . $tag->name . ' ' . '</strong>';
+
+			}
 		}
 
 		echo '<h1><a href="' . get_permalink() . '">' . get_the_title() . '</a></h1>';

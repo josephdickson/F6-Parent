@@ -1,5 +1,5 @@
 <!-- Row for main content area - category-summer.php -->
-	<div class="small-12" role="main" style="border-top:3px solid #f7941d;">
+	<div class="small-12 post-footer-fall-2017" role="main" style="border-top:3px solid #f7941d;">
 
 		<div class="background-top" style="width:100%;background-image:url('/communications/wp-content/uploads/sites/17/2017/12/2017-Participant-Fall-cover-for-background.jpg');">
 
@@ -13,7 +13,7 @@
 
 		</div>
 
-		<div class="row small-up-1 medium-up-2 large-up-5">
+		<div class="row small-up-1 medium-up-2 large-up-3">
 
 			<?php
 				// Convocation

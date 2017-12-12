@@ -14,9 +14,9 @@
 
 						<div class="inauguration">
 
-							<?php	
+							<?php
 								// Inauguration
-								get_template_part('/participant/summer-2017-inauguration-photos'); 
+								get_template_part('/participant/summer-2017-inauguration-photos');
 
 							?>
 
@@ -29,7 +29,7 @@
 
 							<?php
 								// Commencement
-								get_template_part('/template-parts/wp-query-2017-commencement'); 
+								get_template_part('/template-parts/wp-query-2017-commencement');
 
 							?>
 
@@ -43,9 +43,9 @@
 									<div style="margin-top: -580px;"></div>
 										<?php
 											// Around the Mounds
-											get_template_part('/participant/participant-plus-wp-query-2017-spotlights'); 
+											get_template_part('/participant/participant-plus-wp-query-2017-spotlights');
 										?>
-					
+
 
 
 								<div class="background-bottom"></div>
@@ -56,10 +56,10 @@
 
 							<div class="around-the-mounds" style="margin-top:210px;">
 
-				
+
 									<?php
 										// Around the Mounds
-										get_template_part('/participant/participant-plus-wp-query-2017-around-the-mounds'); 
+										get_template_part('/participant/participant-plus-wp-query-2017-around-the-mounds');
 									?>
 
 								<div class="background-bottom" style="height:396px;width:100%;margin-top:-200px;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Around The Mounds Background_r2_c1.jpg');"></div>

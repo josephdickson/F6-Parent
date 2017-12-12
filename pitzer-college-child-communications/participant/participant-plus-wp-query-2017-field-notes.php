@@ -24,14 +24,14 @@ if ( $the_query->have_posts() ) {
 
 		echo '<div class="callout special-item">';
 
-			echo '<strong>' . 'Video' . ' ' . '</strong>';
-
 		// check if the post has a Post Thumbnail assigned to it.
 		if ( has_post_thumbnail() ) {
 			echo '<a href="' . get_permalink() . '">';
 			the_post_thumbnail('400x400');
 			echo '</a>';
 		}
+
+		echo '<strong>' . 'Video' . ' ' . '</strong>';
 
 		echo '<h1><a href="' . get_permalink() . '">' . get_the_title() . '</a></h1>';
 
