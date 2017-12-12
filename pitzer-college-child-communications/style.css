@@ -104,6 +104,24 @@ img.participant-plus-icon-cover {max-width: 35%;margin-top:-12% !important;paddi
 .category-summer-2017 .participant-plus li.light-blue::before {color:#64B0C4;}
 .category-summer-2017 .participant-plus li.yellow::before {color:#FFCF01;}
 .category-summer-2017 .participant-plus li.green::before {color:#7A941D;}
+/* Fall 2017 Participant */
+.category-fall-2017 strong.entry-title {padding-left:1.1rem;font-size:1.8rem;display:block;font-family:'EB Garamond', serif;}
+/*.category-fall-2017 strong.entry-title.pst-la-la,
+.category-fall-2017 strong.entry-title.first-year {font-size: 1.2rem;line-height: 2.7rem;padding-left: 1.1rem;} */
+.category-fall-2017 strong.entry-title.around-the-mounds {padding-left:2rem;}
+.category-fall-2017 .callout.special-item h1 a {font-size:1.1rem;line-height:1.4rem;display:block;min-height:3.5em;font-family:'EB Garamond', serif;}
+.category-fall-2017 .callout.special-item p {display:block;min-height:4.5rem;font-size:0.8rem;line-height:1.2rem;font-family:sans-serif;}
+img.participant-plus-icon-cover {max-width: 35%;margin-top:-12% !important;padding-bottom:1em;}
+.participant-plus.cover {font-size:0.8rem;}
+.participant-plus.cover .edit-link {font-size:1rem;}
+.category-fall-2017 .participant-plus ul {padding:0;margin:0;list-style:none;}
+.category-fall-2017 .participant-plus li {}
+.category-fall-2017 .participant-plus li::before {content: "■ ";color: #f7941d;padding-right:0.3rem;font-size:2rem;line-height:1.2rem;}
+.category-fall-2017 .participant-plus li.gray::before {color:#58595b;}
+.category-fall-2017 .participant-plus li.blue::before {color:#20438F;}
+.category-fall-2017 .participant-plus li.light-blue::before {color:#64B0C4;}
+.category-fall-2017 .participant-plus li.yellow::before {color:#FFCF01;}
+.category-fall-2017 .participant-plus li.green::before {color:#7A941D;}
 /* Photo Gallery */
 .reveal.small a.previous,
 .reveal.small a.next {display:block;width:50%;position:absolute;top:15%;padding:28% 2%;}
@@ -120,3 +138,14 @@ body.postid-8378 div.media-contact,
 body.postid-8378 div.pitzer-art-galleries-info,
 body.postid-8378 div.about-pitzer-college-info {display:none;}
 body.postid-8378 h1.entry-title {font-size:1.75em;}
+/* Holiday Video 2017 */
+body.page-template-page-holiday-2017 .off-canvas-content {background-color:#def4fb;}
+body.page-template-page-holiday-2017 .off-canvas-content h1.entry-title {color:#f7941d;text-align: center;font-size:2.5rem;padding-bottom:1rem;line-height:2.7rem;}
+body.page-template-page-holiday-2017 .off-canvas-content .entry-content p {color:#000000;font-family:'EB Garamond', serif;font-size:1.5rem;}
+body.page-template-page-holiday-2017 .off-canvas-content .content-area {background-color:#ffffff;margin:2rem 0 0 0;padding:2rem 0 0 0;box-shadow:0px 0px 15px #ffffff;border-radius:15px;}
+body.page-template-page-holiday-2017 #breadcrumbs {display:none;}
+@media screen and (min-width: 64em) {
+  body.page-template-page-holiday-2017 .entry-content p {
+    padding:25px 150px;
+    }
+  }

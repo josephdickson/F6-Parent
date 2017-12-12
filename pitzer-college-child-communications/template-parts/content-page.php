@@ -22,6 +22,14 @@
 
 						}
 
+						elseif ( in_category ( array( 1143 ) ) ) {
+
+							$categories = get_the_category();
+
+							echo the_title( '<p id="breadcrumbs"><a href="' . get_category_link( 1143 ) . '">' .  $categories[0]->name . '</a> » ' , '</p>' ) . '</p>';
+
+						}
+
 						else yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 
 					}
@@ -44,7 +52,7 @@
 				?>
 
 			<?php 	// Requires Advanced Custom Fields
-				get_template_part( 'acf/acf' , 'flexible-fields' ); 
+				get_template_part( 'acf/acf' , 'flexible-fields' );
 
 				get_template_part( 'template-parts/acf' , 'gallery' );
 
@@ -53,7 +61,7 @@
 			</div><!-- .entry-content -->
 
 	<?php	// Edit link added to end of post
-		get_template_part( 'template-parts/edit-post-link' ); 
+		get_template_part( 'template-parts/edit-post-link' );
 	?>
 
 </article><!-- #post-## -->

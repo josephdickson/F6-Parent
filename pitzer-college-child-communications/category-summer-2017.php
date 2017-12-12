@@ -1,6 +1,6 @@
 <?php get_header( 'spring-2017' ); ?>
 
-<!-- Row for main content area - category.php -->
+<!-- Row for main content area - category-summer.php -->
 	<div class="small-12" role="main">
 
 		<div class="background-top" style="height:641px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r1_c1.jpg')"></div>

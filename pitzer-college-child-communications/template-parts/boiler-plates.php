@@ -2,6 +2,7 @@
 /* 
 
 	Checks category for appropraite boiler plates
+	Set boiler plates to Category "Office of Communications" so they don't show up automatically as "Press Release"
 
 */
 
@@ -92,6 +93,30 @@ if ( in_category( 'press-release' ) ) {
 				$the_query->the_post();
 				echo '<div class="keck-science-info">';
 				echo '<p><strong>' . get_the_title() . '</strong></p>';
+				the_content();
+				get_template_part( 'template-parts/edit-post-link' );
+				echo '</div>';
+			}
+			/* Restore original Post Data */
+			wp_reset_postdata();
+
+			} else {
+				// no posts found
+		}
+	}
+
+
+	// WP Query post is set to category slugged index-fund
+	if ( in_category( 'index-fund' ) ) {
+
+		// The Query - post slug is index-fund
+		$the_query = new WP_Query( array( 'name' => 'index-fund' ) );
+
+		// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				echo '<div class="index-fund-info">';
 				the_content();
 				get_template_part( 'template-parts/edit-post-link' );
 				echo '</div>';

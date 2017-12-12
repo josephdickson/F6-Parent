@@ -3,6 +3,7 @@
  * News Categories for the front page
  */
 ?>
+<!-- news-categories.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 

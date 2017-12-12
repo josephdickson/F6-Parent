@@ -17,7 +17,19 @@
 	</div><!-- .off-canvas-content starts in header.php -->
 
 	<?php // Participant Plus
-		get_template_part('participant/post-footer'); 
+
+		if ( in_category ( array( 1075 , 1081 ) ) ) {
+
+			get_template_part('participant/post-footer');
+
+		}
+
+		elseif ( in_category ( array( 1143 ) ) ) {
+
+			get_template_part('participant/post-footer-fall-2017');
+
+		}
+
 	?>
 
 

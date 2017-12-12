@@ -1,11 +1,3 @@
-			<?php
-
-				if ( in_category ( array( 1075 , 1081 ) ) ) {
-
-					$categories = get_the_category();
-
-			?>
-
 					<div class="small-12" role="main" style="border-top:3px solid #f7941d;">
 
 						<div class="background-top" style="height:641px;width:100%;background-image:url('/wp-content/themes/pitzer-college-child-communications/img/Inauguration_Background_r1_c1.jpg')"></div>
@@ -75,6 +67,3 @@
 							</div>
 
 					</div>
-
-
-				<?php }			?>

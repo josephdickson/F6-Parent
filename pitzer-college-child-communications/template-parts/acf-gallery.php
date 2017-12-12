@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $images = get_field('image_gallery');
 
@@ -23,7 +23,18 @@ if( $images ):
 
                 <div class="reveal small <?php if($image === reset($images) ) { echo 'first-image'; } ?><?php if($image === end($images) ) { echo 'last-image'; } ?>" id="<?php echo 'reveal' . $a; ?>" aria-labelledby="<?php echo 'reveal' . $image['ID'] .'Header' ?>" data-reveal>
 
-                    <h1 id="<?php echo 'reveal' . $image['ID'] .'Header' ?>"><?php echo $image['title']; ?></h1>
+                  <?php
+                    if ( in_category ( array( 1143 ) ) ) {
+
+                		}
+
+                    else {
+
+                  ?>
+
+                      <h1 id="<?php echo 'reveal' . $image['ID'] .'Header' ?>"><?php echo $image['title']; ?></h1>
+
+                  <?php  } ?>
 
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
