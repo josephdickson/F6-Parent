@@ -105,27 +105,36 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 .category-summer-2017 .participant-plus li.yellow::before {color:#FFCF01;}
 .category-summer-2017 .participant-plus li.green::before {color:#7A941D;}
 /* Fall 2017 Participant */
-.category-fall-2017 strong.entry-title {padding-left:1.1rem;font-size:1.8rem;display:block;font-family:'EB Garamond', serif;}
+.category-fall-2017 .participant-plus .cover h1.entry-title {font-family: 'Open Sans Condensed', sans-serif; font-weight: 700;margin-left:0;}
+.category-fall-2017 .participant-plus .cover h1.entry-title {font-weight: 300;}
+.category-fall-2017 strong.entry-title {padding-left:0.25rem;font-size:1.8rem;display:block;font-family:'Open Sans', sans-serif;font-weight: 700; background-color:rgba(0,255,255,0.1);}
+.category-fall-2017 strong.entry-title.around-the-mounds {margin: 0 0.5rem;}
+.category-fall-2017 .participant-plus.cover.column,
+.category-fall-2017 .participant-plus.cover .column,
+.category-fall-2017 .participant-plus.cover .columns {padding:0;}
 /*.category-fall-2017 strong.entry-title.pst-la-la,
 .category-fall-2017 strong.entry-title.first-year {font-size: 1.2rem;line-height: 2.7rem;padding-left: 1.1rem;} */
-.category-fall-2017 strong.entry-title.around-the-mounds {padding-left:2rem;}
+@media screen and (min-width:40em) {
+  .category-fall-2017 .columns,
+  .category-fall-2017 .column {padding-left:0.46875rem;padding-right:0.46875rem;}
+}
 .category-fall-2017 .callout.special-item h1 a {
-  font-family:'EB Garamond', serif;
-  color: #fff;
-  font-size: 3rem;
-  line-height: 2.6rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.9rem;
   margin-top: -1rem;
   position: relative;
   float: left;
-  background: #000000;
+  background: #ffffff;
   width: 94%;
   margin-left: 3%;
   padding: 5px;
   border-top: 2px solid #f7941d;
 }
-.category-fall-2017 .mcsi .callout.special-item h1 a {font-size:2.3rem;line-height:2.2rem}
-.category-fall-2017 .callout.special-item {background: #000000; padding:0;}
-.category-fall-2017 .callout.special-item p {display:block;font-size:0.8rem;line-height:1.2rem;font-family:sans-serif;font-weight: bold;color:#ffffff;background-color:#000000;padding:0 5%;}
+.category-fall-2017 .callout.special-item {background: #f9f9f9; padding:0;}
+.category-fall-2017 .callout.special-item p {display:block;font-size:0.8rem;line-height:1rem;font-family:'Open Sans', sans-serif;font-weight: 400;color:#000000;background-color:#ffffff;padding:2%;margin:0 3% 3% 3%;}
 .participant-plus.cover {font-size:0.8rem;}
 .participant-plus.cover .edit-link {font-size:1rem;}
 .post-footer-fall-2017 .participant-plus ul {padding:0;margin:0;list-style:none;}
@@ -137,8 +146,7 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 .post-footer-fall-2017 .participant-plus li.yellow::before {color:#FFCF01;}
 .post-footer-fall-2017 .participant-plus li.green::before {color:#7A941D;}
 .post-footer-fall-2017 .special-item img {margin-top:0;}
-.post-footer-fall-2017 .special-item strong {float:left;background: rgba(255,255,255, 0.4);color:#fff;padding:0.3rem;display:block;position: relative;margin-top:-2.8rem;width:100%;text-shadow:2px 2px 0px #58595b;font-size:1.2rem;}
-.post-footer-fall-2017 .mcsi .special-item strong {margin-top:-2.35rem;font-size:.9rem;}
+.post-footer-fall-2017 .special-item strong {float:left;background: rgba(255,255,255, 0.4);color:#fff;padding:0.3rem;display:block;position: relative;margin-top:-2.35rem;padding-left: .7rem;width:100%;text-shadow:2px 2px 0px #58595b;font-size:1.2rem;font-size:.9rem;}
 .post-footer-fall-2017 .special-item strong.pst-la-la {background:rgba(0,0,0,0.4)};
 .post-footer-fall-2017 div.social-icons {margin: 0}
 /* Photo Gallery */
