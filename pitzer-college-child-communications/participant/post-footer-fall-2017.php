@@ -13,24 +13,37 @@
 
 		</div>
 
-		<div class="row small-up-1 medium-up-2 large-up-3">
+<div class="small-12 large-6 columns" style="padding:0;">
+
+		<div class="row small-up-1 medium-up-1 large-up-1">
 
 			<?php
 				// Convocation
 				get_template_part('/participant/participant-plus-wp-query-convocation');
 
 			?>
+		</div>
 
-			<?php
-				// Field Notes
-				get_template_part('/participant/participant-plus-wp-query-2017-field-notes');
-			?>
+</div>
 
-			<?php
-				// Radiant Nature
-				get_template_part('/participant/participant-plus-wp-query-2017-radiant-nature');
+<div class="small-12 large-6 columns" style="padding:0;">
 
-			?>
+				<div class="row small-up-1 medium-up-2 large-up-2">
+
+					<?php
+						// Field Notes
+						get_template_part('/participant/participant-plus-wp-query-2017-field-notes');
+					?>
+
+					<?php
+						// Radiant Nature
+						get_template_part('/participant/participant-plus-wp-query-2017-radiant-nature');
+
+					?>
+
+				</div>
+
+</div>
 
 		<div class="mcsi">
 

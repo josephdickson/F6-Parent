@@ -6,7 +6,7 @@ $the_query = new WP_Query( array( 'category_name' => 'fall-2017', 'tag' => 'mcsi
 // The Loop
 if ( $the_query->have_posts() ) {
 
-	echo '<div class="row small-up-1 medium-up-2 large-up-5">';
+	echo '<div class="row small-up-1 medium-up-2 large-up-3">';
 	echo '<strong class="entry-title around-the-mounds">Around the Mounds</strong>';
 
 	while ( $the_query->have_posts() ) {
