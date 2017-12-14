@@ -105,13 +105,16 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 .category-summer-2017 .participant-plus li.yellow::before {color:#FFCF01;}
 .category-summer-2017 .participant-plus li.green::before {color:#7A941D;}
 /* Fall 2017 Participant */
-.category-fall-2017 .participant-plus .cover h1.entry-title {font-family: 'Open Sans Condensed', sans-serif; font-weight: 700;margin-left:0;}
-.category-fall-2017 .participant-plus .cover h1.entry-title {font-weight: 300;}
-.category-fall-2017 strong.entry-title {padding-left:0.25rem;font-size:1.8rem;display:block;font-family:'Open Sans', sans-serif;font-weight: 700; background-color:rgba(0,255,255,0.1);}
+.category-fall-2017 .participant-plus .cover h1.entry-title strong {font-family: 'Open Sans Condensed', sans-serif; font-weight: 700;margin-left:0;}
+.category-fall-2017 .participant-plus .cover h1.entry-title {font-family: 'Open Sans Condensed', sans-serif;font-weight: 300;margin-left:0;}
+.category-fall-2017 .participant-plus .cover h1.entry-title span.small {font-size:1.25rem;}
+.category-fall-2017 strong.entry-title {padding-left:0.25rem;font-size:1.3rem;display:block;color:#ffffff;font-family:'Open Sans', sans-serif;font-weight: 700;background: #f7941d; background: linear-gradient(to right, #f7941d, transparent);}
 .category-fall-2017 strong.entry-title.around-the-mounds {margin: 0 0.5rem;}
 .category-fall-2017 .participant-plus.cover.column,
 .category-fall-2017 .participant-plus.cover .column,
 .category-fall-2017 .participant-plus.cover .columns {padding:0;}
+.category-fall-2017 .participant-plus.cover li {list-style-position: inside;text-indent: -2.1rem;margin-left: 2rem;font-family: 'Open Sans', sans-serif;font-weight: 400; color:#000000;font-size:0.8rem;}
+.category-fall-2017 .participant-plus.cover.small-12.columns.small {padding-bottom:1rem;border-bottom:1px solid #58595b;}
 /*.category-fall-2017 strong.entry-title.pst-la-la,
 .category-fall-2017 strong.entry-title.first-year {font-size: 1.2rem;line-height: 2.7rem;padding-left: 1.1rem;} */
 @media screen and (min-width:40em) {
@@ -121,9 +124,9 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 .category-fall-2017 .callout.special-item h1 a {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #000000;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.9rem;
+  line-height: 1.5rem;
   margin-top: -1rem;
   position: relative;
   float: left;
@@ -147,7 +150,6 @@ a.participant-plus:hover > h1 {color:#64b0c3;}
 .post-footer-fall-2017 .participant-plus li.green::before {color:#7A941D;}
 .post-footer-fall-2017 .special-item img {margin-top:0;}
 .post-footer-fall-2017 .special-item strong {float:left;background: rgba(255,255,255, 0.4);color:#fff;padding:0.3rem;display:block;position: relative;margin-top:-2.35rem;padding-left: .7rem;width:100%;text-shadow:2px 2px 0px #58595b;font-size:1.2rem;font-size:.9rem;}
-.post-footer-fall-2017 .special-item strong.pst-la-la {background:rgba(0,0,0,0.4)};
 .post-footer-fall-2017 div.social-icons {margin: 0}
 /* Photo Gallery */
 .reveal.small a.previous,

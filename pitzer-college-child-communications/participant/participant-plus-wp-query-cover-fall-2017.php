@@ -17,20 +17,18 @@
 
 							<?php the_content(); ?>
 
-							<?php	// Edit link added to end of post
-								get_template_part( 'template-parts/edit-post-link' );
-							?>
+							<div class="cover small-12 large-3 columns">
 
-					</div>
+									<?php the_post_thumbnail('large'); ?>
+									<a style="display:block;width:35%;margin-top:-34%;margin-left:-3.3rem;" class="participant-plus-icon-fall-2017" href="https://issuu.com/pitzercollege/docs/2017-spring-summer-participant" target="_blank"><img src="<?php echo wp_get_attachment_url( 5695 ); ?>" alt="Participant Plus"></a>
 
-					<div class="cover small-12 large-3 columns">
+								<span style="float:right;font-size:0.9em;">Supplementary multimedia content</span>
 
-							<?php the_post_thumbnail('large'); ?>
-							<a style="display:block;width:35%;margin-top:-34%;" class="participant-plus-icon-fall-2017" href="https://issuu.com/pitzercollege/docs/2017-spring-summer-participant" target="_blank"><img src="<?php echo wp_get_attachment_url( 5695 ); ?>" alt="Participant Plus"></a>
+									<?php	// Edit link added to end of post
+										get_template_part( 'template-parts/edit-post-link' );
+									?>
 
-						<span style="float:right;font-size:0.9em;">Supplementary multimedia content</span>
-
-					</div>
+							</div>
 
 				</div>
 				<?php } ?>
