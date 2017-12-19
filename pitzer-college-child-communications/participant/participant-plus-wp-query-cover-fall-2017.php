@@ -20,7 +20,7 @@
 							<div class="cover small-12 large-3 columns">
 
 									<?php the_post_thumbnail('large'); ?>
-									<a style="display:block;width:35%;margin-top:-34%;margin-left:-3.3rem;" class="participant-plus-icon-fall-2017" href="https://issuu.com/pitzercollege/docs/2017-spring-summer-participant" target="_blank"><img src="<?php echo wp_get_attachment_url( 5695 ); ?>" alt="Participant Plus"></a>
+									<img style="display:block;width:35%;margin-top:-34%;margin-left:-3.3rem" src="<?php echo wp_get_attachment_url( 5695 ); ?>" alt="Participant Plus">
 
 								<span style="float:right;font-size:0.9em;">Supplementary multimedia content</span>
 
