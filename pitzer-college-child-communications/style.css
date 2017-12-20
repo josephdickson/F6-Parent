@@ -48,6 +48,12 @@ p.tags {margin-top:1rem;}
 .flag:after {background-image:url('/wp-content/themes/pitzer-college-child-communications/img/flag-orange.png');content: '';position: absolute;top: 0; right: 0;  bottom: 0; left: 0;width:160px;height:60px;background-repeat:no-repeat;background-position:right center;}
 .flag span {z-index: 1;padding: 1.2em 0 0 1em;display: block;position: absolute;}
 .flag .arrow-left {width: 0;height: 0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-right:16px solid #c2c2c2;	margin-top:28px;position:relative;float:left;}
+/* Main Particpant Page */
+.page-template-page-participant .callout.special-item {padding: 0; border-width: 0;}
+.page-template-page-participant .callout.special-item img {margin-top:0;box-shadow: 1px 1px 2px #BEBEBE;border-radius: 2px;}
+.page-template-page-participant .small-up-1.medium-up-3.large-up-4 .column {padding:0 .25rem;}
+.page-template-page-participant .page ul {font-size: 0.85rem}
+.page-template-page-participant .page p {margin-bottom: 0.5rem;}
 /* Speical Page - Summer 2017 Participant */
 .category-summer-2017 .off-canvas-content {padding-bottom:0;}
 .callout.special-item {padding-bottom:0;padding-top:0;}
